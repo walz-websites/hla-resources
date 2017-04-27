@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://www.humanlife.org/xmlrpc.php">
+<title>Human Life Alliance</title>
+ 
+<meta property="og:type" content="blog"/>
+<meta property="og:title" content="Human Life Alliance"/>
+<meta property="og:url" content="https://www.humanlife.org/"/>
+<meta property="og:site_name" content="Human Life Alliance"/>
+<meta name="twitter:card" content="summary"/>
+ 
+<link rel='dns-prefetch' href='//www.humanlife.org'/>
+<link rel='dns-prefetch' href='//fonts.googleapis.com'/>
+<link rel='dns-prefetch' href='//s.w.org'/>
+<link rel="alternate" type="application/rss+xml" title="Human Life Alliance &raquo; Feed" href="https://www.humanlife.org/feed/"/>
+<link rel="alternate" type="application/rss+xml" title="Human Life Alliance &raquo; Comments Feed" href="https://www.humanlife.org/comments/feed/"/>
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.humanlife.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=cc4f74db55978c9d40448b8c956e603b"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-0.1em!important;background:none!important;padding:0!important;}</style>
+<link rel='stylesheet' id='fmepco-front-css-css' href='https://www.humanlife.org/wp-content/plugins/fma-product-custom-options/front/css/fmepco_front_style.css?ver=cc4f74db55978c9d40448b8c956e603b' type='text/css' media='all'/>
+<link rel='stylesheet' id='pt-cv-public-style-css' href='https://www.humanlife.org/wp-content/plugins/content-views-query-and-display-post-page/public/assets/css/cv.css?ver=1.9.8' type='text/css' media='all'/>
+<link rel='stylesheet' id='udefault-css' href='https://www.humanlife.org/wp-content/plugins/ultimate-wp-query-search-filter/themes/default.css?ver=all' type='text/css' media='all'/>
+<link rel='stylesheet' id='woocommerce-layout-css' href='//www.humanlife.org/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=3.0.4' type='text/css' media='all'/>
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='//www.humanlife.org/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=3.0.4' type='text/css' media='only screen and (max-width: 768px)'/>
+<link rel='stylesheet' id='woocommerce-general-css' href='//www.humanlife.org/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.0.4' type='text/css' media='all'/>
+<link rel='stylesheet' id='yith_wcas_frontend-css' href='https://www.humanlife.org/wp-content/plugins/yith-woocommerce-ajax-search-premium/assets/css/yith_wcas_ajax_search.css?ver=cc4f74db55978c9d40448b8c956e603b' type='text/css' media='all'/>
+<style id='yith_wcas_frontend-inline-css' type='text/css'>.autocomplete-suggestion{padding-right:0px;}.woocommerce .autocomplete-suggestion span.yith_wcas_result_on_sale,.autocomplete-suggestion span.yith_wcas_result_on_sale{background:#7eb742;color:#ffffff}.woocommerce .autocomplete-suggestion span.yith_wcas_result_outofstock,.autocomplete-suggestion span.yith_wcas_result_outofstock{background:#7a7a7a;color:#ffffff}.woocommerce .autocomplete-suggestion span.yith_wcas_result_featured,.autocomplete-suggestion span.yith_wcas_result_featured{background:#c0392b;color:#ffffff}.autocomplete-suggestion img{width:30px;}.autocomplete-suggestion .yith_wcas_result_content .title{color:#004b91;}.autocomplete-suggestion{min-height:40px;}</style>
+<link rel='stylesheet' id='ywcnp_premium_style-css' href='https://www.humanlife.org/wp-content/plugins/yith-woocommerce-name-your-price-premium/assets/css/ywcnp_frontend_style.css?ver=1.0.11' type='text/css' media='all'/>
+<link rel='stylesheet' id='athena-style-css' href='https://www.humanlife.org/wp-content/themes/athena-child/style.css?ver=cc4f74db55978c9d40448b8c956e603b' type='text/css' media='all'/>
+<link rel='stylesheet' id='athena-font-raleway-css' href='//fonts.googleapis.com/css?family=Raleway%3A400%2C300%2C600&#038;ver=1.0.8' type='text/css' media='all'/>
+<link rel='stylesheet' id='athena-bootstrap-css' href='https://www.humanlife.org/wp-content/themes/athena/inc/css/bootstrap.css?ver=1.0.8' type='text/css' media='all'/>
+<link rel='stylesheet' id='athena-bootstrap-theme-css' href='https://www.humanlife.org/wp-content/themes/athena/inc/css/bootstrap-theme.min.css?ver=1.0.8' type='text/css' media='all'/>
+<link rel='stylesheet' id='athena-fontawesome-css' href='https://www.humanlife.org/wp-content/themes/athena/inc/css/font-awesome.css?ver=1.0.8' type='text/css' media='all'/>
+<link rel='stylesheet' id='athena-main-style-css' href='https://www.humanlife.org/wp-content/themes/athena/inc/css/style.css?ver=1.0.8' type='text/css' media='all'/>
+<link rel='stylesheet' id='athena-camera-style-css' href='https://www.humanlife.org/wp-content/themes/athena/inc/css/camera.css?ver=1.0.8' type='text/css' media='all'/>
+<link rel='stylesheet' id='athena-animations-css' href='https://www.humanlife.org/wp-content/themes/athena/inc/css/animate.css?ver=1.0.8' type='text/css' media='all'/>
+<link rel='stylesheet' id='athena-slicknav-css' href='https://www.humanlife.org/wp-content/themes/athena/inc/css/slicknav.min.css?ver=1.0.8' type='text/css' media='all'/>
+<link rel='stylesheet' id='athena-template-css' href='https://www.humanlife.org/wp-content/themes/athena/inc/css/temps/blue.css?ver=1.0.8' type='text/css' media='all'/>
+<link rel='stylesheet' id='A2A_SHARE_SAVE-css' href='https://www.humanlife.org/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.13' type='text/css' media='all'/>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/plugins/fma-product-custom-options/front/js/accounting.min.js?ver=cc4f74db55978c9d40448b8c956e603b'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/plugins/add-to-any/addtoany.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-includes/js/masonry.min.js?ver=3.3.2'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/themes/athena/inc/js/script.js?ver=1.0.8'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/plugins/constant-contact-api/lib/form-designer/js/cc-widget.js?ver=cc4f74db55978c9d40448b8c956e603b'></script>
+<link rel='https://api.w.org/' href='https://www.humanlife.org/wp-json/'/>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.humanlife.org/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.humanlife.org/wp-includes/wlwmanifest.xml"/>
+<script type="text/javascript">
+var a2a_config=a2a_config||{};a2a_config.callbacks=a2a_config.callbacks||[];a2a_config.templates=a2a_config.templates||{};
+</script>
+<script type="text/javascript" src="https://static.addtoany.com/menu/page.js" async="async"></script>
+<style>.post-3719{display:none!important;}</style><script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//www.humanlife.org/?wordfence_logHuman=1&hid=D79EF4D3B311758BE9778F6CC54DE113');
+</script> <style type="text/css">body{font-size:14px;font-family:Raleway,sans-serif;}h1,h2,h3,h4,h5,h6,.slide2-header,.slide1-header,.athena-title,.widget-title,.entry-title,.product_title{font-family:Raleway,sans-serif;}ul.athena-nav>li.menu-item a{font-size:14px;}</style>
+<script type="text/javascript">
+    jQuery(document).ready( function($) {
+        $('.athena-blog-content').imagesLoaded(function () {
+            $('.athena-blog-content').masonry({
+                itemSelector: '.athena-blog-post',
+                gutter: 0,
+                transitionDuration: 0,
+            }).masonry('reloadItems');
+        });
+    });
+    </script>
+ 
+<script type='text/javascript'>
+			var gaProperty = 'UA-82185837-1';
+			var disableStr = 'ga-disable-' + gaProperty;
+			if ( document.cookie.indexOf( disableStr + '=true' ) > -1 ) {
+				window[disableStr] = true;
+			}
+			function gaOptout() {
+				document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+				window[disableStr] = true;
+			}
+		</script>
+<script type='text/javascript'>var _gaq = _gaq || [];
+		_gaq.push(
+			['_setAccount', 'UA-82185837-1'], ['_setDomainName', 'www.humanlife.org'],['_gat._anonymizeIp'],
+			['_setCustomVar', 1, 'logged-in', 'no', 1],
+			['_trackPageview']);</script>
+ 
+</head>
+<body class="home blog yith-wcan-pro group-blog">
+<div id="athena-search" class="noshow">
+<div class="row">
+<span class="fa fa-search"></span>
+<form role="search" method="get" class="search-form" action="https://www.humanlife.org/">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s"/>
+</label>
+<input type="submit" class="search-submit" value="Search"/>
+</form>
+<span class="fa fa-close"></span>
+</div>
+</div>
+<div id="page" class="hfeed site">
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<header id="masthead" class="site-header" role="banner">
+<div id="athena-header" class="frontpage">
+<div class="header-inner">
+<div class="row">
+<div class="athena-branding">
+<div class="site-branding">
+<div id="athena-logo" class="show">
+<a href="https://www.humanlife.org/" rel="home">
+<img class="mobile" src="https://www.humanlife.org/wp-content/uploads/2016/07/hla_logo_13.png" title="Human Life Alliance"/>
+<img class="desktop" style="display: none;" src="/wp-content/uploads/2016/07/hla_logo_20.png" title="Human Life Alliance"/>
+</a>
+</div>
+<h1 class="site-title hidden">
+<a href="https://www.humanlife.org/" rel="home">Human Life Alliance</a>
+</h1>
+<p class="site-description hidden">
+</p>
+</div> 
+</div>
+<div class="athena-header-menu">
+<div class="athena-mobile-cart">
+<a class="athena-cart" href="https://www.humanlife.org/cart/"><span class="fa fa-shopping-cart"></span> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>0.00</span></a>
+</div>
+<nav id="site-navigation" class="main-navigation" role="navigation">
+<div class="menu-main-container"><ul id="primary-menu" class="athena-nav"><li id="menu-item-70" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-70"><a href="#">About</a>
+<ul class="sub-menu">
+<li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a href="https://www.humanlife.org/about/mission/">Mission</a></li>
+<li id="menu-item-100" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100"><a href="https://www.humanlife.org/about/testimonials/">Testimonials</a></li>
+<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="https://www.humanlife.org/about/history/">History</a></li>
+<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="https://www.humanlife.org/about/leadership/">Leadership</a></li>
+<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="https://www.humanlife.org/about/financials/">Financials</a></li>
+<li id="menu-item-431" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-431"><a href="https://www.humanlife.org/about/contact/">Contact</a></li>
+</ul>
+</li>
+<li id="menu-item-1965" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1965"><a href="#">Resources</a>
+<ul class="sub-menu">
+<li id="menu-item-1957" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1957"><a href="/resource-center?filter_form=publications&#038;query_type_form=or">Publications</a></li>
+<li id="menu-item-1958" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1958"><a href="/resource-center?filter_form=fact-sheets&#038;query_type_form=or">Fact Sheets</a></li>
+<li id="menu-item-1959" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1959"><a href="/resource-center?filter_form=posters&#038;query_type_form=or">Posters</a></li>
+<li id="menu-item-2127" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2127"><a href="/resource-center?filter_form=dvds&#038;query_type_form=or">DVDs</a></li>
+<li id="menu-item-2126" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2126"><a href="/resource-center?filter_form=bumper-stickers&#038;query_type_form=or">Bumper Stickers</a></li>
+<li id="menu-item-2128" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2128"><a href="/resource-center?filter_form=other&#038;query_type_form=or">Other</a></li>
+<li id="menu-item-56" class="display-none menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="https://www.humanlife.org/resource-center/articles/">Articles</a></li>
+<li id="menu-item-93" class="display-none menu-item menu-item-type-post_type menu-item-object-page menu-item-93"><a href="https://www.humanlife.org/resource-center/social-media/">Social Media</a></li>
+</ul>
+</li>
+<li id="menu-item-71" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-71"><a href="#">Get Involved</a>
+<ul class="sub-menu">
+<li id="menu-item-51" class="display-none menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="https://www.humanlife.org/get-involved/on-campus/">On Campus</a></li>
+<li id="menu-item-53" class="display-none menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="https://www.humanlife.org/get-involved/at-church/">At Church</a></li>
+<li id="menu-item-98" class="display-none menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a href="https://www.humanlife.org/get-involved/prc/">PRC</a></li>
+<li id="menu-item-99" class="display-none menu-item menu-item-type-post_type menu-item-object-page menu-item-99"><a href="https://www.humanlife.org/get-involved/sidewalk-counseling/">Sidewalk Counseling</a></li>
+<li id="menu-item-97" class="display-none menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a href="https://www.humanlife.org/get-involved/in-your-community/">In Your Community</a></li>
+<li id="menu-item-95" class="display-none menu-item menu-item-type-post_type menu-item-object-page menu-item-95"><a href="https://www.humanlife.org/get-involved/at-a-nursing-home-or-hospice/">At a Nursing Home or Hospice</a></li>
+<li id="menu-item-2165" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2165"><a href="http://www.prolifehealthcare.org/">Pro-life Healthcare Alliance</a></li>
+<li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96"><a href="https://www.humanlife.org/get-involved/at-hla/">At HLA</a></li>
+</ul>
+</li>
+<li id="menu-item-72" class="Media menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-72"><a href="#">Media</a>
+<ul class="sub-menu">
+<li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a href="https://www.humanlife.org/media/weekly-wire/">Weekly Wire</a></li>
+<li id="menu-item-94" class="display-none menu-item menu-item-type-post_type menu-item-object-page menu-item-94"><a href="https://www.humanlife.org/media/hla-action-news/">HLA Action News</a></li>
+<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="https://www.humanlife.org/media/press/">Press</a></li>
+</ul>
+</li>
+<li id="menu-item-1948" class="Donate menu-item menu-item-type-post_type menu-item-object-product menu-item-1948"><a href="https://www.humanlife.org/product/donation/">DONATE</a></li>
+<li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="https://www.humanlife.org/subscribe/">Subscribe</a></li>
+<li class="menu-item"><a class="athena-search" href="#search" role="button" data-toggle="modal"><span class="fa fa-search"></span></a></li><li><a class="athena-cart" href="https://www.humanlife.org/cart/"><span class="fa fa-shopping-cart"></span> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>0.00</span></a></li></ul></div>
+</nav> 
+</div>
+</div>
+</div>
+</div>
+</header> 
+<div id="content" class="site-content">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82185837-1', 'auto');
+  ga('require', 'linkid');
+  ga('send', 'pageview');
+
+</script>
+<style>#athena-sidebar{overflow:unset!important;}#athena-header.frontpage{position:inherit!important;}#athena-header div{background-color:#ffffff!important;}#primary-menu li a{color:#394573;padding-left:10px;padding-top:8px;}ul.athena-nav ul.sub-menu li{background-color:#ffffff;}#primary-menu li a:hover{background-color:#9CA3C1;color:#ffffff;}ul.athena-nav>li.menu-item{margin-right:5px!important;}#menu-item-2298 a{padding-right:10px;padding-bottom:8px!important;}#menu-item-2298 a:hover{color:#ff6600!important;background-color:#ffffff!important;}#menu-item-2278 a{padding-right:10px;}.athena-search{padding-right:10px;}.slicknav_item a{color:#394573!important;}.slicknav_item span{color:#394573!important;}li.menu-item a{color:#394573;}#masthead{border-bottom:1px solid;}</style>
+<div id="primary" class="content-area">
+<main id="main" class="site-main" role="main">
+<div id="athena-jumbotron">
+<div id="athena-slider" class="hero">
+<div id="slide1" data-thumb="https://www.humanlife.org/wp-content/uploads/2017/03/Web_LifeBegins_1900x1069.jpg" data-src="https://www.humanlife.org/wp-content/uploads/2017/03/Web_LifeBegins_1900x1069.jpg">
+<div class="overlay">
+<div class="row">
+<div class="col-sm-6 parallax">
+<h2 class="header-text animated slideInDown slide1-header">Check out our new comic book</h2>
+<a href="https://www.humanlife.org/product/life-begins/" class="athena-button primary large animated flipInX slide1_button1 delay3">
+Get yours now!!! </a>
+</div>
+<div class="col-sm-6">
+</div>
+</div>
+</div>
+</div>
+<div id="slide2" data-thumb="https://www.humanlife.org/wp-content/uploads/2016/08/Store_Web_1900x1089-gradient.jpg" data-src="https://www.humanlife.org/wp-content/uploads/2016/08/Store_Web_1900x1089-gradient.jpg">
+<div class="overlay">
+<div class="row">
+<div class="col-sm-6 parallax">
+<h2 class="header-text animated slideInDown slide2-header">Find Pro-life Resources</h2>
+<a href="/resource-center" class="athena-button primary large animated flipInX slide2_button1 delay3">
+View Resources </a>
+</div>
+<div class="col-sm-6">
+</div>
+</div>
+</div>
+</div>
+<div id="slide3" data-thumb="https://www.humanlife.org/wp-content/uploads/2016/08/Store_Web_1900x1089-gradient.jpg" data-src="https://www.humanlife.org/wp-content/uploads/2016/08/PHA_Web_1900x1089-gradient.jpg">
+<div class="overlay">
+<div class="row">
+<div class="col-sm-6 parallax">
+<h2 class="header-text animated slideInDown slide2-header">Visit the Pro-life Healthcare Alliance</h2>
+<a href="https://www.prolifehealthcare.org/" class="athena-button primary large animated flipInX slide1_button1 delay3">View website</a>
+</div>
+<div class="col-sm-6">
+</div>
+</div>
+</div>
+</div>
+<div id="slide4" data-thumb="https://www.humanlife.org/wp-content/uploads/2016/08/Store_Web_1900x1089-gradient.jpg" data-src="https://www.humanlife.org/wp-content/uploads/2016/08/Donate_Web_1900x1089-gradient.jpg">
+<div class="overlay">
+<div class="row">
+<div class="col-sm-6 parallax">
+<h2 class="header-text animated slideInDown slide2-header">Help HLA reach millions</h2>
+<a href="https://www.humanlife.org/product/donation/" class="athena-button primary large animated flipInX slide1_button1 delay3">DONATE</a>
+</div>
+<div class="col-sm-6">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+<div class="row">
+<div class="homepage-page-content col-sm-12">
+<div class="front-page">
+<div class="woocommerce ywcps-product-slider"><h3>Highlighted</h3><div class="ywcps-wrapper" data-columns="4" data-en_responsive="true" data-n_item_desk_small="4" data-n_item_tablet="2" data-n_item_mobile="2"data-n_items="4" data-is_loop="false" data-pag_speed="800" data-auto_play="5000" data-stop_hov="false" data-show_nav="false"data-en_rtl="true" data-anim_in="fadeIn" data-anim_out="fadeOut" data-anim_speed="450" data-show_dot_nav="false"><div class="ywcps-slider " style="visibility:hidden;"><ul class="ywcps-products products ywcps_products_slider" ><li class="post-1242 product type-product status-publish has-post-thumbnail product_shipping_class-shipping first instock shipping-taxable purchasable product-type-variable has-children">
+	<a href="https://www.humanlife.org/product/be-mother/" class="woocommerce-LoopProduct-link"><img width="158" height="200" src="https://www.humanlife.org/wp-content/uploads/2016/07/DareToBe_Mag_ENG-SPAN_HLA_WebImage_475x600_Jan2016-1.jpg" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="DareToBe_Mag_ENG-SPAN_HLA_WebImage_475x600_Jan2016" title="DareToBe_Mag_ENG-SPAN_HLA_WebImage_475x600_Jan2016" /><h2 class="woocommerce-loop-product__title">Dare to be&#8230; a Mother</h2>
+</a></li>
+<li class="post-411 product type-product status-publish has-post-thumbnail  instock shipping-taxable purchasable product-type-variable has-children">
+	<a href="https://www.humanlife.org/product/know/" class="woocommerce-LoopProduct-link"><img width="158" height="200" src="https://www.humanlife.org/wp-content/uploads/2016/06/DidYouKnow_HLA_WebImage_475x600_Aug2014-3-158x200.jpg" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="DidYouKnow_HLA_WebImage_475x600_Aug2014" title="DidYouKnow_HLA_WebImage_475x600_Aug2014" srcset="https://www.humanlife.org/wp-content/uploads/2016/06/DidYouKnow_HLA_WebImage_475x600_Aug2014-3-158x200.jpg 158w, https://www.humanlife.org/wp-content/uploads/2016/06/DidYouKnow_HLA_WebImage_475x600_Aug2014-3-238x300.jpg 238w, https://www.humanlife.org/wp-content/uploads/2016/06/DidYouKnow_HLA_WebImage_475x600_Aug2014-3-79x100.jpg 79w, https://www.humanlife.org/wp-content/uploads/2016/06/DidYouKnow_HLA_WebImage_475x600_Aug2014-3.jpg 475w" sizes="(max-width: 158px) 100vw, 158px" /><h2 class="woocommerce-loop-product__title">Did You Know?</h2>
+</a></li>
+<li class="post-1208 product type-product status-publish has-post-thumbnail product_shipping_class-shipping  instock shipping-taxable purchasable product-type-variable has-children">
+	<a href="https://www.humanlife.org/product/informed/" class="woocommerce-LoopProduct-link"><img width="158" height="200" src="https://www.humanlife.org/wp-content/uploads/2016/07/Informed_HLA_WebImage_475x600_Dec2013-1.jpg" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="Informed_HLA_WebImage_475x600_Dec2013" title="Informed_HLA_WebImage_475x600_Dec2013" /><h2 class="woocommerce-loop-product__title">Informed</h2>
+</a></li>
+<li class="post-1018 product type-product status-publish has-post-thumbnail product_shipping_class-shipping last instock featured shipping-taxable purchasable product-type-variable has-children">
+	<a href="https://www.humanlife.org/product/just-4-girls-just-4-guys/" class="woocommerce-LoopProduct-link"><img width="158" height="200" src="https://www.humanlife.org/wp-content/uploads/2016/06/J4G_GirlsGuys_HLA_WebImage_475x600_Mar2016.jpg" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="J4G_GirlsGuys_HLA_WebImage_475x600_Mar2016" title="J4G_GirlsGuys_HLA_WebImage_475x600_Mar2016" /><h2 class="woocommerce-loop-product__title">Just for Girls/Just for Guys 2016-17</h2>
+</a></li>
+<li class="post-1195 product type-product status-publish has-post-thumbnail product_shipping_class-shipping first instock shipping-taxable purchasable product-type-variable has-children">
+	<a href="https://www.humanlife.org/product/campus/" class="woocommerce-LoopProduct-link"><img width="158" height="200" src="https://www.humanlife.org/wp-content/uploads/2016/07/StandUp_WebImage_475x600-158x200.jpg" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="standup_webimage_475x600" title="standup_webimage_475x600" srcset="https://www.humanlife.org/wp-content/uploads/2016/07/StandUp_WebImage_475x600-158x200.jpg 158w, https://www.humanlife.org/wp-content/uploads/2016/07/StandUp_WebImage_475x600-238x300.jpg 238w, https://www.humanlife.org/wp-content/uploads/2016/07/StandUp_WebImage_475x600-79x100.jpg 79w, https://www.humanlife.org/wp-content/uploads/2016/07/StandUp_WebImage_475x600.jpg 475w" sizes="(max-width: 158px) 100vw, 158px" /><h2 class="woocommerce-loop-product__title">Stand Up</h2>
+</a></li>
+<li class="post-1053 product type-product status-publish has-post-thumbnail product_shipping_class-shipping  instock shipping-taxable purchasable product-type-variable has-children">
+	<a href="https://www.humanlife.org/product/truth-planned-parenthood/" class="woocommerce-LoopProduct-link"><img width="158" height="200" src="https://www.humanlife.org/wp-content/uploads/2016/06/PlannedParenthood_HLA_WebImage_475x600_Jul2013.jpg" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="PlannedParenthood_HLA_WebImage_475x600_Jul2013" title="PlannedParenthood_HLA_WebImage_475x600_Jul2013" /><h2 class="woocommerce-loop-product__title">The Truth Behind Planned Parenthood</h2>
+</a></li>
+<li class="post-340 product type-product status-publish has-post-thumbnail  instock shipping-taxable purchasable product-type-variable has-children">
+	<a href="https://www.humanlife.org/product/choice-street-mag/" class="woocommerce-LoopProduct-link"><img width="158" height="200" src="https://www.humanlife.org/wp-content/uploads/2016/06/StreetMag_HLA_WebImage_475x600_Sept2015.jpg" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="StreetMag_HLA_WebImage_475x600_Sept2015" title="StreetMag_HLA_WebImage_475x600_Sept2015" /><h2 class="woocommerce-loop-product__title">This is Not Your Only Choice (Street Magazine)</h2>
+</a></li>
+</ul></div><div class="ywcps-nav"><div id="nav_prev_def_1949" class="ywcps-nav-prev"><span id="default_prev"></span></div><div id="nav_next_def_1949" class="ywcps-nav-next"><span id="default_next"></span></div></div></div><div class="es-carousel-clear"></div></div>		</div>
+
+            </div>
+
+
+            
+
+        </div>
+    </main><!-- #main -->
+</div><!-- #primary -->
+
+
+
+</div><!-- #content -->
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+    
+        
+    <div class="athena-footer" class="parallax-window" data-parallax="scroll" data-image-src="">
+        <div>
+            <div class="row">
+                            </div>            
+        </div>
+
+        
+    </div>
+    
+    <div class="clear"></div>
+    
+    <div class="site-info">
+        
+        <div class="row">
+            
+            <div class="athena-copyright">
+                Copyright Human Life Alliance 2016            </div>
+            
+            <div id="authica-social">
+                
+                                <a href="https://www.facebook.com/humanlifealliance/" target="_BLANK" class="athena-facebook">
+                    <span class="fa fa-facebook"></span>
+                </a>
+                                
+                
+                                
+                                <a href="https://www.instagram.com/humanlifealliance/" target="_BLANK" class="athena-instagram">
+                    <span class="fa fa-instagram"></span>
+                </a>
+                                
+                                
+                
+                                <a href="https://www.pinterest.com/humanlife1/" target="_BLANK" class="athena-pinterest">
+                    <span class="fa fa-pinterest"></span>
+                </a>
+                                
+                                <a href="https://twitter.com/humanlife" target="_BLANK" class="athena-twitter">
+                    <span class="fa fa-twitter"></span>
+                </a>
+                                
+            </div>
+
+            <div class="menu-footer-menu-container"><ul id="footer-menu" class="athena-footer-nav"><li id="menu-item-2144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2144"><a href="https://www.humanlife.org/my-account/">My Account</a></li>
+<li class="menu-item"><a class="athena-search" href="#search" role="button" data-toggle="modal"><span class="fa fa-search"></span></a></li><li><a class="athena-cart" href="https://www.humanlife.org/cart/"><span class="fa fa-shopping-cart"></span> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>0.00</span></a></li></ul></div>            <br>
+
+            <a href="https://smartcatdesign.net" rel="designer" style="display: block !important" class="rel">
+                Design by Smartcat                <img src="https://www.humanlife.org/wp-content/themes/athena/inc/images/cat_logo_mini.png"/>
+            </a>
+            
+            
+        </div>
+        
+        <div class="scroll-top alignright">
+            <span class="fa fa-chevron-up"></span>
+        </div>
+        
+
+        
+    </div><!-- .site-info -->
+    
+    
+
+</footer><!-- #colophon -->
+</div><!-- #page -->
+<div id="su-footer-links" style="text-align: center;"></div><script type='text/javascript'>(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();</script><link rel='stylesheet' id='fontawesome-css'  href='https://www.humanlife.org/wp-content/plugins/yith-woocommerce-product-slider-carousel-premium/assets/css/font-awesome.min.css?ver=cc4f74db55978c9d40448b8c956e603b' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-style-css'  href='https://www.humanlife.org/wp-content/plugins/yith-woocommerce-product-slider-carousel-premium/assets/css/owl.css?ver=2.0.0-beta.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='yith-animate-css'  href='https://www.humanlife.org/wp-content/plugins/yith-woocommerce-product-slider-carousel-premium/assets/css/animate.css?ver=cc4f74db55978c9d40448b8c956e603b' type='text/css' media='all' />
+<link rel='stylesheet' id='yith-product-slider-style-css'  href='https://www.humanlife.org/wp-content/plugins/yith-woocommerce-product-slider-carousel-premium/assets/css/product_slider_style.css?ver=1.0.12' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"4b03397729","is_admin":"","is_mobile":"","ajaxurl":"https:\/\/www.humanlife.org\/wp-admin\/admin-ajax.php","lang":"","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
+var PT_CV_PAGINATION = {"first":"\u00ab","prev":"\u2039","next":"\u203a","last":"\u00bb","goto_first":"Go to first page","goto_prev":"Go to previous page","goto_next":"Go to next page","goto_last":"Go to last page","current_page":"Current page is","goto_page":"Go to page"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/plugins/content-views-query-and-display-post-page/public/assets/js/cv.js?ver=1.9.8'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ajax = {"url":"https:\/\/www.humanlife.org\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/plugins/ultimate-wp-query-search-filter/classes/scripts/uwpqsfscript.js?ver=1.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wp-content\/uploads\/2016\/09\/ella.pdf%22\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/www.humanlife.org\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//www.humanlife.org/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=3.0.4'></script>
+<script type='text/javascript' src='//www.humanlife.org/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+<script type='text/javascript' src='//www.humanlife.org/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wp-content\/uploads\/2016\/09\/ella.pdf%22\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//www.humanlife.org/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=3.0.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/wp-content\/uploads\/2016\/09\/ella.pdf%22\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//www.humanlife.org/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=3.0.4'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/plugins/yith-woocommerce-ajax-search-premium/assets/js/yith-autocomplete.min.js?ver=1.2.7'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var yith_name_your_price = {"ajax_url":"https:\/\/www.humanlife.org\/wp-admin\/admin-ajax.php","mon_decimal_point":".","mon_decimal_error":"Please enter a valid price","mon_negative_error":"Please enter a value greater or equal to 0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/plugins/yith-woocommerce-name-your-price-premium/assets/js/ywcnp_free_frontend.min.js?ver=1.0.11'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/plugins/yith-woocommerce-name-your-price-premium/assets/js/ywcnp_premium_frontend_2_5.min.js?ver=1.0.11'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/themes/athena/js/navigation.js?ver=20120206'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/themes/athena/js/skip-link-focus-fix.js?ver=20130115'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/themes/athena/inc/js/sticky.min.js?ver=1.0.8'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/themes/athena/inc/js/easing.js?ver=1.0.8'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/themes/athena/inc/js/camera.js?ver=1.0.8'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/themes/athena/inc/js/parallax.min.js?ver=1.0.8'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/themes/athena/inc/js/owl.carousel.min.js?ver=1.0.8'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/themes/athena/inc/js/slicknav.min.js?ver=1.0.8'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/themes/athena/inc/js/wow.js?ver=1.0.8'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/plugins/constant-contact-api/lib/form-designer/js/jquery.placeholder.min.js'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/plugins/page-links-to/js/new-tab.min.js?ver=2.9.8'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-includes/js/wp-embed.min.js?ver=cc4f74db55978c9d40448b8c956e603b'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/plugins/yith-woocommerce-product-slider-carousel-premium/assets/js/owl.carousel.js?ver=2.0.0-beta.2.4'></script>
+<script type='text/javascript' src='https://www.humanlife.org/wp-content/plugins/yith-woocommerce-product-slider-carousel-premium/assets/js/yith_product_slider.min.js?ver=1.0.12'></script>
+<!-- WooCommerce JavaScript -->
+<script type="text/javascript">
+jQuery(function($) { 
+
+			$( '.add_to_cart_button:not(.product_type_variable, .product_type_grouped)' ).click( function() {
+				_gaq.push(['_trackEvent', 'Products', 'Add to Cart', ($(this).data('product_sku')) ? ('SKU: ' + $(this).data('product_sku')) : ('#' + $(this).data('product_id'))]);
+			});
+		
+ });
+</script>
+</body>
+</html>

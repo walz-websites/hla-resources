@@ -1,0 +1,206 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+//items
+.item-description{
+	margin: 0;
+}
+.item-image{
+	max-width: 400px;
+	float: left;
+	margin-right: 15px;
+}
+div.form-div a.shop-buttons{
+	background: #3498DB;
+	color: #ffffff;
+	padding: .18em 0.6em;
+	border-radius: 3px;
+	display: inline-block;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+div.form-div a.shop-buttons:hover{
+	background: #5DADE2;
+	color: #ffffff;
+	text-decoration: none;
+}
+.shop-buttons{
+	background: #3498DB;
+	color: #ffffff;
+	padding: .18em 0.6em;
+	border-radius: 3px;
+	display: inline-block;
+	margin-bottom: 10px;
+	border: none;
+	font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	cursor: pointer;
+}
+.shop-buttons:hover{
+	background: #5DADE2;
+	color: #ffffff;
+	text-decoration: none;
+}
+.use-header{margin:0;}
+select.use{margin-bottom: 10px;}
+.add-to-cart-form{margin-bottom: 10px;}
+.t-one{padding-right: 10px;}
+.t-even{background:#FFFFFF;}
+.t-odd{background: #F0F0F0;}
+table.categories{width:100%;}
+.amount-green{color:#7FA68A;}
+
+
+//cart
+.cart-item-image{width:50px;}
+.cart-table{
+	width: 100%;
+	text-align: left;
+}
+.cart-table-row{
+	vertical-align: top;
+}
+.cart-table tr:nth-child(even) {
+    background: #F0F0F0;
+}
+
+@media screen and (max-width: 650px) {
+	.cart-table-m tr td{
+		display: grid;
+		padding: 5px;
+	}
+	.cart-table-m tr td dl dt{
+		float: left;
+		font-weight: 600;
+	}
+	.cart-table-m tr td dl dd{
+		float: right;
+	}
+	.cart-table-m tr th{
+		display:none;
+	}
+	.cart-table-m tr td img.cart-item-image{
+		float:right;
+	}
+}
+@media screen and (min-width: 651px) {
+	.cart-table-m tr td dl dt{
+		display:none;
+	}
+}
+
+#update_cart{
+	text-decoration: none;
+	float:right;
+	background: #F0F0F0;
+	color: #ffffff;
+	padding: .18em 0.6em;
+	border-radius: 3px;
+	display: inline-block;
+	margin-bottom: 10px;
+	cursor: pointer;
+	text-align: center;
+}
+#update_cart.update_cart{
+	background: #3498DB;
+	color: #ffffff;
+	padding: .18em 0.6em;
+	border-radius: 3px;
+	display: inline-block;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.cart_remove{
+	color: red;
+	border-radius: 30px;
+	padding: 5px;
+	text-decoration: none;
+	cursor: pointer;
+	width: 10px;
+}
+.cart_remove:hover{
+	color:#ffffff;
+	background:red;
+	text-decoration: none;
+}
+#cart-totals{
+	max-width: 500px;
+	float: right;
+}
+#cart-totals table tbody tr{
+	vertical-align: top;
+}
+#cart-totals table tbody tr td {
+	min-width: 80px;
+}
+#cart_donation{
+	text-decoration: none;
+	background: #3498DB;
+	color: #ffffff;
+	padding: .18em 0.6em;
+	border-radius: 3px;
+	display: inline-block;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.qty{max-width: 80px;}
+.float-left{
+	float:left;
+}
+
+//.cart-table tr td{display: table-row;}
+
+
+
+
+
+
+
+
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    1000px;
+
+$on-palm:          600px;
+$on-laptop:        1000px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;

@@ -1,0 +1,109 @@
+---
+layout: default
+---
+{% if page.type == "Publication" %}
+  	{% assign price-text = site.price.publication.text %}
+  	{% assign price-amount = site.price.publication.amount %}
+{% endif %}
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="post-content" itemprop="articleBody">
+	<h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
+  	<img class="item-image" src="{{ site.url }}{{ site.baseurl }}/images/{{ page.front-pic }}" alt="{{ page.title }}">
+	<div class="form-div">
+		<h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
+		 <form class="add-to-cart-form">
+		 	<input id="suggested-donation" type="radio" name="donation" value="suggested" onclick="document.getElementById('no-donation-selected').style.display = 'none';document.getElementById('amount-no-donation').style.display = 'none';document.getElementById('amount-suggested-donation').style.display = 'contents';" checked="checked">
+		 	<label for="suggested-donation">Suggested Donation - {{ price-text }}</label>
+		 	<br>
+  			<input id="no-donation" type="radio" name="donation" value="none" onclick="document.getElementById('no-donation-selected').style.display = 'contents';document.getElementById('amount-no-donation').style.display = 'contents';document.getElementById('amount-suggested-donation').style.display = 'none';">
+  			<label for="no-donation">No Donation at this time - $0</label>
+  			<br>
+  			<h4 class="use-header">How will you be using this?</h4>
+  			<select id="use" class="use" type="select" name="use">
+				<option value="-- Please Select --">
+					-- Please Select --   
+				</option>
+				<option value="Family/Personal">
+					Family/Personal   
+				</option>
+				<option value="Community">
+					Community   
+				</option>
+				<option value="Church">
+					Church   
+				</option>
+				<option value="College">
+					College   
+				</option>
+				<option value="High School">
+					High School   
+				</option>
+				<option value="Pregnancy Resource Center">
+					Pregnancy Resource Center   
+				</option>
+				<option value="Sidewalk Counseling">
+					Sidewalk Counseling   
+				</option>
+			</select>
+			<br>
+			<p>Please allow 2-3 weeks for shipping. For Expedited Shipping call (651)-484-1040. <span id="no-donation-selected" style="display:none;">Each publication costs 30 cents to design, print and ship. Select the suggested donation amount of $0.30 cents to help us with these expenses or $0 for no donation at this time. HLA services and materials are free for your use. If you choose to make a different donation and support our efforts with today’s request, please check out the DONATE page. Thank you.</span></p>
+			<p class="amount-green"><span id="amount-no-donation" style="display:none;">$0.00</span><span id="amount-suggested-donation">{{ price-text }}</span></p>
+			<p id="demo"></p>
+  			<input id="quantity" class="input-text qty text" step="1" min="1" max="99999" name="quantity" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" type="number">
+  			<a class="shop-buttons" onclick="add_to_cart();">Add to Cart</a>
+		</form> 
+		{% if page.pdf %}<a class="shop-buttons" href="{{ site.url }}{{ site.baseurl }}/pdf/{{ page.pdf }}">View PDF</a>{% endif %}
+		{% if page.citations %}<a class="shop-buttons" href="{{ site.url }}{{ site.baseurl }}{{ page.citations }}">View Citations</a>{% endif %}
+  		{% if page.share %}{% include add-to-any.html %}{% endif %}
+  	</div>
+  	<div>
+  		<h4 class="item-description">Description:</h4>
+    	{{ content }}
+  		<h4 class="item-description">Categories:</h4>
+    	<table class="categories">
+    		<tbody>
+    			<tr class="t-odd">
+    				<td class="t-one">Issues</td>
+    				<td><i>{{ page.issues }}</i></td>
+    			</tr>
+    			<tr class="t-even">
+    				<td class="t-one">Type</td>
+    				<td><i>{{ page.type }}</i></td>
+    			</tr>
+    			<tr class="t-odd">
+    				<td class="t-one">Target Age</td>
+    				<td><i>{{ page.target-age }}</i></td>
+    			</tr>
+    			<tr class="t-even">
+    				<td class="t-one">Target Audience</td>
+    				<td><i>{{ page.target-audience }}</i></td>
+    			</tr>
+    			<tr class="t-odd">
+    				<td class="t-one">Language</td>
+    				<td><i>{{ page.language }}</i></td>
+    			</tr>
+    		</tbody>
+    	</table>
+
+    </div>
+  </div>
+</article>
+<script type="text/javascript">
+	function add_to_cart () {
+		var line_item = new Object();
+		line_item.item = "{{ page.title }}";
+		line_item.id_number = "{{ page.id }}";
+		line_item.url = "{{ page.url }}";
+		line_item.image = "{{ page.front-pic }}";
+		line_item.donation = document.getElementById("suggested-donation").checked;
+		line_item.suggested_donation = "{{ price-amount }}";
+		line_item.quantity = document.getElementById("quantity").value;
+		line_item.use = document.getElementById("use").value;
+		var items = JSON.parse(localStorage.getItem("items")) || new Array();
+		items.push(line_item);
+		var myJSON = JSON.stringify(items);
+		document.getElementById("demo").innerHTML = myJSON;
+		localStorage.setItem("items", myJSON);
+	}
+</script>
