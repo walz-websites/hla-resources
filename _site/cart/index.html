@@ -11,8 +11,8 @@
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://127.0.0.1:4000/cart/">
-  <link rel="alternate" type="application/rss+xml" title="Human Life Alliance" href="http://127.0.0.1:4000/feed.xml">
+  <link rel="canonical" href="https://walz.gitlab.io/hla-resources//cart/">
+  <link rel="alternate" type="application/rss+xml" title="Human Life Alliance" href="https://walz.gitlab.io/hla-resources//feed.xml">
 </head>
 
 
@@ -75,7 +75,7 @@
 				if (items[i].donation) {
 					amount =  Number(items[i].suggested_donation) * Number(items[i].quantity);
 				};
-				htmlString = htmlString + '<tr class="cart-table-row"><td><a class="cart_remove" onclick="remove_item(' + i + ');">x</a></td><td>' + '<img class="cart-item-image" src="http://127.0.0.1:4000/images/' + items[i].image + '"/>' + '</td><td><dl><dt>Item</dt><dd>' + if_cart_donation(items[i].use,'<a href="http://127.0.0.1:4000' + items[i].url + '">') + items[i].item + if_cart_donation(items[i].use,'</a><br>') + if_cart_donation(items[i].use,selected(items[i].use,i)) + '</dd></dl></td><td>' + if_cart_donation(items[i].use,'<dl><dt>Quantity</dt><dd><input id="quantity_' + i + '" class="input-text qty text" step="1" min="1" max="99999" name="quantity" value="' + items[i].quantity + '" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" type="number" onclick="document.getElementById(\'update_cart\').classList.add(\'update_cart\');"></dd></dl>') + '</td><td>' + if_cart_donation(items[i].use,'<dl><dt>Suggested Donation</dt><dd>$' + (Number(items[i].suggested_donation) * Number(items[i].quantity)).toFixed(2).toString() + '</dd></dl>') + '</td><td><dl><dt>Donation</dt><dd>$' + amount.toFixed(2).toString() + "</dd></dl></td></tr>";
+				htmlString = htmlString + '<tr class="cart-table-row"><td><a class="cart_remove" onclick="remove_item(' + i + ');">x</a></td><td>' + '<img class="cart-item-image" src="https://walz.gitlab.io/hla-resources//images/' + items[i].image + '"/>' + '</td><td><dl><dt>Item</dt><dd>' + if_cart_donation(items[i].use,'<a href="https://walz.gitlab.io/hla-resources/' + items[i].url + '">') + items[i].item + if_cart_donation(items[i].use,'</a><br>') + if_cart_donation(items[i].use,selected(items[i].use,i)) + '</dd></dl></td><td>' + if_cart_donation(items[i].use,'<dl><dt>Quantity</dt><dd><input id="quantity_' + i + '" class="input-text qty text" step="1" min="1" max="99999" name="quantity" value="' + items[i].quantity + '" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" type="number" onclick="document.getElementById(\'update_cart\').classList.add(\'update_cart\');"></dd></dl>') + '</td><td>' + if_cart_donation(items[i].use,'<dl><dt>Suggested Donation</dt><dd>$' + (Number(items[i].suggested_donation) * Number(items[i].quantity)).toFixed(2).toString() + '</dd></dl>') + '</td><td><dl><dt>Donation</dt><dd>$' + amount.toFixed(2).toString() + "</dd></dl></td></tr>";
 			};
 			htmlString = htmlString + '<tr><td></td><td></td><td></td><td></td><td></td><td><a id="update_cart" class="" onclick="update_cart();">Update Cart</a></td></tr></tbody></table><a class="shop-buttons float-left" onclick="empty_cart();">Empty Cart</a>';
 
