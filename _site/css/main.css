@@ -153,6 +153,12 @@ table.categories {
 .float-left {
   float: left; }
 
+.store-pics {
+  max-width: 200px; }
+
+.store-item-block {
+  display: inline-block; }
+
 /**
  * Reset some basic elements
  */
