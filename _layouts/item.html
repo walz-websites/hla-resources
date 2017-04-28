@@ -13,10 +13,10 @@ layout: default
 	<div class="form-div">
 		<h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
 		 <form class="add-to-cart-form">
-		 	<input id="suggested-donation" type="radio" name="donation" value="suggested" onclick="document.getElementById('no-donation-selected').style.display = 'none';document.getElementById('amount-no-donation').style.display = 'none';document.getElementById('amount-suggested-donation').style.display = 'contents';" checked="checked">
+		 	<input id="suggested-donation" type="radio" name="donation" value="suggested" onclick="suggested_donation();" checked="checked">
 		 	<label for="suggested-donation">Suggested Donation - {{ price-text }}</label>
 		 	<br>
-  			<input id="no-donation" type="radio" name="donation" value="none" onclick="document.getElementById('no-donation-selected').style.display = 'contents';document.getElementById('amount-no-donation').style.display = 'contents';document.getElementById('amount-suggested-donation').style.display = 'none';">
+  			<input id="no-donation" type="radio" name="donation" value="none" onclick="no_donation();">
   			<label for="no-donation">No Donation at this time - $0</label>
   			<br>
   			<h4 class="use-header">How will you be using this?</h4>
@@ -105,5 +105,21 @@ layout: default
 		var myJSON = JSON.stringify(items);
 		document.getElementById("demo").innerHTML = myJSON;
 		localStorage.setItem("items", myJSON);
+	}
+	first_load();
+	function first_load () {
+		if (document.getElementById("no-donation").checked) {
+			no_donation();
+		};
+	}
+	function suggested_donation () {
+		document.getElementById('no-donation-selected').style.display = 'none';
+		document.getElementById('amount-no-donation').style.display = 'none';
+		document.getElementById('amount-suggested-donation').style.display = 'contents';
+	}
+	function no_donation () {
+		document.getElementById('no-donation-selected').style.display = 'contents';
+		document.getElementById('amount-no-donation').style.display = 'contents';
+		document.getElementById('amount-suggested-donation').style.display = 'none';
 	}
 </script>

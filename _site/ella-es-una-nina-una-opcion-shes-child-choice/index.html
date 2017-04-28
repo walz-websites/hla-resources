@@ -9,9 +9,9 @@
   <title>Ella es una niña, no una opción</title>
   <meta name="description" content="Ella es una niña, no una “opción” is HLA’s Spanish language publication developed from the original She’s a child, not a “choice.” Translated in partnership ...">
 
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://walz.gitlab.io/hla-resources//ella-es-una-nina-una-opcion-shes-child-choice/">
-  <link rel="alternate" type="application/rss+xml" title="Human Life Alliance" href="https://walz.gitlab.io/hla-resources//feed.xml">
+  <link rel="stylesheet" href="/hla-resources/css/main.css">
+  <link rel="canonical" href="https://walz.gitlab.io/hla-resources/ella-es-una-nina-una-opcion-shes-child-choice/">
+  <link rel="alternate" type="application/rss+xml" title="Human Life Alliance" href="https://walz.gitlab.io/hla-resources/feed.xml">
 </head>
 
 
@@ -21,7 +21,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/">Human Life Alliance</a>
+    <a class="site-title" href="/hla-resources/">Human Life Alliance</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -35,7 +35,7 @@
       <div class="trigger">
         
           
-          <a class="page-link" href="/cart/">Cart</a>
+          <a class="page-link" href="/hla-resources/cart/">Cart</a>
           
         
           
@@ -59,14 +59,14 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="post-content" itemprop="articleBody">
 	<h2 class="post-title" itemprop="name headline">Ella es una niña, no una opción</h2>
-  	<img class="item-image" src="https://walz.gitlab.io/hla-resources//images/Ella-HLA-front.jpg" alt="Ella es una niña, no una opción">
+  	<img class="item-image" src="https://walz.gitlab.io/hla-resources/images/Ella-HLA-front.jpg" alt="Ella es una niña, no una opción">
 	<div class="form-div">
 		<h2 class="post-title" itemprop="name headline">Ella es una niña, no una opción</h2>
 		 <form class="add-to-cart-form">
-		 	<input id="suggested-donation" type="radio" name="donation" value="suggested" onclick="document.getElementById('no-donation-selected').style.display = 'none';document.getElementById('amount-no-donation').style.display = 'none';document.getElementById('amount-suggested-donation').style.display = 'contents';" checked="checked">
+		 	<input id="suggested-donation" type="radio" name="donation" value="suggested" onclick="suggested_donation();" checked="checked">
 		 	<label for="suggested-donation">Suggested Donation - $0.30</label>
 		 	<br>
-  			<input id="no-donation" type="radio" name="donation" value="none" onclick="document.getElementById('no-donation-selected').style.display = 'contents';document.getElementById('amount-no-donation').style.display = 'contents';document.getElementById('amount-suggested-donation').style.display = 'none';">
+  			<input id="no-donation" type="radio" name="donation" value="none" onclick="no_donation();">
   			<label for="no-donation">No Donation at this time - $0</label>
   			<br>
   			<h4 class="use-header">How will you be using this?</h4>
@@ -103,7 +103,7 @@
   			<input id="quantity" class="input-text qty text" step="1" min="1" max="99999" name="quantity" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" type="number">
   			<a class="shop-buttons" onclick="add_to_cart();">Add to Cart</a>
 		</form> 
-		<a class="shop-buttons" href="https://walz.gitlab.io/hla-resources//pdf/ella.pdf">View PDF</a>
+		<a class="shop-buttons" href="https://walz.gitlab.io/hla-resources/pdf/ella.pdf">View PDF</a>
 		
   		<!-- AddToAny BEGIN -->
 <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
@@ -165,6 +165,22 @@
 		var myJSON = JSON.stringify(items);
 		document.getElementById("demo").innerHTML = myJSON;
 		localStorage.setItem("items", myJSON);
+	}
+	first_load();
+	function first_load () {
+		if (document.getElementById("no-donation").checked) {
+			no_donation();
+		};
+	}
+	function suggested_donation () {
+		document.getElementById('no-donation-selected').style.display = 'none';
+		document.getElementById('amount-no-donation').style.display = 'none';
+		document.getElementById('amount-suggested-donation').style.display = 'contents';
+	}
+	function no_donation () {
+		document.getElementById('no-donation-selected').style.display = 'contents';
+		document.getElementById('amount-no-donation').style.display = 'contents';
+		document.getElementById('amount-suggested-donation').style.display = 'none';
 	}
 </script>
       </div>
