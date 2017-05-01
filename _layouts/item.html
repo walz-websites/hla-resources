@@ -9,10 +9,10 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="post-content" itemprop="articleBody">
 	<h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
-  	<img class="item-image" src="{{ site.url }}{{ site.baseurl }}/images/{{ page.front-pic }}" alt="{{ page.title }}">
+  	<img class="item-image" src="{{ site.baseurl }}/images/{{ page.front-pic }}" alt="{{ page.title }}">
 	<div class="form-div">
 		<h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
-		 <form class="add-to-cart-form">
+		 <div class="add-to-cart-form">
 		 	<input id="suggested-donation" type="radio" name="donation" value="suggested" onclick="suggested_donation();" checked="checked">
 		 	<label for="suggested-donation">Suggested Donation - {{ price-text }}</label>
 		 	<br>
@@ -52,7 +52,7 @@ layout: default
 			<p id="demo"></p>
   			<input id="quantity" class="input-text qty text" step="1" min="1" max="99999" name="quantity" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" type="number">
   			<input type = "submit" class="shop-buttons" onclick="add_to_cart();" value="Add to Cart">
-		</form> 
+		</div> 
 		{% if page.pdf %}<a class="shop-buttons" href="{{ site.url }}{{ site.baseurl }}/pdf/{{ page.pdf }}">View PDF</a>{% endif %}
 		{% if page.citations %}<a class="shop-buttons" href="{{ site.url }}{{ site.baseurl }}{{ page.citations }}">View Citations</a>{% endif %}
   		{% if page.share %}{% include add-to-any.html %}{% endif %}
