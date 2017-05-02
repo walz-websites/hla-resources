@@ -25,9 +25,9 @@ var getJSON = function(url, callback) {
 getJSON('https://script.google.com/macros/s/AKfycbyWpKQdW8LbheeCZ5KiHZJOz0nj--hGsBUQWUsYeq3Y6vP3Ht76/exec?amount=15',
 function(err, data) {
   if (err != null) {
-    alert('Something went wrong: ' + err);
+    document.getElementById('cart').innerHTML = "err";
   } else {
-    alert('Your query count: ' + data.query.count);
+    document.getElementById('cart').innerHTML = data.query.count;
   }
 });
 </script>
