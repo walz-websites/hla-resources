@@ -51,7 +51,7 @@ function(err, data) {
 			htmlString = htmlString + '<div id="cart-totals">' + ask_for_donations(total(items)) + '<h3>Cart Totals</h3><p>Shipping is included with suggested donation. For Expedited Shipping (Must call us with details) (651)-484-1040.</p><table class="cart-table"><tbody><tr><td>Suggested Total</td><td>$' + suggested_total(items).toFixed(2).toString() + '</td></tr><tr><td>Total</td><td>$' + total(items).toFixed(2).toString() + '</td></tr></tbody></table></div>';
 			document.getElementById('cart').innerHTML = htmlString;
 		}else{
-			document.getElementById('cart').innerHTML = '<h3 style="text-align: center;color: #7f7f7f;">Empty Cart</h3>';
+		//	document.getElementById('cart').innerHTML = '<h3 style="text-align: center;color: #7f7f7f;">Empty Cart</h3>';
 		};
 	}
 	
