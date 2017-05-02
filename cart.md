@@ -22,12 +22,12 @@ var getJSON = function(url, callback) {
     xhr.send();
 };
 
-getJSON('https://script.google.com/macros/s/AKfycbyWpKQdW8LbheeCZ5KiHZJOz0nj--hGsBUQWUsYeq3Y6vP3Ht76/exec?amount=15',
+getJSON('http://query.yahooapis.com/v1/public/yql?q=select%20%2a%20from%20yahoo.finance.quotes%20WHERE%20symbol%3D%27WRC%27&format=json&diagnostics=true&env=store://datatables.org/alltableswithkeys&callback',
 function(err, data) {
   if (err != null) {
-    document.getElementById('cart').innerHTML = "err";
+    alert('Something went wrong: ' + err);
   } else {
-    document.getElementById('cart').innerHTML = data.query.count;
+    alert('Your query count: ' + data.query.count);
   }
 });
 </script>
