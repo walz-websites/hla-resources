@@ -4,6 +4,7 @@ title: Cart
 permalink: /cart/
 ---
 <div id="cart"></div>
+<div id="payment"></div>
 
 <script type="text/javascript">
 	show_cart();
@@ -54,6 +55,7 @@ permalink: /cart/
 				amount = amount + (Number(items[i].suggested_donation) * Number(items[i].quantity));
 			};
 		};
+		get_payeezy_info(amount);
 		return amount;
 	}
 
@@ -131,5 +133,36 @@ permalink: /cart/
 	function empty_cart () {
 		localStorage.removeItem("items");
 		show_cart();
+	}
+
+	function get_payeezy_info (amount) {
+		var url = 'https://script.google.com/macros/s/AKfycbyWpKQdW8LbheeCZ5KiHZJOz0nj--hGsBUQWUsYeq3Y6vP3Ht76/exec?amount=' + amount;
+		var xml = new XMLHttpRequest();
+		xml.open('GET',url,true);
+		xml.responseType = 'json';
+		xml.onload = function() {
+	      var status = xml.status;
+	      if (status == 200) {
+	        make_pay_button(xml.response);
+	      } else {
+	        make_pay_error();
+	      }
+	    };
+	    xml.send();
+	}
+	function make_pay_button (data) {
+		var string = '<form action="https://demo.globalgatewaye4.firstdata.com/pay" id="pay_now_form_6f8c42b3cc" method="post">';
+  		string = string + '<input type="hidden" name="x_login" value="' + data.x_login + '" />';
+  		string = string + '<input type="hidden" name="x_fp_sequence" value="' + data.x_fp_sequence + '" />';
+  		string = string + '<input type="hidden" name="x_fp_hash" value="' + data.signature + '" />';
+  		string = string + '<input type="hidden" name="x_amount" value="' + data.x_amount + '" />';
+  		string = string + '<input type="hidden" name="x_currency_code" value="' + data.x_currency_code + '" />';
+  		string = string + '<input type="hidden" name="x_fp_timestamp" value="' + data.x_fp_timestamp + '" />';
+  		string = string + '<input type="hidden" name="x_show_form" value="PAYMENT_FORM" />';
+  		string = string + '<input type="submit" value="test" /></form>';
+		document.getElementById('payment').innerHTML = string;
+	}
+	function make_pay_error () {
+		document.getElementById('payment').innerHTML = '<p>error</p>';	
 	}
 </script>
