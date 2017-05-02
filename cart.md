@@ -4,30 +4,35 @@ title: Cart
 permalink: /cart/
 ---
 <div id="cart"></div>
-<div id="cp936c80f096" style="margin: 10px 0" onclick="document.getElementById('pay_now_form_6f8c42b3cc').submit()"><div><div class='r-bg '><span class='r-fg r-fg-3'></span> <span class='r-fg r-fg-2'></span> <span class='r-fg r-fg-1'></span> <span class='r-fg r-fg-0'></span> </div><form action="https://demo.globalgatewaye4.firstdata.com/pay" id="pay_now_form_6f8c42b3cc" method="post">
-<input type="hidden" name="x_login" value="HCO-IGNIT-861" />
-<input type="hidden" name="x_show_form" value="PAYMENT_FORM" />
-<input type="hidden" name="x_fp_sequence" value="1493671159555286719" />
-<input type="hidden" name="x_fp_hash" value="PNB-1.0-52252aa99ef2676db84d76224be65dddfd2dbfa2" />
-<input type="hidden" name="x_amount" value="10" />
-<input type="hidden" name="x_currency_code" value="USD" />
-<input type="hidden" name="x_test_request" value="TRUE" />
-<input type="hidden" name="x_relay_response" value="" />
-<input type="hidden" name="donation_prompt" value="" />
-<input type="hidden" name="button_code" value="Pay Now Ignite Maple Grove DEMO0500" />
-<div class="cpwrap"><button type="button">Pay Now</button></div></form><div class='r-bg '><span class='r-fg r-fg-0'></span> <span class='r-fg r-fg-1'></span> <span class='r-fg r-fg-2'></span> <span class='r-fg r-fg-3'></span> </div></div></div><style type="text/css">div#cp936c80f096{width: 200px; background-color: #FF9900;}div#cp936c80f096:hover{cursor: pointer}div#cp936c80f096 * {background-color: #FFAA00;}div#cp936c80f096 form{margin:0; padding:0;text-align:center}div#cp936c80f096 div.cpwrap {width: 90%;border:0;margin:0 auto;padding: 0px; background-color: #FF9900}div#cp936c80f096 button{width: 95%;border:0;margin:0;padding: 3px 0; background-color: #FF9900;text-align: center; color: #FFFFFF; }div#cp936c80f096:hover button {text-decoration: underline}div#cp936c80f096 button:focus,div#cp936c80f096 button:visited,div#cp936c80f096 button:active{border:none;outline: none}div#cp936c80f096 button {font-size: 16px}div#cp936c80f096 div.cpwrap {border-left: 3px solid #FFAA00; border-right: 3px solid #FFAA00}div#cp936c80f096 .r-fg{background-color: #FFAA00; border-color: #FFAA00}div#cp936c80f096 .r-bg{background-color: white}div#cp936c80f096 .r-fg{border-style: solid; border-width: 0px 1px; overflow: hidden; display: block; height: 1px; font-size: 1px}div#cp936c80f096 .r-fg-0{margin-left: 1px; margin-right: 1px; border-width: 0px 1px !important; height: 1px !important}div#cp936c80f096 .r-fg-1{margin-left: 2px; margin-right: 2px}div#cp936c80f096 .r-fg-2{margin-left: 3px; margin-right: 3px}div#cp936c80f096 .r-fg-3{margin-left: 5px; margin-right: 5px}</style>
-<div id="cp32e91857bb" style="margin: 10px 0" onclick="document.getElementById('pay_now_form_ac9ae9eade').submit()"><div><div class='r-bg '><span class='r-fg r-fg-3'></span> <span class='r-fg r-fg-2'></span> <span class='r-fg r-fg-1'></span> <span class='r-fg r-fg-0'></span> </div><form action="https://demo.globalgatewaye4.firstdata.com/pay" id="pay_now_form_ac9ae9eade" method="post">
-<input type="hidden" name="x_login" value="HCO-IGNIT-861" />
-<input type="hidden" name="x_show_form" value="PAYMENT_FORM" />
-<input type="hidden" name="x_fp_sequence" value="14936713321171783815" />
-<input type="hidden" name="x_fp_hash" value="PNB-1.0-be9aae2f2870bdad43828f9f449e0819cca847e7" />
-<input type="hidden" name="x_amount" value="" />
-<input type="hidden" name="x_currency_code" value="USD" />
-<input type="hidden" name="x_test_request" value="TRUE" />
-<input type="hidden" name="x_relay_response" value="" />
-<input type="hidden" name="donation_prompt" value="" />
-<input type="hidden" name="button_code" value="Pay Now Ignite Maple Grove DEMO0500" />
-<div class="cpwrap"><button type="button">Pay Now</button></div></form><div class='r-bg '><span class='r-fg r-fg-0'></span> <span class='r-fg r-fg-1'></span> <span class='r-fg r-fg-2'></span> <span class='r-fg r-fg-3'></span> </div></div></div><style type="text/css">div#cp32e91857bb{width: 200px; background-color: #FF9900;}div#cp32e91857bb:hover{cursor: pointer}div#cp32e91857bb * {background-color: #FFAA00;}div#cp32e91857bb form{margin:0; padding:0;text-align:center}div#cp32e91857bb div.cpwrap {width: 90%;border:0;margin:0 auto;padding: 0px; background-color: #FF9900}div#cp32e91857bb button{width: 95%;border:0;margin:0;padding: 3px 0; background-color: #FF9900;text-align: center; color: #FFFFFF; }div#cp32e91857bb:hover button {text-decoration: underline}div#cp32e91857bb button:focus,div#cp32e91857bb button:visited,div#cp32e91857bb button:active{border:none;outline: none}div#cp32e91857bb button {font-size: 16px}div#cp32e91857bb div.cpwrap {border-left: 3px solid #FFAA00; border-right: 3px solid #FFAA00}div#cp32e91857bb .r-fg{background-color: #FFAA00; border-color: #FFAA00}div#cp32e91857bb .r-bg{background-color: white}div#cp32e91857bb .r-fg{border-style: solid; border-width: 0px 1px; overflow: hidden; display: block; height: 1px; font-size: 1px}div#cp32e91857bb .r-fg-0{margin-left: 1px; margin-right: 1px; border-width: 0px 1px !important; height: 1px !important}div#cp32e91857bb .r-fg-1{margin-left: 2px; margin-right: 2px}div#cp32e91857bb .r-fg-2{margin-left: 3px; margin-right: 3px}div#cp32e91857bb .r-fg-3{margin-left: 5px; margin-right: 5px}</style>
+
+
+<script type="text/javascript">
+var getJSON = function(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'json';
+    xhr.onload = function() {
+      var status = xhr.status;
+      if (status == 200) {
+        callback(null, xhr.response);
+      } else {
+        callback(status);
+      }
+    };
+    xhr.send();
+};
+
+getJSON('https://script.google.com/macros/s/AKfycbyWpKQdW8LbheeCZ5KiHZJOz0nj--hGsBUQWUsYeq3Y6vP3Ht76/exec?amount=15',
+function(err, data) {
+  if (err != null) {
+    alert('Something went wrong: ' + err);
+  } else {
+    alert('Your query count: ' + data.query.count);
+  }
+});
+</script>
+
+
 <script type="text/javascript">
 	show_cart();
 	function show_cart () {
