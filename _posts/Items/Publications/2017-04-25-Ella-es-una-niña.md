@@ -2,6 +2,7 @@
 layout: item
 category: item
 id: "#0010"
+loc: "0100"
 title: "Ella es una niña, no una opción"
 permalink: /ella-es-una-nina-una-opcion-shes-child-choice/
 store: true

@@ -23,11 +23,22 @@ permalink: /cart/
 			htmlString = htmlString + '<div id="cart-totals">' + ask_for_donations(total(items)) + '<h3>Cart Totals</h3><p>Shipping is included with suggested donation. For Expedited Shipping (Must call us with details) (651)-484-1040.</p><table class="cart-table"><tbody><tr><td>Suggested Total</td><td>$' + suggested_total(items).toFixed(2).toString() + '</td></tr><tr><td>Total</td><td>$' + total(items).toFixed(2).toString() + '</td></tr></tbody></table></div>';
 			document.getElementById('cart').innerHTML = htmlString;
 		}else{
-		//	document.getElementById('cart').innerHTML = '<h3 style="text-align: center;color: #7f7f7f;">Empty Cart</h3>';
+			document.getElementById('cart').innerHTML = '<h3 style="text-align: center;color: #7f7f7f;">Empty Cart</h3>';
+		};
+		var amount = total(items);
+		if (amount>0) {
+			get_payeezy_info(amount);
+		}else{
+			document.getElementById('payment').innerHTML = "";
 		};
 	}
 	
 	function update_cart () {
+		save_cart();
+		show_cart();
+	}
+	
+	function save_cart () {
 		var items = JSON.parse(localStorage.getItem("items")) || new Array();
 		for (var i = 0; i < items.length; i++) {
 			if (items[i].use != "none") {
@@ -36,11 +47,10 @@ permalink: /cart/
 			};
 		};
 		localStorage.setItem("items", JSON.stringify(items));
-		show_cart();
 	}
 	
 	function remove_item (id) {
-		update_cart();
+		save_cart();
 		var items = JSON.parse(localStorage.getItem("items")) || new Array();
 		items.splice(id, 1);
 		localStorage.setItem("items", JSON.stringify(items));
@@ -54,7 +64,6 @@ permalink: /cart/
 				amount = amount + (Number(items[i].suggested_donation) * Number(items[i].quantity));
 			};
 		};
-		get_payeezy_info(amount);
 		return amount;
 	}
 
@@ -135,19 +144,21 @@ permalink: /cart/
 	}
 
 	function get_payeezy_info (amount) {
-		var url = 'https://script.google.com/macros/s/AKfycbyWpKQdW8LbheeCZ5KiHZJOz0nj--hGsBUQWUsYeq3Y6vP3Ht76/exec?amount=' + amount;
-		var xml = new XMLHttpRequest();
-		xml.open('GET',url,true);
-		xml.responseType = 'json';
-		xml.onload = function() {
-	      var status = xml.status;
-	      if (status == 200) {
-	        make_pay_button(xml.response);
-	      } else {
-	        make_pay_error();
-	      }
+		if (amount>0) {
+			var url = 'https://script.google.com/macros/s/AKfycbyWpKQdW8LbheeCZ5KiHZJOz0nj--hGsBUQWUsYeq3Y6vP3Ht76/exec?amount=' + amount;
+			var xml = new XMLHttpRequest();
+			xml.open('GET',url,true);
+			xml.responseType = 'json';
+			xml.onload = function() {
+		      var status = xml.status;
+		      if (status == 200) {
+		        make_pay_button(xml.response);
+		      } else {
+		        make_pay_error();
+		      }
+		    };
+		    xml.send();
 	    };
-	    xml.send();
 	}
 	function make_pay_button (data) {
 		var string = '<form action="https://demo.globalgatewaye4.firstdata.com/pay" id="pay_now_form_6f8c42b3cc" method="post">';

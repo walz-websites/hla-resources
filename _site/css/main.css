@@ -60,6 +60,9 @@ table.categories {
 .amount-green {
   color: #7FA68A; }
 
+#cart {
+  overflow: hidden; }
+
 .cart-item-image {
   width: 50px; }
 

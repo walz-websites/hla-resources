@@ -6,7 +6,7 @@ layout: default
 
   <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
+  <ul id="store_front" class="post-list">
     {% for post in site.categories.item %}
       {% if post.store %}
         <li class="store-item-block">
@@ -25,3 +25,154 @@ layout: default
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
+<script type="text/javascript">  
+  start();
+  function start () {
+    var items = sort_items(getUrlVars()["issues"],getUrlVars()["item_type"],getUrlVars()["target_age"],getUrlVars()["target_audience"],getUrlVars()["item_language"]);
+
+    items.sort(compare);
+    htmlString = "";
+    for (var i = 0; i < items.length; i++) {
+      htmlString = htmlString + pack_item(items[i]);
+    };
+    document.getElementById('store_front').innerHTML = htmlString;
+
+  }
+  function compare(a,b) {
+    if (a.loc < b.loc)
+      return -1;
+    if (a.loc > b.loc)
+      return 1;
+    return 0;
+  }
+
+  function pack_item (item) {
+    return '<li class="store-item-block"><a class="post-link" href="{{ site.baseurl }}' + item.url + '"><img class="store-pics" src="{{ site.baseurl }}/images/' + item.pic + '" alt="' + item.item_title + '"><h6>' + item.item_title + '</h6></a></li>';
+  }
+  function sort_items (issues,item_type,target_age,target_audience,item_language) {
+    var items = list_items();
+
+    if (issues) {
+      //issues filter
+      var issues = issues.split(",");
+      var items_issues_pass = new Array();
+      for (var x = issues.length - 1; x >= 0; x--) {
+        for (var y = items.length - 1; y >= 0; y--) {
+          var searched = items[y].issues.split(",");
+          for (var i = searched.length - 1; i >= 0; i--) {
+            if(searched[i].replace(/^\s+|\s+$/gm,'') == issues[x].replace(/^\s+|\s+$/gm,'')){
+              if (items_issues_pass.indexOf(items[y])==-1) {
+                items_issues_pass.push(items[y]);
+              };
+            };
+          };
+        };
+      };
+      items = items_issues_pass;
+    };
+
+    if (item_type) {
+      //item_type filter
+      var item_type = item_type.split(",");
+      var items_item_type_pass = new Array();
+      for (var x = item_type.length - 1; x >= 0; x--) {
+        for (var y = items.length - 1; y >= 0; y--) {
+          var searched = items[y].item_type.split(",");
+          for (var i = searched.length - 1; i >= 0; i--) {
+            if(searched[i].replace(/^\s+|\s+$/gm,'') == item_type[x].replace(/^\s+|\s+$/gm,'')){
+              if (items_item_type_pass.indexOf(items[y])==-1) {
+                items_item_type_pass.push(items[y]);
+              };
+            };
+          };
+        };
+      };
+      items = items_item_type_pass;
+    };
+
+    if (target_age) {
+      //target_age filter
+      var target_age = target_age.split(",");
+      var items_target_age_pass = new Array();
+      for (var x = target_age.length - 1; x >= 0; x--) {
+        for (var y = items.length - 1; y >= 0; y--) {
+          var searched = items[y].target_age.split(",");
+          for (var i = searched.length - 1; i >= 0; i--) {
+            if(searched[i].replace(/^\s+|\s+$/gm,'') == target_age[x].replace(/^\s+|\s+$/gm,'')){
+              if (items_target_age_pass.indexOf(items[y])==-1) {
+                items_target_age_pass.push(items[y]);
+              };
+            };
+          };
+        };
+      };
+      items = items_target_age_pass;
+    };
+
+    if (target_audience) {
+      //target_audience filter
+      var target_audience = target_audience.split(",");
+      var items_target_audience_pass = new Array();
+      for (var x = target_audience.length - 1; x >= 0; x--) {
+        for (var y = items.length - 1; y >= 0; y--) {
+          var searched = items[y].target_audience.split(",");
+          for (var i = searched.length - 1; i >= 0; i--) {
+            if(searched[i].replace(/^\s+|\s+$/gm,'') == target_audience[x].replace(/^\s+|\s+$/gm,'')){
+              if (items_target_audience_pass.indexOf(items[y])==-1) {
+                items_target_audience_pass.push(items[y]);
+              };
+            };
+          };
+        };
+      };
+      items = items_target_audience_pass;
+    };
+
+    if (item_language) {
+      //item_language filter
+      var item_language = item_language.split(",");
+      var items_item_language_pass = new Array();
+      for (var x = item_language.length - 1; x >= 0; x--) {
+        for (var y = items.length - 1; y >= 0; y--) {
+          var searched = items[y].item_language.split(",");
+          for (var i = searched.length - 1; i >= 0; i--) {
+            if(searched[i].replace(/^\s+|\s+$/gm,'') == item_language[x].replace(/^\s+|\s+$/gm,'')){
+              if (items_item_language_pass.indexOf(items[y])==-1) {
+                items_item_language_pass.push(items[y]);
+              };
+            };
+          };
+        };
+      };
+      items = items_item_language_pass;
+    };
+    return items;
+  }
+  function list_items () {
+    var items = new Array();
+    {% for post in site.categories.item %}
+      {% if post.store %}
+        var item = {
+          issues:"{{ post.issues }}",
+          item_type:"{{ post.type }}",
+          target_age:"{{ post.target-age }}",
+          target_audience:"{{ post.target-audience }}",
+          item_language:"{{ post.language }}",
+          item_title:"{{ post.title }}",
+          pic:"{{ post.front-pic }}",
+          url:"{{ post.url }}",
+          loc:"{{ post.loc }}",
+        };
+        items.push(item);
+      {% endif %}
+    {% endfor %}
+    return items;
+  }
+  function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+      vars[key] = value;
+    });
+    return vars;
+  }
+</script>

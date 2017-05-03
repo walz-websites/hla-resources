@@ -2,6 +2,7 @@
 layout: item
 category: item
 id: "#0012"
+loc: "0120"
 title: "Did You Know?"
 permalink: /know/
 store: true

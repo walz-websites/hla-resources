@@ -2,6 +2,7 @@
 layout: item
 category: item
 id: "#0013"
+loc: "0130"
 title: "The Truth Behind Planned Parenthood"
 permalink: /truth-planned-parenthood/
 store: true
