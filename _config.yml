@@ -7,15 +7,16 @@
 
 # Site settings
 title: Human Life Alliance
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+logo: logo.png
+email: feedback@humanlife.org
+description: Human Life Alliance promotes awareness of the inherent dignity and personhood of human life, born and preborn, without exception or compromise. Human Life Alliance proclaims and defends a culture of life and chastity through education, social and political awareness and life-affirming alternatives to abortion, infanticide, assisted suicide and euthanasia. Human Life Alliance accomplishes its mission in a spirit of prayer and non-violence.
 baseurl: "/hla-resources" # the subpath of your site, e.g. /blog
 url: "https://walz.gitlab.io" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: humanlife
+facebook_username: humanlifealliance
+pinterest_username: humanlife1
+instagram_username: humanlifealliance
+youtube_username: UCIe33JnrcbSOGBzR8YYmy2Q
 
 # Build settings
 markdown: kramdown
@@ -24,5 +25,21 @@ price:
     publication: 
         amount: 0.30
         text: "$0.30"
+    fact-sheet:
+        amount: 0.10
+        text: "$0.10"
+    poster:
+        amount: 1.00
+        text: "$1.00"
+    bumper-sticker:
+        amount: 1.00
+        text: "$1.00"
+    other:
+        amount: 0.10
+        text: "$0.10"
+    dvd:
+        amount: 20.00
+        text: "$20.00"
 
-cart_donations_image: "pp-front.jpg"
+
+cart_donations_image: "donate.jpg"

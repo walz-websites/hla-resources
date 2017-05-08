@@ -4,7 +4,7 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Resource Center</h1>
 
   <ul id="store_front" class="post-list">
     {% for post in site.categories.item %}
@@ -21,8 +21,6 @@ layout: default
       {% endif %}
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
 <script type="text/javascript">  
@@ -153,11 +151,11 @@ layout: default
     {% for post in site.categories.item %}
       {% if post.store %}
         var item = {
-          issues:"{{ post.issues }}",
-          item_type:"{{ post.type }}",
-          target_age:"{{ post.target-age }}",
-          target_audience:"{{ post.target-audience }}",
-          item_language:"{{ post.language }}",
+          issues:"{{ post.issues }}".replace(" ", "-"),
+          item_type:"{{ post.type }}".replace(" ", "-"),
+          target_age:"{{ post.target-age }}".replace(" ", "-"),
+          target_audience:"{{ post.target-audience }}".replace(" ", "-"),
+          item_language:"{{ post.language }}".replace(" ", "-"),
           item_title:"{{ post.title }}",
           pic:"{{ post.front-pic }}",
           url:"{{ post.url }}",

@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Human Life Alliance</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</description>
+    <description>Human Life Alliance promotes awareness of the inherent dignity and personhood of human life, born and preborn, without exception or compromise. Human Life Alliance proclaims and defends a culture of life and chastity through education, social and political awareness and life-affirming alternatives to abortion, infanticide, assisted suicide and euthanasia. Human Life Alliance accomplishes its mission in a spirit of prayer and non-violence.</description>
     <link>https://walz.gitlab.io/hla-resources/</link>
     <atom:link href="https://walz.gitlab.io/hla-resources/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 03 May 2017 15:35:12 -0500</pubDate>
-    <lastBuildDate>Wed, 03 May 2017 15:35:12 -0500</lastBuildDate>
+    <pubDate>Mon, 08 May 2017 10:44:06 -0500</pubDate>
+    <lastBuildDate>Mon, 08 May 2017 10:44:06 -0500</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>

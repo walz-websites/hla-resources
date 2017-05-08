@@ -155,12 +155,66 @@ table.categories{width:100%;}
 }
 
 .store-pics{
-	max-width:200px;
+	//max-width:200px;
 }
 .store-item-block{
 	display:inline-block;
+	max-width:200px;
+	vertical-align: top;
+	margin-left: 10px;
 }
-
+//footer
+footer.site-footer{
+	background:#1B1B1B;
+}
+.icon{
+	color: #dddddd;
+}
+.icon:hover{
+	color: #5DADE2;
+}
+ul.social-media-list li{
+	display: inline-block;
+	margin-left: 5px;
+}
+//menu
+ul#primary-menu{
+	list-style-type: none;
+	margin: 0;
+	display:flex;
+}
+ul#primary-menu ul.sub-menu{
+	display:none;
+	list-style-type: none;
+	margin: 0;
+}
+ul#primary-menu li a{
+	padding-left:10px;
+	padding-right:10px;
+	height: 100%;
+	display: block;
+}
+ul#primary-menu a{
+	background:#ffffff;
+	color:#002664;
+}
+ul#primary-menu a:hover{
+	background:#9CA3C1;
+	color:#ffffff;
+	text-decoration: none;
+}
+ul#primary-menu li.menu-item-has-children ul.sub-menu:hover{
+	display:block;
+	position: absolute;
+	background: #fff;
+	padding-right: 10px;
+}
+ul#primary-menu li.menu-item-has-children a:hover + ul.sub-menu{
+	display:block;
+	position: absolute;
+	background: #fff;
+	padding-right: 10px;
+}
 
 
 
@@ -177,17 +231,17 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #002664;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    1000px;
+$content-width:    1200px;
 
 $on-palm:          600px;
-$on-laptop:        1000px;
+$on-laptop:        1200px;
 
 
 

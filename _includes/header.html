@@ -2,7 +2,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <a class="site-title" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/{{ site.logo }}" alt="{{ site.title }}"></a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -14,14 +14,46 @@
       </a>
 
       <div class="trigger">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %}
+        <ul id="primary-menu">
+        <li id="menu-item-1" class="menu-item menu-item-has-children"><a href="https://www.humanlife.org/about/mission/">About</a>
+        <ul class="sub-menu">
+          <li class="menu-item menu-item-child"><a href="https://www.humanlife.org/about/mission/">Mission</a></li>
+          <li class="menu-item menu-item-child"><a href="https://www.humanlife.org/about/testimonials/">Testimonials</a></li>
+          <li class="menu-item menu-item-child"><a href="https://www.humanlife.org/about/history/">History</a></li>
+          <li class="menu-item menu-item-child"><a href="https://www.humanlife.org/about/leadership/">Leadership</a></li>
+          <li class="menu-item menu-item-child"><a href="https://www.humanlife.org/about/financials/">Financials</a></li>
+          <li class="menu-item menu-item-child"><a href="https://www.humanlife.org/about/contact/">Contact</a></li>
+        </ul>
+        </li>
+        <li id="menu-item-2" class="menu-item menu-item-has-children"><a href="{{ site.baseurl }}">Resources</a>
+        <ul class="sub-menu">
+          <li class="menu-item menu-item-child"><a href="{{ site.baseurl }}/?item_type=Publication">Publications</a></li>
+          <li class="menu-item menu-item-child"><a href="{{ site.baseurl }}/?item_type=Fact-Sheet">Fact Sheets</a></li>
+          <li class="menu-item menu-item-child"><a href="{{ site.baseurl }}/?item_type=Poster">Posters</a></li>
+          <li class="menu-item menu-item-child"><a href="{{ site.baseurl }}/?item_type=DVD">DVDs</a></li>
+          <li class="menu-item menu-item-child"><a href="{{ site.baseurl }}/?item_type=Bumper-Sticker">Bumper Stickers</a></li>
+          <li class="menu-item menu-item-child"><a href="{{ site.baseurl }}/?item_type=Other">Other</a></li>
+        </ul>
+        </li>
+        <li id="menu-item-3" class="menu-item menu-item-has-children"><a href="https://www.humanlife.org/get-involved/at-hla/">Get Involved</a>
+        <ul class="sub-menu">
+          <li class="menu-item menu-item-child"><a href="http://www.prolifehealthcare.org/">Pro-life Healthcare Alliance</a></li>
+          <li class="menu-item menu-item-child"><a href="https://www.humanlife.org/get-involved/at-hla/">At HLA</a></li>
+        </ul>
+        </li>
+        <li id="menu-item-4" class="menu-item menu-item-has-children"><a href="https://www.humanlife.org/media/weekly-wire/">Media</a>
+        <ul class="sub-menu">
+          <li class="menu-item menu-item-child"><a href="https://www.humanlife.org/media/weekly-wire/">Weekly Wire</a></li>
+          <li class="menu-item menu-item-child"><a href="https://www.humanlife.org/media/press/">Press</a></li>
+        </ul>
+        </li>
+        <li class="donate-menu-item menu-item"><a href="https://www.humanlife.org/product/donation/">DONATE</a></li>
+        <li class="menu-item"><a href="https://www.humanlife.org/subscribe/">Subscribe</a></li>
+        <li class="menu-item"><a class="athena-search" href="https://www.humanlife.org/#search" role="button" data-toggle="modal"><span class="fa fa-search"></span></a></li><li><a class="athena-cart" href="{{ site.baseurl }}/cart/"><span class="fa fa-shopping-cart"></span></a></li></ul>
       </div>
     </nav>
 
   </div>
 
 </header>
+

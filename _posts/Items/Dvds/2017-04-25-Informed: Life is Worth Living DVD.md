@@ -6,6 +6,9 @@ loc: "0240"
 title: "Informed: Life is Worth Living DVD"
 permalink: /informed-life-worth-living/
 store: true
+price:
+    amount: 20.00
+    text: "$20.00"
 
 date: 2017-04-11 14:19:33 -0500
 
