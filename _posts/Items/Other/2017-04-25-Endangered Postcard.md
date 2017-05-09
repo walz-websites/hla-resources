@@ -2,7 +2,7 @@
 layout: item
 category: item
 id: "#0028"
-loc: "0280"
+loc: "028000"
 title: "Endangered Postcard"
 permalink: /endangered-postcard/
 store: true
@@ -19,7 +19,7 @@ social-pic: endangered-postcard-social.jpg
 issues: Abortion
 type: Other
 target-age: Teens, Young Adults, Adults
-target-audience: Black Community, Church Groups, College Students, Pro-life Organizations, Sidewalk Counselors
+target-audience: African American Community, Church Groups, College Students, Pro-life Organizations, Sidewalk Counselors
 language: English
 
 comment: true

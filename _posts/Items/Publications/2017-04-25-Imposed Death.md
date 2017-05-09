@@ -2,7 +2,7 @@
 layout: item
 category: item
 id: "#0019"
-loc: "0190"
+loc: "019000"
 title: "Imposed Death"
 permalink: /imposed-death/
 store: true

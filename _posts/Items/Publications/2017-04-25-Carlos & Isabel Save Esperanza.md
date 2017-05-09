@@ -2,7 +2,7 @@
 layout: item
 category: item
 id: "#0017"
-loc: "0170"
+loc: "017000"
 title: "Carlos & Isabel Save Esperanza"
 permalink: /carlos-isabel-save-esperanza/
 store: true

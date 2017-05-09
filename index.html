@@ -151,11 +151,11 @@ layout: default
     {% for post in site.categories.item %}
       {% if post.store %}
         var item = {
-          issues:"{{ post.issues }}".replace(" ", "-"),
-          item_type:"{{ post.type }}".replace(" ", "-"),
-          target_age:"{{ post.target-age }}".replace(" ", "-"),
-          target_audience:"{{ post.target-audience }}".replace(" ", "-"),
-          item_language:"{{ post.language }}".replace(" ", "-"),
+          issues:"{{ post.issues }}".replace(/, /g, ",").replace(/ /g, "-"),
+          item_type:"{{ post.type }}".replace(/, /g, ",").replace(/ /g, "-"),
+          target_age:"{{ post.target-age }}".replace(/, /g, ",").replace(/ /g, "-"),
+          target_audience:"{{ post.target-audience }}".replace(/, /g, ",").replace(/ /g, "-"),
+          item_language:"{{ post.language }}".replace(/, /g, ",").replace(/ /g, "-"),
           item_title:"{{ post.title }}",
           pic:"{{ post.front-pic }}",
           url:"{{ post.url }}",

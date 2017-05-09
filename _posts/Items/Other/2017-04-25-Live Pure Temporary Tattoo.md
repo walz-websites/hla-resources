@@ -2,7 +2,7 @@
 layout: item
 category: item
 id: "#0027"
-loc: "0270"
+loc: "027000"
 title: "Live Pure Temporary Tattoo"
 permalink: /live-pure-temporary-tattoo/
 store: true

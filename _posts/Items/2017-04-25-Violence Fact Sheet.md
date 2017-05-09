@@ -2,7 +2,7 @@
 layout: item
 category: item
 id: "#0026"
-loc: "0260"
+loc: "026000"
 title: "Violence Fact Sheet"
 permalink: /violence-fact-sheet/
 store: true

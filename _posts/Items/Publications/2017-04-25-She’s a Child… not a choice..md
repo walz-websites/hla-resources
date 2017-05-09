@@ -2,7 +2,7 @@
 layout: item
 category: item
 id: "#0022"
-loc: "0220"
+loc: "022000"
 title: "She’s a Child… not a choice."
 permalink: /child-choice/
 store: true

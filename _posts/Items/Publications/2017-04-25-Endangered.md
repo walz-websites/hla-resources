@@ -2,7 +2,7 @@
 layout: item
 category: item
 id: "#0023"
-loc: "0230"
+loc: "023000"
 title: "Endangered"
 permalink: /endangered/
 store: true

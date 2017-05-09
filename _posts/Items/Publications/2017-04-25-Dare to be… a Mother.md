@@ -2,7 +2,7 @@
 layout: item
 category: item
 id: "#0021"
-loc: "0210"
+loc: "021000"
 title: "Dare to be… a Mother"
 permalink: /be-mother/
 store: true

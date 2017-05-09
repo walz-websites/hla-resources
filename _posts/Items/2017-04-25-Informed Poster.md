@@ -1,23 +1,20 @@
 ---
 layout: item
 category: item
-id: "#0030"
-loc: "0300"
-title: "Donor Refusal Card"
-permalink: /donor-refusal-card/
+id: "#0053"
+loc: "053000"
+title: "Informed Poster"
+permalink: /informed-poster/
 store: true
-price:
-    amount: 0.30
-    text: "$0.30"
-size: '3.5″ x 4″'
+size: '11″ x 17″'
 
 date: 2017-04-10 14:19:33 -0500
 
-front-pic: donor-refusal-card-front.jpg
-social-pic: donor-refusal-card-social.jpg
+front-pic: informed-poster-front.jpg
+social-pic: informed-poster-social.jpg
 
 issues: Euthanasia
-type: Other
+type: Poster
 target-age: Young Adults, Adults
 target-audience: Church Groups, College Students, Counselors
 language: English

@@ -2,7 +2,7 @@
 layout: item
 category: item
 id: "#0020"
-loc: "0200"
+loc: "020000"
 title: "A Favor de la Vida"
 permalink: /favor-de-la-vida/
 store: true

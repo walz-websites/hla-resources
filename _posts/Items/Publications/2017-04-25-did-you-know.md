@@ -2,7 +2,7 @@
 layout: item
 category: item
 id: "#0012"
-loc: "0120"
+loc: "012000"
 title: "Did You Know?"
 permalink: /know/
 store: true
@@ -16,7 +16,7 @@ pdf: did-you-know.pdf
 issues: Abortion
 type: Publication
 target-age: Teens, Young Adults, Adults
-target-audience: Black Community, College Students, High School Students, Pregnancy Resource Center, Pro-life Organizations, Sidewalk Counselors
+target-audience: African American Community, College Students, High School Students, Pregnancy Resource Center, Pro-life Organizations, Sidewalk Counselors
 language: English
 
 comment: true

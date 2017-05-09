@@ -1,10 +1,10 @@
 ---
 layout: item
 category: item
-id: "#0029"
-loc: "0290"
-title: "Not an Exception Original Postcard"
-permalink: /exception-original-postcard/
+id: "#0035"
+loc: "035000"
+title: "Not an Exception Biracial Postcard"
+permalink: /exception-biracial-postcard/
 store: true
 price:
     amount: 0.10
@@ -13,8 +13,8 @@ size: '4″ x 6″'
 
 date: 2017-04-10 14:19:33 -0500
 
-front-pic: exception-original-postcard-front.jpg
-social-pic: exception-original-postcard-social.jpg
+front-pic: exception-biracial-postcard-front.jpg
+social-pic: exception-biracial-postcard-social.jpg
 
 issues: Abortion
 type: Other

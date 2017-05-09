@@ -2,7 +2,7 @@
 layout: item
 category: item
 id: "#0016"
-loc: "016"
+loc: "01600"
 title: "This is Not Your Only Choice (Street Magazine)"
 permalink: /choice-street-mag/
 store: true

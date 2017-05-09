@@ -2,7 +2,7 @@
 layout: item
 category: item
 id: "#0018"
-loc: "0180"
+loc: "018000"
 title: "Life Begins"
 permalink: /life-begins/
 store: true

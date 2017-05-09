@@ -2,7 +2,7 @@
 layout: item
 category: item
 id: "#0025"
-loc: "0250"
+loc: "025000"
 title: "Mushroom DVD"
 permalink: /mushroom-dvd/
 store: true
