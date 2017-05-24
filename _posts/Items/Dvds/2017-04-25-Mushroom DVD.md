@@ -5,7 +5,7 @@ id: "#0025"
 loc: "025000"
 title: "Mushroom DVD"
 permalink: /mushroom-dvd/
-store: true
+store: false
 price:
     amount: 20.00
     text: "$20.00"

@@ -1,0 +1,204 @@
+<h4>Issue</h4>
+<ul>
+    <li id="issues-Abortion" onclick="filter('issues','Abortion');">Abortion</li>
+    <li id="issues-Abstinence" onclick="filter('issues','Abstinence');">Abstinence</li>
+    <li id="issues-Assisted-Suicide" onclick="filter('issues','Assisted-Suicide');">Assisted Suicide</li>
+    <li id="issues-Euthanasia" onclick="filter('issues','Euthanasia');">Euthanasia</li>
+</ul>
+<hr>
+<h4>Type</h4>
+<ul>
+    <li id="item_type-Publication" onclick="filter('item_type','Publication');">Publications</li>
+    <li id="item_type-Fact-Sheet" onclick="filter('item_type','Fact-Sheet');">Fact Sheets</li>
+    <li id="item_type-Poster" onclick="filter('item_type','Poster');">Posters</li>
+    <li id="item_type-DVD" onclick="filter('item_type','DVD');">DVDs</li>
+    <li id="item_type-Bumper-Sticker" onclick="filter('item_type','Bumper-Sticker');">Bumper Stickers</li>
+    <li id="item_type-Other" onclick="filter('item_type','Other');">Other</li>
+</ul>
+<hr>
+<h4>Target Audience</h4>
+<ul>
+    <li id="target_audience-African-American-Community" onclick="filter('target_audience','African-American-Community');">African American Community</li>
+    <li id="target_audience-Church-Groups" onclick="filter('target_audience','Church-Groups');">Church Groups</li>
+    <li id="target_audience-College-Students" onclick="filter('target_audience','College-Students');">College Students</li>
+    <li id="target_audience-Counselors" onclick="filter('target_audience','Counselors');">Counselors</li>
+    <li id="target_audience-High-School-Students" onclick="filter('target_audience','High-School-Students');">High School Students</li>
+    <li id="target_audience-Latino-Community" onclick="filter('target_audience','Latino-Community');">Latino Community</li>
+    <li id="target_audience-Pregnancy-Resource-Center" onclick="filter('target_audience','Pregnancy-Resource-Center');">Pregnancy Resource Center</li>
+    <li id="target_audience-Pro-life-Organizations" onclick="filter('target_audience','Pro-life-Organizations');">Pro-life Organizations</li>
+    <li id="target_audience-Sidewalk-Counselors" onclick="filter('target_audience','Sidewalk-Counselors');">Sidewalk Counselors</li>
+    <li id="target_audience-Unintended-Pregnancy" onclick="filter('target_audience','Unintended-Pregnancy');">Unintended Pregnancy</li>
+    <li id="target_audience-Youth-Group" onclick="filter('target_audience','Youth-Group');">Youth Group</li>
+</ul>
+<hr>
+<h4>Target Age</h4>
+<ul>
+    <li id="target_age-Kids" onclick="filter('target_age','Kids');">Kids</li>
+    <li id="target_age-Teens" onclick="filter('target_age','Teens');">Teens</li>
+    <li id="target_age-Young-Adults" onclick="filter('target_age','Young-Adults');">Young Adults</li>
+    <li id="target_age-Adults" onclick="filter('target_age','Adults');">Adults</li>
+</ul>
+<hr>
+<h4>Language</h4>
+<ul>
+    <li id="item_language-English" onclick="filter('item_language','English');">English</li>
+    <li id="item_language-Spanish" onclick="filter('item_language','Spanish');">Spanish</li>
+    <li id="item_language-Portuguese" onclick="filter('item_language','Portuguese');">Portuguese</li>
+</ul>
+<script type="text/javascript">
+    on_filter_load();
+    function on_filter_load () {
+        
+    }
+    function filter (kind,value) {
+        var issues = getUrlVars()["issues"];
+        var item_type = getUrlVars()["item_type"];
+        var target_age = getUrlVars()["target_age"];
+        var target_audience = getUrlVars()["target_audience"];
+        var item_language = getUrlVars()["item_language"];
+
+        if (kind == "issues") {
+            if (issues) {
+                var temp = issues.split(",");
+                var tempvalue = [value];
+                if (temp.indexOf(tempvalue[0]) != -1) {
+                    temp.splice(temp.indexOf(tempvalue[0]), 1);
+                    temp = temp.join(",");
+                    if (temp == "") {
+                        issues = false;
+                    }else{
+                        issues = temp;
+                    };
+                }else{
+                    issues = issues + "," + value;
+                };
+            }else{
+                issues = value;
+            };
+        };
+        if (kind == "item_type") {
+            if (item_type) {
+                var temp = item_type.split(",");
+                var tempvalue = [value];
+                if (temp.indexOf(tempvalue[0]) != -1) {
+                    temp.splice(temp.indexOf(tempvalue[0]), 1);
+                    temp = temp.join(",");
+                    if (temp == "") {
+                        item_type = false;
+                    }else{
+                        item_type = temp;
+                    };
+                }else{
+                    item_type = item_type + "," + value;
+                };
+            }else{
+                item_type = value;  
+            };  
+        };
+        if (kind == "target_age") {
+            if (target_age) {
+                var temp = target_age.split(",");
+                var tempvalue = [value];
+                if (temp.indexOf(tempvalue[0]) != -1) {
+                    temp.splice(temp.indexOf(tempvalue[0]), 1);
+                    temp = temp.join(",");
+                    if (temp == "") {
+                        target_age = false;
+                    }else{
+                        target_age = temp;
+                    };
+                }else{
+                    target_age = target_age + "," + value;
+                };
+            }else{
+                target_age = value;
+            };
+        };
+        if (kind == "target_audience") {
+            if (target_audience) {
+                var temp = target_audience.split(",");
+                var tempvalue = [value];
+                if (temp.indexOf(tempvalue[0]) != -1) {
+                    temp.splice(temp.indexOf(tempvalue[0]), 1);
+                    temp = temp.join(",");
+                    if (temp == "") {
+                        target_audience = false;
+                    }else{
+                        target_audience = temp;
+                    };
+                }else{
+                    target_audience = target_audience + "," + value;
+                };
+            }else{
+                target_audience = value;
+            };
+        };
+        if (kind == "item_language") {
+            if (item_language) {
+                var temp = item_language.split(",");
+                var tempvalue = [value];
+                if (temp.indexOf(tempvalue[0]) != -1) {
+                    temp.splice(temp.indexOf(tempvalue[0]), 1);
+                    temp = temp.join(",");
+                    if (temp == "") {
+                        item_language = false;
+                    }else{
+                        item_language = temp;
+                    };
+                }else{
+                    item_language = item_language + "," + value;
+                };
+            }else{
+                item_language = value;
+            };
+        };
+
+        var urlString = '';
+        var first = true;
+        if (issues) {
+            if (first) {
+                urlString = urlString + "issues=" + issues;
+                first = false;
+            }else{
+                urlString = urlString + "&issues=" + issues;
+            };
+        };
+        if (item_type) {
+            if (first) {
+                urlString = urlString + "item_type=" + item_type;
+                first = false;
+            }else{
+                urlString = urlString + "&item_type=" + item_type;
+            };
+        };
+        if (target_age) {
+            if (first) {
+                urlString = urlString + "target_age=" + target_age;
+                first = false;
+            }else{
+                urlString = urlString + "&target_age=" + target_age;
+            };
+        };
+        if (target_audience) {
+            if (first) {
+                urlString = urlString + "target_audience=" + target_audience;
+                first = false;
+            }else{
+                urlString = urlString + "&target_audience=" + target_audience;
+            };
+        };
+        if (item_language) {
+            if (first) {
+                urlString = urlString + "item_language=" + item_language;
+                first = false;
+            }else{
+                urlString = urlString + "&item_language=" + item_language;
+            };
+        };
+        if (urlString != '') {
+            window.location.href = "http://127.0.0.1:4000{{ site.baseurl }}/?" + urlString;
+        }else{
+            window.location.href = "http://127.0.0.1:4000{{ site.baseurl }}/";
+        };
+    }
+</script>
