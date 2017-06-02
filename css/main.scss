@@ -4,11 +4,20 @@
 @charset "utf-8";
 
 //items
+@media screen and (max-width: 690px) {
+	h2.post-title.lower{display:none;}
+	h2.post-title.higher{display:block;}
+	img.item-image{float:none;}
+}
+@media screen and (min-width: 691px) {
+	h2.post-title.lower{display:block;}
+	h2.post-title.higher{display:none;}
+}
 .item-description{
 	margin: 0;
 }
 .item-image{
-	max-width: 400px;
+	width: 400px;
 	float: left;
 	margin-right: 15px;
 }
