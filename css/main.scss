@@ -55,14 +55,11 @@ table.categories{width:100%;}
 	width:250px;
 	float:right;
 }
+
 #filter ul li{
 	cursor: pointer;
 	list-style-type: none;
 	color: #002664;	
-}
-#store_front{
-	max-width:850px;
-	float:left;	
 }
 
 #filter ul.filtered-out li{
@@ -71,7 +68,14 @@ table.categories{width:100%;}
 #filter ul.filtered-out li.filtered-in{
 	color: #002664;	
 }
-
+@media screen and (max-width: 550px) {
+	div#filter.hide-on-small{display:none;}
+	div#filter.hide-on-large{display:block;}
+}
+@media screen and (min-width: 551px) {
+	div#filter.hide-on-small{display:block;}
+	div#filter.hide-on-large{display:none;}
+}
 
 //cart
 #cart{
