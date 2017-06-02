@@ -1267,9 +1267,31 @@
         <li id="item_language-Portuguese" onclick="filter('item_language','Portuguese');">Portuguese</li>
     </ul>
     <script type="text/javascript">
+        function getVars() {
+            var vars = {};
+            window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
         on_filter_load();
+        alert("test");
         function on_filter_load () {
-            
+            filter_load ("issues");
+            filter_load ("item_type");
+            filter_load ("target_age");
+            filter_load ("target_audience");
+            filter_load ("item_language");
+        }
+        function filter_load (type) {
+            var arg = getVars()[type];
+            if(arg){
+                arg = arg.split(",");
+                document.getElementById(type).classList.add("filtered-out");
+                for (var i = arg.length - 1; i >= 0; i--) {
+                    document.getElementById(type+"-"+arg[i]).classList.add("filtered-in");
+                };
+            }
         }
         function filter (kind,value) {
             var issues = getUrlVars()["issues"];
@@ -1417,9 +1439,9 @@
                 };
             };
             if (urlString != '') {
-                window.location.href = "http://127.0.0.1:4000/hla-resources/?" + urlString;
+                window.location.href = "https://walz.gitlab.io/hla-resources/?" + urlString;
             }else{
-                window.location.href = "http://127.0.0.1:4000/hla-resources/";
+                window.location.href = "https://walz.gitlab.io/hla-resources/";
             };
         }
     </script>

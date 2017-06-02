@@ -65,11 +65,19 @@ table.categories {
   float: right; }
 
 #filter ul li {
-  cursor: pointer; }
+  cursor: pointer;
+  list-style-type: none;
+  color: #002664; }
 
 #store_front {
   max-width: 850px;
   float: left; }
+
+#filter ul.filtered-out li {
+  color: gray; }
+
+#filter ul.filtered-out li.filtered-in {
+  color: #002664; }
 
 #cart {
   overflow: hidden; }
