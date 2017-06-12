@@ -3,6 +3,63 @@
 ---
 @charset "utf-8";
 
+
+
+i.loading{
+	webkit-animation: spin 1s infinite cubic-bezier(.46,.03,.52,.96);
+	animation: spin 1s infinite cubic-bezier(.46,.03,.52,.96);
+}
+@-webkit-keyframes spin {
+    0%   {-webkit-transform: rotate(0deg)}
+    100% {-webkit-transform: rotate(360deg)}
+}
+
+.float-right{
+	float:right;
+}
+a#checkout-button{
+	padding: .18em 0;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	color:#ffffff;
+}
+div.checkout-form p input {
+	width: 98%;
+}
+div.checkout-form p textarea {
+	width: 98%;
+}
+div.checkout-form p.half {
+	width: 47%;
+}
+div.checkout-form p.half.first {
+	margin-right:20px;
+}
+div.checkout-form p.full {
+	width: 100%;
+}
+div.checkout-form p {
+	display:inline-block;
+}
+div.checkout-form{
+	width: 48%;
+	display:inline-block;
+	vertical-align: top;
+}
+div.checkout-form p input.checkbox {
+	width: unset;
+}
+div#checkout-billing {
+	margin-right:20px;
+}
+div#checkout-payment{
+	display:none;
+}
+div#checkout-shipping{
+	display:none;	
+}
+
 //items
 @media screen and (max-width: 690px) {
 	h2.post-title.lower{display:none;}

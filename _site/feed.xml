@@ -3,10 +3,10 @@
   <channel>
     <title>Human Life Alliance</title>
     <description>Human Life Alliance promotes awareness of the inherent dignity and personhood of human life, born and preborn, without exception or compromise. Human Life Alliance proclaims and defends a culture of life and chastity through education, social and political awareness and life-affirming alternatives to abortion, infanticide, assisted suicide and euthanasia. Human Life Alliance accomplishes its mission in a spirit of prayer and non-violence.</description>
-    <link>https://walz.gitlab.io/hla-resources/</link>
-    <atom:link href="https://walz.gitlab.io/hla-resources/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 02 Jun 2017 16:54:19 -0500</pubDate>
-    <lastBuildDate>Fri, 02 Jun 2017 16:54:19 -0500</lastBuildDate>
+    <link>http://127.0.0.1:4000/</link>
+    <atom:link href="http://127.0.0.1:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 12 Jun 2017 13:10:03 -0500</pubDate>
+    <lastBuildDate>Mon, 12 Jun 2017 13:10:03 -0500</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -14,8 +14,8 @@
         <description>&lt;p&gt;&lt;i&gt;Ella es una niña, no una “opción”&lt;/i&gt; is HLA’s Spanish language publication developed from the original &lt;i&gt;She’s a child, not a “choice.”&lt;/i&gt; Translated in partnership with the Vida Initiative and Vida Humana Internacional, &lt;i&gt;Ella es una niña&lt;/i&gt; is an excellent resource for Latino outreach. It has been distributed in the United States and most Spanish speaking countries.&lt;/p&gt;
 </description>
         <pubDate>Tue, 25 Apr 2017 14:19:33 -0500</pubDate>
-        <link>https://walz.gitlab.io/hla-resources/ella-es-una-nina-una-opcion-shes-child-choice/</link>
-        <guid isPermaLink="true">https://walz.gitlab.io/hla-resources/ella-es-una-nina-una-opcion-shes-child-choice/</guid>
+        <link>http://127.0.0.1:4000/ella-es-una-nina-una-opcion-shes-child-choice/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000/ella-es-una-nina-una-opcion-shes-child-choice/</guid>
         
         
         <category>item</category>
@@ -27,8 +27,8 @@
         <description>&lt;p&gt;STAND UP is HLA’s latest 12-page campus impact publication. It challenges students, faculty and staff to STAND UP for life Through personal stories, accurate facts, and shocking statistics STAND UP encourages young people to think about how abortion rhetoric is used in our culture.&lt;/p&gt;
 </description>
         <pubDate>Mon, 24 Apr 2017 14:19:33 -0500</pubDate>
-        <link>https://walz.gitlab.io/hla-resources/campus/</link>
-        <guid isPermaLink="true">https://walz.gitlab.io/hla-resources/campus/</guid>
+        <link>http://127.0.0.1:4000/campus/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000/campus/</guid>
         
         
         <category>item</category>
@@ -204,8 +204,8 @@
 &lt;p&gt;http://www.fatherhoodforever.org/&lt;/p&gt;
 </description>
         <pubDate>Mon, 24 Apr 2017 14:19:33 -0500</pubDate>
-        <link>https://walz.gitlab.io/hla-resources/citations/campus/</link>
-        <guid isPermaLink="true">https://walz.gitlab.io/hla-resources/citations/campus/</guid>
+        <link>http://127.0.0.1:4000/citations/campus/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000/citations/campus/</guid>
         
         
         <category>citation</category>
@@ -217,8 +217,8 @@
         <description>&lt;p&gt;Abortion is the leading cause of death among African Americans. Did You Know? is shattering the silence of this great tragedy. Written by African Americans for the African American community, Did You Know? contains powerful articles written by leaders such as Dr. Alveda King, niece of Martin Luther King Jr., Rev. Arnold Culbreath, Urban Outreach Director for Protecting Black Life, Dr. Johnny Hunter, National Director of Life Education and Research Network, Inc., and many others. 12 Pages.&lt;/p&gt;
 </description>
         <pubDate>Sun, 23 Apr 2017 14:19:33 -0500</pubDate>
-        <link>https://walz.gitlab.io/hla-resources/know/</link>
-        <guid isPermaLink="true">https://walz.gitlab.io/hla-resources/know/</guid>
+        <link>http://127.0.0.1:4000/know/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000/know/</guid>
         
         
         <category>item</category>
@@ -230,8 +230,8 @@
         <description>&lt;p&gt;Did you know Planned Parenthood commits more abortions in the U.S. than any other organization? &lt;i&gt;The Truth Behind Planned Parenthood&lt;/i&gt; exposes its ‘reproductive health care’ strategy and presents evidence of life-offending abuses. This unique combination of essays from pro-life leaders across the nation exposes plans and tactics designed to promote Planned Parenthood’s culture of death.&lt;/p&gt;
 </description>
         <pubDate>Sat, 22 Apr 2017 14:19:33 -0500</pubDate>
-        <link>https://walz.gitlab.io/hla-resources/truth-planned-parenthood/</link>
-        <guid isPermaLink="true">https://walz.gitlab.io/hla-resources/truth-planned-parenthood/</guid>
+        <link>http://127.0.0.1:4000/truth-planned-parenthood/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000/truth-planned-parenthood/</guid>
         
         
         <category>item</category>
@@ -243,8 +243,8 @@
         <description>&lt;p&gt;This trendy, double-sided flip magazine for teens, presents the importance of abstinence until marriage. It covers a wide variety of topics on sex, dating, and healthy relationships. Teens will read both sides! 16 pages.&lt;/p&gt;
 </description>
         <pubDate>Fri, 21 Apr 2017 14:19:33 -0500</pubDate>
-        <link>https://walz.gitlab.io/hla-resources/just-4-girls-just-4-guys/</link>
-        <guid isPermaLink="true">https://walz.gitlab.io/hla-resources/just-4-girls-just-4-guys/</guid>
+        <link>http://127.0.0.1:4000/just-4-girls-just-4-guys/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000/just-4-girls-just-4-guys/</guid>
         
         
         <category>item</category>
@@ -256,8 +256,8 @@
         <description>&lt;p&gt;Informed is an introductory tool to help patients, families and surrogates more fully participate in the interaction with doctors and other health professionals. Topics include: Advanced Directives, POLST, Ventilators, Hospice care and more.&lt;/p&gt;
 </description>
         <pubDate>Thu, 20 Apr 2017 14:19:33 -0500</pubDate>
-        <link>https://walz.gitlab.io/hla-resources/informed/</link>
-        <guid isPermaLink="true">https://walz.gitlab.io/hla-resources/informed/</guid>
+        <link>http://127.0.0.1:4000/informed/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000/informed/</guid>
         
         
         <category>item</category>
@@ -269,8 +269,8 @@
         <description>&lt;p&gt;Get the number one resource for sidewalk counseling today! This innovative Street Magazine will engage a young woman in crisis pregnancy, present the facts about the child in her womb and reveal the gruesome realities of abortion−perfect for reaching a young woman entering Planned Parenthood. 24 pages.&lt;/p&gt;
 </description>
         <pubDate>Wed, 19 Apr 2017 14:19:33 -0500</pubDate>
-        <link>https://walz.gitlab.io/hla-resources/choice-street-mag/</link>
-        <guid isPermaLink="true">https://walz.gitlab.io/hla-resources/choice-street-mag/</guid>
+        <link>http://127.0.0.1:4000/choice-street-mag/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000/choice-street-mag/</guid>
         
         
         <category>item</category>
@@ -282,8 +282,8 @@
         <description>&lt;p&gt;Carlos &amp;amp; Isabel Save Esperanza was designed to teach young children a valuable pro-life lesson all human beings deserve to be cherished and loved.&lt;/p&gt;
 </description>
         <pubDate>Tue, 18 Apr 2017 14:19:33 -0500</pubDate>
-        <link>https://walz.gitlab.io/hla-resources/carlos-isabel-save-esperanza/</link>
-        <guid isPermaLink="true">https://walz.gitlab.io/hla-resources/carlos-isabel-save-esperanza/</guid>
+        <link>http://127.0.0.1:4000/carlos-isabel-save-esperanza/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000/carlos-isabel-save-esperanza/</guid>
         
         
         <category>item</category>
@@ -295,8 +295,8 @@
         <description>&lt;p&gt;&lt;b&gt;&lt;i&gt;Life Begins: An Amazing Adventure&lt;/i&gt;&lt;/b&gt; is a comic book designed to teach children about the development of the preborn child. Lead by two adventurous narrators, Gus and Lila, Life Begins is a delightful walk through the first nine months of life. Children enjoy the antics of comical narrators while learning their first pro-life lesson—how a baby grows in her mother’s womb.&lt;/p&gt;
 </description>
         <pubDate>Mon, 17 Apr 2017 14:19:33 -0500</pubDate>
-        <link>https://walz.gitlab.io/hla-resources/life-begins/</link>
-        <guid isPermaLink="true">https://walz.gitlab.io/hla-resources/life-begins/</guid>
+        <link>http://127.0.0.1:4000/life-begins/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000/life-begins/</guid>
         
         
         <category>item</category>

@@ -4,7 +4,6 @@ title: Cart
 permalink: /cart/
 ---
 <div id="cart"></div>
-<div id="payment"></div>
 <script type="text/javascript">
 	show_cart();
 	function show_cart () {
@@ -20,17 +19,13 @@ permalink: /cart/
 			};
 			htmlString = htmlString + '<tr><td></td><td></td><td></td><td></td><td></td><td><input type="submit" id="update_cart" class="" onclick="update_cart();" value="Update Cart"></td></tr></tbody></table><a class="shop-buttons float-left" onclick="empty_cart();">Empty Cart</a>';
 
-			htmlString = htmlString + '<div id="cart-totals">' + ask_for_donations(total(items)) + '<h3>Cart Totals</h3><p>Shipping is included with suggested donation. For Expedited Shipping (Must call us with details) (651)-484-1040.</p><table class="cart-table"><tbody><tr><td>Suggested Total</td><td>$' + suggested_total(items).toFixed(2).toString() + '</td></tr><tr><td>Total</td><td>$' + total(items).toFixed(2).toString() + '</td></tr></tbody></table></div>';
+			htmlString = htmlString + '<div id="cart-totals">' + ask_for_donations(total(items)) + '<h3>Cart Totals</h3><p>Shipping is included with suggested donation. For Expedited Shipping (Must call us with details) (651)-484-1040.</p><table class="cart-table"><tbody><tr><td>Suggested Total</td><td>$' + suggested_total(items).toFixed(2).toString() + '</td></tr><tr><td>Total</td><td>$' + total(items).toFixed(2).toString() + '</td></tr></tbody></table><div id="checkout"></div></div>';
 			document.getElementById('cart').innerHTML = htmlString;
 		}else{
 			document.getElementById('cart').innerHTML = '<h3 style="text-align: center;color: #7f7f7f;">Empty Cart</h3>';
 		};
 		var amount = total(items);
-		if (amount>0) {
-			get_payeezy_info(amount);
-		}else{
-			document.getElementById('payment').innerHTML = "";
-		};
+		document.getElementById('checkout').innerHTML = '<a id="checkout-button" class="shop-buttons float-right" href="{{ site.url }}{{ site.baseurl }}/checkout">Checkout</a>';
 	}
 	
 	function update_cart () {
@@ -141,38 +136,5 @@ permalink: /cart/
 	function empty_cart () {
 		localStorage.removeItem("items");
 		show_cart();
-	}
-
-	function get_payeezy_info (amount) {
-		if (amount>0) {
-			var url = 'https://script.google.com/macros/s/AKfycbyWpKQdW8LbheeCZ5KiHZJOz0nj--hGsBUQWUsYeq3Y6vP3Ht76/exec?amount=' + amount;
-			var xml = new XMLHttpRequest();
-			xml.open('GET',url,true);
-			xml.responseType = 'json';
-			xml.onload = function() {
-		      var status = xml.status;
-		      if (status == 200) {
-		        make_pay_button(xml.response);
-		      } else {
-		        make_pay_error();
-		      }
-		    };
-		    xml.send();
-	    };
-	}
-	function make_pay_button (data) {
-		var string = '<form action="https://demo.globalgatewaye4.firstdata.com/pay" id="pay_now_form_6f8c42b3cc" method="post">';
-  		string = string + '<input type="hidden" name="x_login" value="' + data.x_login + '" />';
-  		string = string + '<input type="hidden" name="x_fp_sequence" value="' + data.x_fp_sequence + '" />';
-  		string = string + '<input type="hidden" name="x_fp_hash" value="' + data.signature + '" />';
-  		string = string + '<input type="hidden" name="x_amount" value="' + data.x_amount + '" />';
-  		string = string + '<input type="hidden" name="x_currency_code" value="' + data.x_currency_code + '" />';
-  		string = string + '<input type="hidden" name="x_fp_timestamp" value="' + data.x_fp_timestamp + '" />';
-  		string = string + '<input type="hidden" name="x_show_form" value="PAYMENT_FORM" />';
-  		string = string + '<input type="submit" value="test" /></form>';
-		document.getElementById('payment').innerHTML = string;
-	}
-	function make_pay_error () {
-		document.getElementById('payment').innerHTML = '<p>error</p>';	
 	}
 </script>
