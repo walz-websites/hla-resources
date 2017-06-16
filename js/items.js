@@ -14,7 +14,7 @@ function list_items () {
         pic:"{{ post.front-pic }}",
         url:"{{ post.url }}",
         loc:"{{ post.loc }}",
-        id:"{{ post.id }}",
+        id:"{{ post.my_id }}",
         size:"{{ post.size }}",
         price:{amount:"{{ post.price.amount }}",text:"{{ post.price.text }}"}
       };
