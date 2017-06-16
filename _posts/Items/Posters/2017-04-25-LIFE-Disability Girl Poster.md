@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0052"
+my_id: "#0052"
 loc: "052000"
 title: "LIFE-Disability Girl Poster"
 permalink: /life-disability-girl-poster/

@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0055"
+my_id: "#0055"
 loc: "055000"
 title: "Alveda King Poster"
 permalink: /alveda-king-poster/

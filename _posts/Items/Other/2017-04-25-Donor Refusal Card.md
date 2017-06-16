@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0030"
+my_id: "#0030"
 loc: "030000"
 title: "Donor Refusal Card"
 permalink: /donor-refusal-card/

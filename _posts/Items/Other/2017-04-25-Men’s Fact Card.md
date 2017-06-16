@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0032"
+my_id: "#0032"
 loc: "032000"
 title: "Men’s Fact Card"
 permalink: /mens-fact-card/

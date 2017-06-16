@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0036"
+my_id: "#0036"
 loc: "036000"
 title: "Life Pastor Parker 1/2 Size Handout"
 permalink: /life-pastor-parker-12-size-handout/

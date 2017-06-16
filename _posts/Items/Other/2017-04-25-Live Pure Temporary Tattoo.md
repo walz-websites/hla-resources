@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0027"
+my_id: "#0027"
 loc: "027000"
 title: "Live Pure Temporary Tattoo"
 permalink: /live-pure-temporary-tattoo/

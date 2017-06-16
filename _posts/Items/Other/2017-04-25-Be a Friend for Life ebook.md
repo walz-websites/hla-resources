@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0038"
+my_id: "#0038"
 loc: "038000"
 title: "Be a Friend for Life ebook"
 permalink: /friend-life-ebook/

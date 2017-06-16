@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0060"
+my_id: "#0060"
 loc: "060000"
 title: "Who are you to judge Poster"
 permalink: /judge-poster/

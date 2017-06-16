@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0075"
+my_id: "#0075"
 loc: "075000"
 title: "Better Future Guy Poster"
 permalink: /future-guy-poster/

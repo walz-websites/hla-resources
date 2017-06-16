@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0012"
+my_id: "#0012"
 loc: "012000"
 title: "Did You Know?"
 permalink: /know/

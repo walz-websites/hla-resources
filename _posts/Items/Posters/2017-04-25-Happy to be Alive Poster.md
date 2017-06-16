@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0056"
+my_id: "#0056"
 loc: "056000"
 title: "Happy to be Alive Poster"
 permalink: /happy-alive-poster/

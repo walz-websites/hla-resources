@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0057"
+my_id: "#0057"
 loc: "057000"
 title: "She’s a Child not a Choice Poster"
 permalink: /shes-child-choice-poster/

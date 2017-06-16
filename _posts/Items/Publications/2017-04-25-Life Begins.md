@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0018"
+my_id: "#0018"
 loc: "018000"
 title: "Life Begins"
 permalink: /life-begins/

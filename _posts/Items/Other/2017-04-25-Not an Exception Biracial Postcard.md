@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0035"
+my_id: "#0035"
 loc: "035000"
 title: "Not an Exception Biracial Postcard"
 permalink: /exception-biracial-postcard/

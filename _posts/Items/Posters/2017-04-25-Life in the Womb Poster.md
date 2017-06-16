@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0059"
+my_id: "#0059"
 loc: "059000"
 title: "Life in the Womb Poster"
 permalink: /life-in-the-womb-poster/

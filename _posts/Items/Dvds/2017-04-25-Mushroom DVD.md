@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0025"
+my_id: "#0025"
 loc: "025000"
 title: "Mushroom DVD"
 permalink: /mushroom-dvd/

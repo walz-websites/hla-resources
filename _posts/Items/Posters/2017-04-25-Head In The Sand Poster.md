@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0048"
+my_id: "#0048"
 loc: "048000"
 title: "Head In The Sand Poster"
 permalink: /head-sand-poster/

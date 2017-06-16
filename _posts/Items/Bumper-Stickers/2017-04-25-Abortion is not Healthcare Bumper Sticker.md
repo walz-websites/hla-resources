@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0039"
+my_id: "#0039"
 loc: "039000"
 title: "Abortion is not Healthcare Bumper Sticker"
 permalink: /abortion-healthcare-bumper-sticker/

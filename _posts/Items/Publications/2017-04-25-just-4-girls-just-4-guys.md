@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0014"
+my_id: "#0014"
 loc: "014000"
 title: "Just for Girls/Just for Guys 2016-17"
 permalink: /just-4-girls-just-4-guys/

@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0047"
+my_id: "#0047"
 loc: "047000"
 title: "Imposed Death: A Conference on Stealth Euthanasia 2012 DVD"
 permalink: /imposed-death-conference-stealth-euthanasia-2012-dvd/

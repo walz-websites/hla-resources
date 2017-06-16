@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0050"
+my_id: "#0050"
 loc: "050000"
 title: "LIFE-Grandpa & Baby Poster"
 permalink: /life-grandpa-baby-poster/

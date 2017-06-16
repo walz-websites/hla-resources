@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0021"
+my_id: "#0021"
 loc: "021000"
 title: "Dare to be… a Mother"
 permalink: /be-mother/

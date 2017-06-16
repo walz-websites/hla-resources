@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0100"
+my_id: "#0100"
 loc: "100000"
 title: "Abstinence India Fact Sheet"
 permalink: /abstinence-india-fact-sheet/

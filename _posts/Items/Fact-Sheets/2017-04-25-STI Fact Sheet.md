@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0085"
+my_id: "#0085"
 loc: "085000"
 title: "STI Fact Sheet"
 permalink: /sti-fact-sheet/

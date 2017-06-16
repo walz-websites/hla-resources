@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0016"
+my_id: "#0016"
 loc: "01600"
 title: "This is Not Your Only Choice (Street Magazine)"
 permalink: /choice-street-mag/

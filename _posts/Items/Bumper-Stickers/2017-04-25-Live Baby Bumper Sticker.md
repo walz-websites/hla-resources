@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0040"
+my_id: "#0040"
 loc: "040000"
 title: "Live Baby Bumper Sticker"
 permalink: /live-baby-bumper-sticker/

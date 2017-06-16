@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-my_id:"#0043"
+my_id: "#0043"
 loc: "043000"
 title: "Endangered Multi-cultural Babies Bumper Sticker"
 permalink: /endangered-multi-cultural-babies-bumper-sticker/
