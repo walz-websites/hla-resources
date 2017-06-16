@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0024"
+my_id:"#0024"
 loc: "024000"
 title: "Informed: Life is Worth Living DVD"
 permalink: /informed-life-worth-living/

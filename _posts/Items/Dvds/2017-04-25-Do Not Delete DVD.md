@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0045"
+my_id:"#0045"
 loc: "045000"
 title: "Do Not Delete DVD"
 permalink: /delete-dvd/

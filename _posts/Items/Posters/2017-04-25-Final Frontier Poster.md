@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0072"
+my_id:"#0072"
 loc: "072000"
 title: "Final Frontier Poster"
 permalink: /final-frontier-poster/

@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0019"
+my_id:"#0019"
 loc: "019000"
 title: "Imposed Death"
 permalink: /imposed-death/

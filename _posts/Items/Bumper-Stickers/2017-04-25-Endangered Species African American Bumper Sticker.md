@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0044"
+my_id:"#0044"
 loc: "044000"
 title: "Endangered Species African American Bumper Sticker"
 permalink: /endangered-species-african-american-bumper-sticker/

@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0042"
+my_id:"#0042"
 loc: "042000"
 title: "Your Mom Chose Life Bumper Sticker"
 permalink: /mom-chose-life-bumper-sticker/

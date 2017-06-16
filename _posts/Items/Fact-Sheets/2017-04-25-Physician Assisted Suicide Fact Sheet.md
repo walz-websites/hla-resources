@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0086"
+my_id:"#0086"
 loc: "086000"
 title: "Physician Assisted Suicide Fact Sheet"
 permalink: /physician-assisted-suicide-fact-sheet/

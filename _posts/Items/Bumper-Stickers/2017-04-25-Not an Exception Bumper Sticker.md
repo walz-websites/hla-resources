@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0041"
+my_id:"#0041"
 loc: "041000"
 title: "Not an Exception Bumper Sticker"
 permalink: /exception-bumper-sticker/

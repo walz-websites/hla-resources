@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0069"
+my_id:"#0069"
 loc: "069000"
 title: "Marked For Death Poster"
 permalink: /marked-death-poster/

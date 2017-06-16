@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0098"
+my_id:"#0098"
 loc: "098000"
 title: "Abstinence Kenya Male Fact Sheet"
 permalink: /abstinence-kenya-male-fact-sheet/

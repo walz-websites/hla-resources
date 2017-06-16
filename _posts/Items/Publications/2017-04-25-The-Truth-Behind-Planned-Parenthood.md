@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0013"
+my_id:"#0013"
 loc: "013000"
 title: "The Truth Behind Planned Parenthood"
 permalink: /truth-planned-parenthood/

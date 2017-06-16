@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0095"
+my_id:"#0095"
 loc: "095000"
 title: "Chastity Spanish Fact Sheet"
 permalink: /chastity-spanish-fact-sheet/

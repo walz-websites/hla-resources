@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0010"
+my_id:"#0010"
 loc: "010000"
 title: "Ella es una niña, no una opción"
 permalink: /ella-es-una-nina-una-opcion-shes-child-choice/

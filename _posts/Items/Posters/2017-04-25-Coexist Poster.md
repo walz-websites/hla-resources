@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0062"
+my_id:"#0062"
 loc: "062000"
 title: "Coexist Poster"
 permalink: /coexist-poster/

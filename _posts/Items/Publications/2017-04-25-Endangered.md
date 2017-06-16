@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0023"
+my_id:"#0023"
 loc: "023000"
 title: "Endangered"
 permalink: /endangered/

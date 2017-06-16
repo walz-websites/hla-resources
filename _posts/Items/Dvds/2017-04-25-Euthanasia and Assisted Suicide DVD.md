@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0046"
+my_id:"#0046"
 loc: "046000"
 title: "Euthanasia and Assisted Suicide DVD"
 permalink: /euthanasia-assisted-suicide-dvd/

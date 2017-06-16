@@ -150,7 +150,7 @@ layout: default
 	function add_to_cart () {
 		var line_item = new Object();
 		line_item.item = "{{ page.title }}";
-		line_item.id_number = "{{ page.id }}";
+		line_item.id_number = "{{ page.my_id }}";
 		line_item.url = "{{ page.url }}";
 		line_item.image = "{{ page.front-pic }}";
 		line_item.donation = document.getElementById("suggested-donation").checked;

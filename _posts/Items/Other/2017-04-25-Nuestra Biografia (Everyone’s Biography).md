@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0033"
+my_id:"#0033"
 loc: "033000"
 title: "Nuestra Biografia (Everyone’s Biography)"
 permalink: /nuestra-biografia-everyones-biography/

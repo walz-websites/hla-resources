@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0020"
+my_id:"#0020"
 loc: "020000"
 title: "A Favor de la Vida"
 permalink: /favor-de-la-vida/

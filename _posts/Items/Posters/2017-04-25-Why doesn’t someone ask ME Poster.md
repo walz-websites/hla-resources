@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0054"
+my_id:"#0054"
 loc: "054000"
 title: "Why doesn’t someone ask ME Poster"
 permalink: /doesnt/

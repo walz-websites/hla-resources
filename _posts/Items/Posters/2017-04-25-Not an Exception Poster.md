@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0068"
+my_id:"#0068"
 loc: "068000"
 title: "Not an Exception Poster"
 permalink: /exception-poster/

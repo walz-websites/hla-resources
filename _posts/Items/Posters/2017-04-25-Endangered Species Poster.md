@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0073"
+my_id:"#0073"
 loc: "073000"
 title: "Endangered Species Poster"
 permalink: /endangered-species-poster/

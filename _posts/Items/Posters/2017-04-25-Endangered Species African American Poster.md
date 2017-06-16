@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0074"
+my_id:"#0074"
 loc: "074000"
 title: "Endangered Species African American Poster"
 permalink: /endangered-species-african-american-poster/

@@ -1,7 +1,7 @@
 ---
 layout: item
 category: item
-id: "#0017"
+my_id:"#0017"
 loc: "017000"
 title: "Carlos & Isabel Save Esperanza"
 permalink: /carlos-isabel-save-esperanza/
