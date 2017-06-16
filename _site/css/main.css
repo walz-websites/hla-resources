@@ -35,6 +35,9 @@ div.checkout-form p.full {
 div.checkout-form p {
   display: inline-block; }
 
+div.checkout-form p select {
+  width: 100%; }
+
 div.checkout-form {
   width: 48%;
   display: inline-block;

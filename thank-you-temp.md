@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Thank You
-permalink: /thank-you-temp/
+permalink: /thank-you-temp-0451910951845610497409794/
 ---
 <div id="loading"><i class="loading fa fa-spinner fa-5x" aria-hidden="true"></i><h3>Sending Your Order Please Wait...</h3></div>
 <br><br><br><br><br><br>
