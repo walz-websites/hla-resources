@@ -1,0 +1,15 @@
+body div#document{
+	width: 95%;
+}
+body div#document div#content div#order{
+	visibility: hidden;
+}
+body div#document div#content div#order h1{
+	visibility: visible;
+}
+body div#document div#content div#order table{
+	visibility: visible;
+}
+body div#document div#content div#order label{
+	visibility: visible;
+}
