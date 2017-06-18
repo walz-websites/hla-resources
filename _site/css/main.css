@@ -284,7 +284,8 @@ ul#primary-menu {
 ul#primary-menu ul.sub-menu {
   display: none;
   list-style-type: none;
-  margin: 0; }
+  margin: 0;
+  padding-right: 0; }
 
 ul#primary-menu li a {
   padding-left: 10px;
@@ -304,14 +305,12 @@ ul#primary-menu a:hover {
 ul#primary-menu li.menu-item-has-children ul.sub-menu:hover {
   display: block;
   position: absolute;
-  background: #fff;
-  padding-right: 10px; }
+  background: #fff; }
 
 ul#primary-menu li.menu-item-has-children a:hover + ul.sub-menu {
   display: block;
   position: absolute;
-  background: #fff;
-  padding-right: 10px; }
+  background: #fff; }
 
 /**
  * Reset some basic elements
