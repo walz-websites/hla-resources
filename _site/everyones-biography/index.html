@@ -9,9 +9,9 @@
   <title>Everyone’s Biography</title>
   <meta name="description" content="Everyone’s Biography is a wallet-size hand-out great for carrying with you on the go. Inside these small handouts, there is a fetal development timeline and ...">
 
-  <link rel="stylesheet" href="/hla-resources/css/main.css">
-  <link rel="canonical" href="https://walz.gitlab.io/hla-resources/everyones-biography/">
-  <link rel="alternate" type="application/rss+xml" title="Human Life Alliance" href="https://walz.gitlab.io/hla-resources/feed.xml">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://resources.humanlife.org/everyones-biography/">
+  <link rel="alternate" type="application/rss+xml" title="Human Life Alliance" href="https://resources.humanlife.org/feed.xml">
   <script src="https://use.fontawesome.com/87dcc5176e.js"></script>
 </head>
 
@@ -22,7 +22,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/hla-resources/"><img src="/hla-resources/images/logo.png" alt="Human Life Alliance"></a>
+    <a class="site-title" href="/"><img src="/images/logo.png" alt="Human Life Alliance"></a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -45,14 +45,14 @@
           <li class="menu-item menu-item-child"><a href="https://www.humanlife.org/about/contact/">Contact</a></li>
         </ul>
         </li>
-        <li id="menu-item-2" class="menu-item menu-item-has-children"><a href="/hla-resources">Resources</a>
+        <li id="menu-item-2" class="menu-item menu-item-has-children"><a href="">Resources</a>
         <ul class="sub-menu">
-          <li class="menu-item menu-item-child"><a href="/hla-resources/?item_type=Publication">Publications</a></li>
-          <li class="menu-item menu-item-child"><a href="/hla-resources/?item_type=Fact-Sheet">Fact Sheets</a></li>
-          <li class="menu-item menu-item-child"><a href="/hla-resources/?item_type=Poster">Posters</a></li>
-          <li class="menu-item menu-item-child"><a href="/hla-resources/?item_type=DVD">DVDs</a></li>
-          <li class="menu-item menu-item-child"><a href="/hla-resources/?item_type=Bumper-Sticker">Bumper Stickers</a></li>
-          <li class="menu-item menu-item-child"><a href="/hla-resources/?item_type=Other">Other</a></li>
+          <li class="menu-item menu-item-child"><a href="/?item_type=Publication">Publications</a></li>
+          <li class="menu-item menu-item-child"><a href="/?item_type=Fact-Sheet">Fact Sheets</a></li>
+          <li class="menu-item menu-item-child"><a href="/?item_type=Poster">Posters</a></li>
+          <li class="menu-item menu-item-child"><a href="/?item_type=DVD">DVDs</a></li>
+          <li class="menu-item menu-item-child"><a href="/?item_type=Bumper-Sticker">Bumper Stickers</a></li>
+          <li class="menu-item menu-item-child"><a href="/?item_type=Other">Other</a></li>
         </ul>
         </li>
         <li id="menu-item-3" class="menu-item menu-item-has-children"><a href="https://www.humanlife.org/get-involved/at-hla/">Get Involved</a>
@@ -69,7 +69,7 @@
         </li>
         <li class="donate-menu-item menu-item"><a href="https://www.humanlife.org/product/donation/">DONATE</a></li>
         <li class="menu-item"><a href="https://www.humanlife.org/subscribe/">Subscribe</a></li>
-        <li><a class="athena-cart" href="/hla-resources/cart/"><span class="fa fa-shopping-cart"></span></a></li></ul>
+        <li><a class="athena-cart" href="/cart/"><span class="fa fa-shopping-cart"></span></a></li></ul>
       </div>
     </nav>
 
@@ -92,7 +92,7 @@
   <div class="post-content" itemprop="articleBody">
 	<h2 class="post-title higher" itemprop="name headline">Everyone’s Biography</h2>
   	
-  		<img class="item-image" src="/hla-resources/images/everyones-biography-front.jpg" alt="Everyone’s Biography">
+  		<img class="item-image" src="/images/everyones-biography-front.jpg" alt="Everyone’s Biography">
   	
 	<div id="form_div" class="form-div">
 		<h2 class="post-title lower" itemprop="name headline">Everyone’s Biography</h2>
@@ -133,7 +133,7 @@
 			<br>
 			<p>Please allow 2-3 weeks for shipping. For Expedited Shipping call (651)-484-1040. <span id="no-donation-selected" style="display:none;">Each publication costs 30 cents to design, print and ship. Select the suggested donation amount of $0.30 cents to help us with these expenses or $0 for no donation at this time. HLA services and materials are free for your use. If you choose to make a different donation and support our efforts with today’s request, please check out the DONATE page. Thank you.</span></p>
 			<p class="amount-green"><span id="amount-no-donation" style="display:none;">$0.00</span><span id="amount-suggested-donation">$0.10</span></p>
-			<p id="demo"></p>
+			
   			<input id="quantity" class="input-text qty text" step="1" min="1" max="99999" name="quantity" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" type="number">
   			<input type = "submit" class="shop-buttons" onclick="add_to_cart();" value="Add to Cart">
 		</div> 
@@ -199,7 +199,6 @@
 		var items = JSON.parse(localStorage.getItem("items")) || new Array();
 		items.push(line_item);
 		var myJSON = JSON.stringify(items);
-		document.getElementById("demo").innerHTML = myJSON;
 		localStorage.setItem("items", myJSON);
 	}
 	first_load();
@@ -244,7 +243,7 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li><img src="/hla-resources/images/logo.png" alt="Human Life Alliance"></li>
+          <li><img src="/images/logo.png" alt="Human Life Alliance"></li>
           <br>
           <li><a href="mailto:feedback@humanlife.org">feedback@humanlife.org</a></li>
           <li>Copyright Human Life Alliance 2017</li>

@@ -155,7 +155,7 @@ function list_items () {
         item_title:"Life Begins",
         pic:"life-begins-front.jpg",
         url:"/life-begins/",
-        loc:"018000",
+        loc:"009990",
         id:"#0018",
         size:"33",
         price:{amount:"",text:""}
