@@ -13,3 +13,18 @@ body div#document div#content div#order table{
 body div#document div#content div#order label{
 	visibility: visible;
 }
+body div#document div#header h1{
+	visibility: hidden;
+}
+body div#document div#header h1 img{
+	visibility: visible;
+}
+body div#document div#header{
+	border-bottom: unset;
+}
+body div#document div#footer div.powered{
+	display: none;
+}
+body div#document div#footer::before{
+	content: "<a>test</a>"
+}
