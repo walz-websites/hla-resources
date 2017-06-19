@@ -32,6 +32,6 @@ body div#document div#footer{
 	left: 0;
 	width: 100%;
 }
-body::before{
+html{
 	border-top: 5px solid #424242;
 }
