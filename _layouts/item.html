@@ -103,7 +103,7 @@ layout: default
 			<br>
 			<p>Please allow 2-3 weeks for shipping. For Expedited Shipping call (651)-484-1040. <span id="no-donation-selected" style="display:none;">Each publication costs 30 cents to design, print and ship. Select the suggested donation amount of $0.30 cents to help us with these expenses or $0 for no donation at this time. HLA services and materials are free for your use. If you choose to make a different donation and support our efforts with today’s request, please check out the DONATE page. Thank you.</span></p>
 			<p class="amount-green"><span id="amount-no-donation" style="display:none;">$0.00</span><span id="amount-suggested-donation">{{ price-text }}</span></p>
-			<p id="demo"></p>
+			
   			<input id="quantity" class="input-text qty text" step="1" min="1" max="99999" name="quantity" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" type="number">
   			<input type = "submit" class="shop-buttons" onclick="add_to_cart();" value="Add to Cart">
 		</div> 
@@ -160,7 +160,6 @@ layout: default
 		var items = JSON.parse(localStorage.getItem("items")) || new Array();
 		items.push(line_item);
 		var myJSON = JSON.stringify(items);
-		document.getElementById("demo").innerHTML = myJSON;
 		localStorage.setItem("items", myJSON);
 	}
 	first_load();
