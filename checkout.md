@@ -148,6 +148,28 @@ permalink: /checkout/
 
 					var total = my_total(JSON.parse(localStorage.getItem("items")));
 					if (total>0) {
+						var string = "";
+						string = string + '<input type="hidden" name="x_first_name" 		value="' + b_f_name + '" />';
+	  					string = string + '<input type="hidden" name="x_last_name"  		value="' + b_l_name + '" />';
+	  					string = string + '<input type="hidden" name="x_company"    		value="' + b_o_name + '" />';
+	  					string = string + '<input type="hidden" name="x_address"    		value="' + b_address_1 + " " + b_address_2 + '" />';
+	  					string = string + '<input type="hidden" name="x_city"       		value="' + b_city + '" />';
+	  					string = string + '<input type="hidden" name="x_state"      		value="' + b_state + '" />';
+	  					string = string + '<input type="hidden" name="x_zip"        		value="' + b_zip + '" />';
+	  					string = string + '<input type="hidden" name="x_country"    		value="' + b_country + '" />';
+	  					string = string + '<input type="hidden" name="x_phone"      		value="' + b_phone + '" />';
+	  					string = string + '<input type="hidden" name="x_email"      		value="' + b_email + '" />';
+
+	  					string = string + '<input type="hidden" name="x_ship_to_first_name" value="' + s_f_name + '" />';
+	  					string = string + '<input type="hidden" name="x_ship_to_last_name"  value="' + s_l_name + '" />';
+	  					string = string + '<input type="hidden" name="x_ship_to_company"    value="' + s_o_name + '" />';
+	  					string = string + '<input type="hidden" name="x_ship_to_address"    value="' + s_address_1 + " " + s_address_2 + '" />';
+	  					string = string + '<input type="hidden" name="x_ship_to_city"       value="' + s_city + '" />';
+	  					string = string + '<input type="hidden" name="x_ship_to_state"      value="' + s_state + '" />';
+	  					string = string + '<input type="hidden" name="x_ship_to_zip"        value="' + s_zip + '" />';
+	  					string = string + '<input type="hidden" name="x_ship_to_country"    value="' + s_country + '" />';
+
+						document.getElementById("payeesyformuser").innerHTML = string;
 						document.getElementById("{{ site.payeesyform }}").submit(); 
 					}else{
 						window.location.assign("{{ site.url }}{{ site.baseurl }}{{ site.thankyoutemp }}");
@@ -188,6 +210,28 @@ permalink: /checkout/
 
 				var total = my_total(JSON.parse(localStorage.getItem("items")));
 				if (total>0) {
+					var string = "";
+					string = string + '<input type="hidden" name="x_first_name" 		value="' + b_f_name + '" />';
+  					string = string + '<input type="hidden" name="x_last_name"  		value="' + b_l_name + '" />';
+  					string = string + '<input type="hidden" name="x_company"    		value="' + b_o_name + '" />';
+  					string = string + '<input type="hidden" name="x_address"    		value="' + b_address_1 + " " + b_address_2 + '" />';
+  					string = string + '<input type="hidden" name="x_city"       		value="' + b_city + '" />';
+  					string = string + '<input type="hidden" name="x_state"      		value="' + b_state + '" />';
+  					string = string + '<input type="hidden" name="x_zip"        		value="' + b_zip + '" />';
+  					string = string + '<input type="hidden" name="x_country"    		value="' + b_country + '" />';
+  					string = string + '<input type="hidden" name="x_phone"      		value="' + b_phone + '" />';
+  					string = string + '<input type="hidden" name="x_email"      		value="' + b_email + '" />';
+
+  					string = string + '<input type="hidden" name="x_ship_to_first_name" value="' + s_f_name + '" />';
+  					string = string + '<input type="hidden" name="x_ship_to_last_name"  value="' + s_l_name + '" />';
+  					string = string + '<input type="hidden" name="x_ship_to_company"    value="' + s_o_name + '" />';
+  					string = string + '<input type="hidden" name="x_ship_to_address"    value="' + s_address_1 + " " + s_address_2 + '" />';
+  					string = string + '<input type="hidden" name="x_ship_to_city"       value="' + s_city + '" />';
+  					string = string + '<input type="hidden" name="x_ship_to_state"      value="' + s_state + '" />';
+  					string = string + '<input type="hidden" name="x_ship_to_zip"        value="' + s_zip + '" />';
+  					string = string + '<input type="hidden" name="x_ship_to_country"    value="' + s_country + '" />';
+
+					document.getElementById("payeesyformuser").innerHTML = string;
 					document.getElementById("{{ site.payeesyform }}").submit(); 
 				}else{
 					window.location.assign("{{ site.url }}{{ site.baseurl }}{{ site.thankyoutemp }}");
@@ -247,26 +291,7 @@ permalink: /checkout/
   			}
   		}
   		
-
-  		string = string + '<input type="hidden" name="x_first_name" 		value="Anthony" />';
-  		string = string + '<input type="hidden" name="x_last_name"  		value="Walz" />';
-  		string = string + '<input type="hidden" name="x_company"    		value="" />';
-  		string = string + '<input type="hidden" name="x_address"    		value="address" />';
-  		string = string + '<input type="hidden" name="x_city"       		value="City" />';
-  		string = string + '<input type="hidden" name="x_state"      		value="State" />';
-  		string = string + '<input type="hidden" name="x_zip"        		value="01234" />';
-  		string = string + '<input type="hidden" name="x_country"    		value="country" />';
-  		string = string + '<input type="hidden" name="x_phone"      		value="1234567990" />';
-  		string = string + '<input type="hidden" name="x_email"      		value="anthonywalz40@gmail.com" />';
-
-  		string = string + '<input type="hidden" name="x_ship_to_first_name" value="Anthony" />';
-  		string = string + '<input type="hidden" name="x_ship_to_last_name"  value="Walz" />';
-  		string = string + '<input type="hidden" name="x_ship_to_company"    value="" />';
-  		string = string + '<input type="hidden" name="x_ship_to_address"    value="address" />';
-  		string = string + '<input type="hidden" name="x_ship_to_city"       value="City" />';
-  		string = string + '<input type="hidden" name="x_ship_to_state"      value="state" />';
-  		string = string + '<input type="hidden" name="x_ship_to_zip"        value="13456" />';
-  		string = string + '<input type="hidden" name="x_ship_to_country"    value="country" />';
+  		string = string + '<div id="payeesyformuser"></div>';
 
   		string = string + '<input type="hidden" name="x_show_form" value="PAYMENT_FORM" />';
   		string = string + '<input type="submit" value="pay" /></form>';
