@@ -25,6 +25,13 @@ body div#document div#header{
 body div#document div#footer div.powered{
 	display: none;
 }
-body div#document div#footer::before{
-	content: "<a>test</a>"
+body div#document div#footer{
+	background: #1B1B1B;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	width: 100%;
+}
+body::before{
+	border-top: 5px solid #424242;
 }
