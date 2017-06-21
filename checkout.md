@@ -172,7 +172,7 @@ permalink: /checkout/
 						document.getElementById("payeesyformuser").innerHTML = string;
 						document.getElementById("{{ site.payeesyform }}").submit(); 
 					}else{
-						window.location.assign("{{ site.url }}{{ site.baseurl }}{{ site.thankyoutemp }}");
+						window.location.assign("{{ site.baseurl }}{{ site.thankyoutemp }}/?Card_Number=null");
 					};
 				}else{
 					document.getElementById('error').innerHTML = 'Error: Shipping information incomplete. <a onclick="dismiss_error();">Dismiss Error</a>';		

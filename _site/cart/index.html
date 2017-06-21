@@ -22,7 +22,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/"><img src="/images/logo.png" alt="Human Life Alliance"></a>
+    <a class="site-title" href="/"><img class="logo" src="/images/logo.svg" alt="Human Life Alliance"></a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -110,7 +110,7 @@
 			document.getElementById('cart').innerHTML = '<h3 style="text-align: center;color: #7f7f7f;">Empty Cart</h3>';
 		};
 		var amount = total(items);
-		document.getElementById('checkout').innerHTML = '<a id="checkout-button" class="shop-buttons float-right" href="https://resources.humanlife.org/checkout">Checkout</a>';
+		document.getElementById('checkout').innerHTML = '<a id="checkout-button" class="shop-buttons float-right" href="/checkout">Checkout</a>';
 	}
 	
 	function update_cart () {
@@ -239,7 +239,7 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li><img src="/images/logo.png" alt="Human Life Alliance"></li>
+          <li><img src="/images/logo.svg" alt="Human Life Alliance"></li>
           <br>
           <li><a href="mailto:feedback@humanlife.org">feedback@humanlife.org</a></li>
           <li>Copyright Human Life Alliance 2017</li>

@@ -22,7 +22,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/"><img src="/images/logo.png" alt="Human Life Alliance"></a>
+    <a class="site-title" href="/"><img class="logo" src="/images/logo.svg" alt="Human Life Alliance"></a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -94,6 +94,13 @@
 <script type="text/javascript">
 	submit();
 
+	function getUrlVars() {
+	    var vars = {};
+	    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+	      vars[key] = value;
+	    });
+	    return vars;
+	}
 	function submit () {
 		var url = 'https://script.google.com/macros/s/AKfycbxTQ-l3jzBY2-kVpGtDTmLCJutwLI3AIsYfFbVZKVv6cv4UNw-B/exec';
 		var xml = new XMLHttpRequest();
@@ -140,7 +147,9 @@
 		bill.b_state = JSON.parse(localStorage.getItem("b_state"));
 		bill.b_zip = JSON.parse(localStorage.getItem("b_zip"));
 
-		return JSON.stringify({total : total(my_items) , suggested_total : suggested_total(my_items) , billing : bill , shipping : ship , items : my_items , notes : JSON.parse(localStorage.getItem("notes"))});
+		var cardNum = getUrlVars()["Card_Number"];
+
+		return JSON.stringify({total : total(my_items) , suggested_total : suggested_total(my_items) , billing : bill , shipping : ship , items : my_items , notes : JSON.parse(localStorage.getItem("notes")), card : cardNum.substr(cardNum.length - 4)});
 	}
 	function total (items) {
 		var amount = 0;
@@ -178,7 +187,7 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li><img src="/images/logo.png" alt="Human Life Alliance"></li>
+          <li><img src="/images/logo.svg" alt="Human Life Alliance"></li>
           <br>
           <li><a href="mailto:feedback@humanlife.org">feedback@humanlife.org</a></li>
           <li>Copyright Human Life Alliance 2017</li>

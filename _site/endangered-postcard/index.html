@@ -22,7 +22,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/"><img src="/images/logo.png" alt="Human Life Alliance"></a>
+    <a class="site-title" href="/"><img class="logo" src="/images/logo.svg" alt="Human Life Alliance"></a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -87,7 +87,7 @@
 
 
 
-
+<div id="item-notification"></div>
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="post-content" itemprop="articleBody">
 	<h2 class="post-title higher" itemprop="name headline">Endangered Postcard</h2>
@@ -96,6 +96,8 @@
   	
 	<div id="form_div" class="form-div">
 		<h2 class="post-title lower" itemprop="name headline">Endangered Postcard</h2>
+  		
+  		
 		 <div class="add-to-cart-form">
 		 	<input id="suggested-donation" type="radio" name="donation" value="suggested" onclick="suggested_donation();" checked="checked">
 		 	<label for="suggested-donation">Suggested Donation - $0.10</label>
@@ -151,8 +153,6 @@
 <!-- AddToAny END -->
   	</div>
   	<div>
-  		
-  		
   		<h4 class="item-description">Categories:</h4>
     	<table class="categories">
     		<tbody>
@@ -197,6 +197,8 @@
 		items.push(line_item);
 		var myJSON = JSON.stringify(items);
 		localStorage.setItem("items", myJSON);
+		document.getElementById("item-notification").innerHTML = "<div><b>" + line_item.quantity + ' Endangered Postcard added to cart</b></div><div id="lower"><a class="shop-buttons" onclick="window.history.back();">Back</a><a class="shop-buttons" href="/cart/">Go to Cart</a></div>';
+		scroll(0,0);
 	}
 	first_load();
 	function first_load () {
@@ -240,7 +242,7 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li><img src="/images/logo.png" alt="Human Life Alliance"></li>
+          <li><img src="/images/logo.svg" alt="Human Life Alliance"></li>
           <br>
           <li><a href="mailto:feedback@humanlife.org">feedback@humanlife.org</a></li>
           <li>Copyright Human Life Alliance 2017</li>

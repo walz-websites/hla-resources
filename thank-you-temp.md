@@ -9,26 +9,34 @@ permalink: /thank-you-temp-0451910951845610497409794/
 <script type="text/javascript">
 	submit();
 
-	function submit () {
-		var url = 'https://script.google.com/macros/s/AKfycbxTQ-l3jzBY2-kVpGtDTmLCJutwLI3AIsYfFbVZKVv6cv4UNw-B/exec';
-		var xml = new XMLHttpRequest();
-		var params = parameters();
-		xml.open('POST',url,true);
-		
-		xml.responseType = 'json';
-		xml.onload = function() {
-		      var status = xml.status;
-		      if (status == 200) {
-		        document.getElementById('loading').innerHTML = "<p>It Worked.</p>" + JSON.stringify(xml.response.id);
-		      } else {
-		        document.getElementById('loading').innerHTML = "<p>Error:</p>";
-		      }
-		    };
-		xml.send(params);
+	function getUrlVars() {
+	    var vars = {};
+	    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+	      vars[key] = value;
+	    });
+	    return vars;
 	}
-	function parameters () {
-		var my_items = JSON.parse(localStorage.getItem("items")) || new Array();
-
+	function submit () {
+		var my_items = JSON.parse(localStorage.getItem("items")) || null;
+		if(my_items != null){
+			var url = 'https://script.google.com/macros/s/AKfycbxTQ-l3jzBY2-kVpGtDTmLCJutwLI3AIsYfFbVZKVv6cv4UNw-B/exec';
+			var xml = new XMLHttpRequest();
+			var params = parameters(my_items);
+			xml.open('POST',url,true);
+			
+			xml.responseType = 'json';
+			xml.onload = function() {
+			      var status = xml.status;
+			      if (status == 200) {
+			        document.getElementById('loading').innerHTML = "<p>It Worked.</p>" + JSON.stringify(xml.response.id);
+			      } else {
+			        document.getElementById('loading').innerHTML = "<p>Error:</p>";
+			      }
+			    };
+			xml.send(params);
+		}
+	}
+	function parameters (my_items) {
 		var ship = new Object();
 		ship.s_f_name = JSON.parse(localStorage.getItem("s_f_name"));
 		ship.s_l_name = JSON.parse(localStorage.getItem("s_l_name"));
@@ -55,7 +63,9 @@ permalink: /thank-you-temp-0451910951845610497409794/
 		bill.b_state = JSON.parse(localStorage.getItem("b_state"));
 		bill.b_zip = JSON.parse(localStorage.getItem("b_zip"));
 
-		return JSON.stringify({total : total(my_items) , suggested_total : suggested_total(my_items) , billing : bill , shipping : ship , items : my_items , notes : JSON.parse(localStorage.getItem("notes"))});
+		var cardNum = getUrlVars()["Card_Number"];
+
+		return JSON.stringify({total : total(my_items) , suggested_total : suggested_total(my_items) , billing : bill , shipping : ship , items : my_items , notes : JSON.parse(localStorage.getItem("notes")), card : cardNum.substr(cardNum.length - 4)});
 	}
 	function total (items) {
 		var amount = 0;

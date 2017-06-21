@@ -25,7 +25,7 @@ permalink: /cart/
 			document.getElementById('cart').innerHTML = '<h3 style="text-align: center;color: #7f7f7f;">Empty Cart</h3>';
 		};
 		var amount = total(items);
-		document.getElementById('checkout').innerHTML = '<a id="checkout-button" class="shop-buttons float-right" href="{{ site.url }}{{ site.baseurl }}/checkout">Checkout</a>';
+		document.getElementById('checkout').innerHTML = '<a id="checkout-button" class="shop-buttons float-right" href="{{ site.baseurl }}/checkout">Checkout</a>';
 	}
 	
 	function update_cart () {

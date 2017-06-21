@@ -55,7 +55,7 @@ layout: default
   		{% assign price-amount = site.price.bumper-sticker.amount %}
   	{% endif %}
 {% endif %}
-
+<div id="item-notification"></div>
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="post-content" itemprop="articleBody">
 	<h2 class="post-title higher" itemprop="name headline">{{ page.title }}</h2>
@@ -66,6 +66,11 @@ layout: default
   	{% endif %}
 	<div id="form_div" class="form-div">
 		<h2 class="post-title lower" itemprop="name headline">{{ page.title }}</h2>
+  		{% if page.no-description  %}
+  		{% else %}
+	  		
+	    	{{ content }}
+    	{% endif %}
 		 <div class="add-to-cart-form">
 		 	<input id="suggested-donation" type="radio" name="donation" value="suggested" onclick="suggested_donation();" checked="checked">
 		 	<label for="suggested-donation">Suggested Donation - {{ price-text }}</label>
@@ -112,11 +117,6 @@ layout: default
   		{% if page.share %}{% include add-to-any.html %}{% endif %}
   	</div>
   	<div>
-  		{% if page.no-description  %}
-  		{% else %}
-	  		<h4 class="item-description">Description:</h4>
-	    	{{ content }}
-    	{% endif %}
   		<h4 class="item-description">Categories:</h4>
     	<table class="categories">
     		<tbody>
@@ -161,6 +161,8 @@ layout: default
 		items.push(line_item);
 		var myJSON = JSON.stringify(items);
 		localStorage.setItem("items", myJSON);
+		document.getElementById("item-notification").innerHTML = "<div><b>" + line_item.quantity + ' {{ page.title }} added to cart</b></div><div id="lower"><a class="shop-buttons" onclick="window.history.back();">Back</a><a class="shop-buttons" href="/cart/">Go to Cart</a></div>';
+		scroll(0,0);
 	}
 	first_load();
 	function first_load () {

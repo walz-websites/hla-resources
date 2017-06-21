@@ -22,7 +22,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/"><img src="/images/logo.png" alt="Human Life Alliance"></a>
+    <a class="site-title" href="/"><img class="logo" src="/images/logo.svg" alt="Human Life Alliance"></a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -87,7 +87,7 @@
 
 
 
-
+<div id="item-notification"></div>
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="post-content" itemprop="articleBody">
 	<h2 class="post-title higher" itemprop="name headline">Imposed Death: A Conference on Stealth Euthanasia 2012 DVD</h2>
@@ -96,6 +96,23 @@
   	
 	<div id="form_div" class="form-div">
 		<h2 class="post-title lower" itemprop="name headline">Imposed Death: A Conference on Stealth Euthanasia 2012 DVD</h2>
+  		
+	  		
+	    	<p>Imposed Death: A Conference on Stealth Euthanasia 2012 exposes common misunderstandings associated with Living Wills and end-of-life decisions. This DVD Set documents society’s progress down the “slippery slope” of assisted suicide and euthanasia to dehumanize the elderly, disabled and medically vulnerable.</p>
+
+<p>Talks included:</p>
+<ol>
+	<li>Euthanasia and Assisted Suicide; Let’s be Clear About What It Is. Speaker: Alex Schadenberg 49 min.</li>
+	<li>Stealth Euthanasia. Speaker: Ron Panzer, B.A., LPN 45 min.</li>
+	<li>Health Care Decision Making Part 1. Speaker: Julie Grimstad, LPN 47 min.</li>
+	<li>Health Care Decision Making Part 2. Speaker: Julie Grimstad, LPN 43 min.</li>
+	<li>Assisted Suicide and Euthanasia. Speaker: Alex Shadenberg 52 min.</li>
+	<li>Hospice. Speaker: Dr. Cristen Krebs 44 min.</li>
+	<li>Infant Euthanasia and Hospice. Speaker: Mary Kellett 35 min.</li>
+	<li>Questions &amp; Answers 19 min.</li>
+</ol>
+
+    	
 		 <div class="add-to-cart-form">
 		 	<input id="suggested-donation" type="radio" name="donation" value="suggested" onclick="suggested_donation();" checked="checked">
 		 	<label for="suggested-donation">Suggested Donation - $30.00</label>
@@ -151,23 +168,6 @@
 <!-- AddToAny END -->
   	</div>
   	<div>
-  		
-	  		<h4 class="item-description">Description:</h4>
-	    	<p>Imposed Death: A Conference on Stealth Euthanasia 2012 exposes common misunderstandings associated with Living Wills and end-of-life decisions. This DVD Set documents society’s progress down the “slippery slope” of assisted suicide and euthanasia to dehumanize the elderly, disabled and medically vulnerable.</p>
-
-<p>Talks included:</p>
-<ol>
-	<li>Euthanasia and Assisted Suicide; Let’s be Clear About What It Is. Speaker: Alex Schadenberg 49 min.</li>
-	<li>Stealth Euthanasia. Speaker: Ron Panzer, B.A., LPN 45 min.</li>
-	<li>Health Care Decision Making Part 1. Speaker: Julie Grimstad, LPN 47 min.</li>
-	<li>Health Care Decision Making Part 2. Speaker: Julie Grimstad, LPN 43 min.</li>
-	<li>Assisted Suicide and Euthanasia. Speaker: Alex Shadenberg 52 min.</li>
-	<li>Hospice. Speaker: Dr. Cristen Krebs 44 min.</li>
-	<li>Infant Euthanasia and Hospice. Speaker: Mary Kellett 35 min.</li>
-	<li>Questions &amp; Answers 19 min.</li>
-</ol>
-
-    	
   		<h4 class="item-description">Categories:</h4>
     	<table class="categories">
     		<tbody>
@@ -212,6 +212,8 @@
 		items.push(line_item);
 		var myJSON = JSON.stringify(items);
 		localStorage.setItem("items", myJSON);
+		document.getElementById("item-notification").innerHTML = "<div><b>" + line_item.quantity + ' Imposed Death: A Conference on Stealth Euthanasia 2012 DVD added to cart</b></div><div id="lower"><a class="shop-buttons" onclick="window.history.back();">Back</a><a class="shop-buttons" href="/cart/">Go to Cart</a></div>';
+		scroll(0,0);
 	}
 	first_load();
 	function first_load () {
@@ -255,7 +257,7 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li><img src="/images/logo.png" alt="Human Life Alliance"></li>
+          <li><img src="/images/logo.svg" alt="Human Life Alliance"></li>
           <br>
           <li><a href="mailto:feedback@humanlife.org">feedback@humanlife.org</a></li>
           <li>Copyright Human Life Alliance 2017</li>
