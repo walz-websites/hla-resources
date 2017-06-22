@@ -148,6 +148,11 @@ layout: default
 </article>
 <script type="text/javascript">
 	function add_to_cart () {
+		{% if page.after-checkout %}
+			var tmp = localStorage.getItem("after_checkout")) || "";
+			tmp = tmp + '{{ page.after-checkout }}';
+			localStorage.setItem("after_checkout",tmp);
+		{% endif %}
 		var line_item = new Object();
 		line_item.item = "{{ page.title }}";
 		line_item.id_number = "{{ page.my_id }}";
