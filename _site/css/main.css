@@ -352,6 +352,9 @@ img.logo {
   .product-video {
     width: 300px;
     height: 169px; } }
+span.required {
+  color: red; }
+
 /**
  * Reset some basic elements
  */
