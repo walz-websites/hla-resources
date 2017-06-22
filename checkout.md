@@ -256,6 +256,9 @@ permalink: /checkout/
 	}
 	function get_payeezy_info (amount) {
 		if (amount>0) {
+			alert(amount);
+			amount = amount.toFixed(2);
+			alert(amount);
 			var url = '{{ site.payeesyscript }}?amount=' + amount;
 			var xml = new XMLHttpRequest();
 			xml.open('GET',url,true);
