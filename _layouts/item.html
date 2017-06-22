@@ -149,7 +149,7 @@ layout: default
 <script type="text/javascript">
 	function add_to_cart () {
 		{% if page.after-checkout %}
-			var tmp = localStorage.getItem("after_checkout")) || "";
+			var tmp = localStorage.getItem("after_checkout") || "";
 			tmp = tmp + '{{ page.after-checkout }}';
 			localStorage.setItem("after_checkout",tmp);
 		{% endif %}

@@ -338,6 +338,20 @@ html {
 img.logo {
   width: 250px; }
 
+@media screen and (min-width: 550px) {
+  .product-video {
+    float: left;
+    width: 500px;
+    height: 281px;
+    margin: 100px 40px 100px 0; } }
+@media screen and (min-width: 450px) {
+  .product-video {
+    width: 400px;
+    height: 225px; } }
+@media screen and (max-width: 449px) {
+  .product-video {
+    width: 300px;
+    height: 169px; } }
 /**
  * Reset some basic elements
  */

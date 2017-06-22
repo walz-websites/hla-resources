@@ -193,6 +193,11 @@
 </article>
 <script type="text/javascript">
 	function add_to_cart () {
+		
+			var tmp = localStorage.getItem("after_checkout") || "";
+			tmp = tmp + '<p>To download the full <a href="{{ site.baseurl }}/pdf/friend-for-life.pdf">click here</a>.</p>';
+			localStorage.setItem("after_checkout",tmp);
+		
 		var line_item = new Object();
 		line_item.item = "Be a Friend for Life ebook";
 		line_item.id_number = "#0038";
