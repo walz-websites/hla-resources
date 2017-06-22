@@ -314,7 +314,7 @@ ul#primary-menu li a {
   display: block; }
 
 ul#primary-menu a {
-  background: #ffffff;
+  background-color: #fdfdfd;
   color: #002664; }
 
 ul#primary-menu a:hover {
@@ -325,12 +325,12 @@ ul#primary-menu a:hover {
 ul#primary-menu li.menu-item-has-children ul.sub-menu:hover {
   display: block;
   position: absolute;
-  background: #fff; }
+  background-color: #fdfdfd; }
 
 ul#primary-menu li.menu-item-has-children a:hover + ul.sub-menu {
   display: block;
   position: absolute;
-  background: #fff; }
+  background-color: #fdfdfd; }
 
 html {
   background: #1B1B1B; }

@@ -54,7 +54,7 @@ permalink: /thank-you-temp-0451910951845610497409794/
 		html = html + '<tr><td></td><td></td><td></td><td>$' + data.suggested_total.toFixed(2).toString() + '</td><td>$' + data.total.toFixed(2).toString() + '</td></tr></tbody></table>';
 
 		html = html + '<p>Your billing (not including any credit card information) and shipping information has been saved to this browser to allow for faster checkout next time. If you would like to delete this information <a id="removed" onclick="remove_b_s();">click here</a>.</p>';
-		var tmp = localStorage.getItem("after_checkout")) || "";
+		var tmp = localStorage.getItem("after_checkout") || "";
 		html = html + tmp;
 		localStorage.removeItem("items");
 		localStorage.removeItem("notes");
