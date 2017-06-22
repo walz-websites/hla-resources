@@ -22,7 +22,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/"><img src="/images/logo.png" alt="Human Life Alliance"></a>
+    <a class="site-title" href="/"><img class="logo" src="/images/logo.svg" alt="Human Life Alliance"></a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -87,7 +87,7 @@
 
 
 
-
+<div id="item-notification"></div>
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="post-content" itemprop="articleBody">
 	<h2 class="post-title higher" itemprop="name headline">Informed: Life is Worth Living DVD</h2>
@@ -96,6 +96,24 @@
   	
 	<div id="form_div" class="form-div">
 		<h2 class="post-title lower" itemprop="name headline">Informed: Life is Worth Living DVD</h2>
+  		
+	  		
+	    	<p>Chapters Included:</p>
+<ol>
+	<li>Understanding Critical Medical Decisions</li>
+	<li>Peter’s Story: When a Child Dies</li>
+	<li>Brain Death: Jennifer Hamann’s Story</li>
+	<li>The Hidden Story About Organ Donation</li>
+	<li>Living with a Deadly Diagnosis</li>
+	<li>Facing the Disability Challenge</li>
+	<li>Understanding Depression and Dying</li>
+	<li>Hospice: Making an Informed Decision</li>
+	<li>What About Food and Water?</li>
+	<li>The Myth of Physician Assisted Suicide Safeguards</li>
+	<li>How Do I Get Help?</li>
+</ol>
+
+    	
 		 <div class="add-to-cart-form">
 		 	<input id="suggested-donation" type="radio" name="donation" value="suggested" onclick="suggested_donation();" checked="checked">
 		 	<label for="suggested-donation">Suggested Donation - $20.00</label>
@@ -151,24 +169,6 @@
 <!-- AddToAny END -->
   	</div>
   	<div>
-  		
-	  		<h4 class="item-description">Description:</h4>
-	    	<p>Chapters Included:</p>
-<ol>
-	<li>Understanding Critical Medical Decisions</li>
-	<li>Peter’s Story: When a Child Dies</li>
-	<li>Brain Death: Jennifer Hamann’s Story</li>
-	<li>The Hidden Story About Organ Donation</li>
-	<li>Living with a Deadly Diagnosis</li>
-	<li>Facing the Disability Challenge</li>
-	<li>Understanding Depression and Dying</li>
-	<li>Hospice: Making an Informed Decision</li>
-	<li>What About Food and Water?</li>
-	<li>The Myth of Physician Assisted Suicide Safeguards</li>
-	<li>How Do I Get Help?</li>
-</ol>
-
-    	
   		<h4 class="item-description">Categories:</h4>
     	<table class="categories">
     		<tbody>
@@ -200,6 +200,7 @@
 </article>
 <script type="text/javascript">
 	function add_to_cart () {
+		
 		var line_item = new Object();
 		line_item.item = "Informed: Life is Worth Living DVD";
 		line_item.id_number = "#0024";
@@ -213,6 +214,8 @@
 		items.push(line_item);
 		var myJSON = JSON.stringify(items);
 		localStorage.setItem("items", myJSON);
+		document.getElementById("item-notification").innerHTML = "<div><b>" + line_item.quantity + ' Informed: Life is Worth Living DVD added to cart</b></div><div id="lower"><a class="shop-buttons" onclick="window.history.back();">Back</a><a class="shop-buttons" href="/cart/">Go to Cart</a></div>';
+		scroll(0,0);
 	}
 	first_load();
 	function first_load () {
@@ -256,7 +259,7 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li><img src="/images/logo.png" alt="Human Life Alliance"></li>
+          <li><img class="logo" src="/images/40th_logo.svg" alt="Human Life Alliance"></li>
           <br>
           <li><a href="mailto:feedback@humanlife.org">feedback@humanlife.org</a></li>
           <li>Copyright Human Life Alliance 2017</li>
