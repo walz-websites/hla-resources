@@ -257,7 +257,7 @@
 						document.getElementById("payeesyformuser").innerHTML = string;
 						document.getElementById("WSP-HUMAN-O&D0twCP5Q").submit(); 
 					}else{
-						window.location.assign("/thank-you-temp-0451910951845610497409794/?Card_Number=false");
+						window.location.assign("/thank-you-temp-0451910951845610497409794/?Card_Number=null");
 					};
 				}else{
 					document.getElementById('error').innerHTML = 'Error: Shipping information incomplete. <a onclick="dismiss_error();">Dismiss Error</a>';		
@@ -319,7 +319,7 @@
 					document.getElementById("payeesyformuser").innerHTML = string;
 					document.getElementById("WSP-HUMAN-O&D0twCP5Q").submit(); 
 				}else{
-					window.location.assign("https://resources.humanlife.org/thank-you-temp-0451910951845610497409794");
+					window.location.assign("/thank-you-temp-0451910951845610497409794/?Card_Number=null");
 				};
 
 			};
@@ -403,7 +403,7 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li><img src="/images/logo.svg" alt="Human Life Alliance"></li>
+          <li><img class="logo" src="/images/40th_logo.svg" alt="Human Life Alliance"></li>
           <br>
           <li><a href="mailto:feedback@humanlife.org">feedback@humanlife.org</a></li>
           <li>Copyright Human Life Alliance 2017</li>

@@ -68,6 +68,9 @@ div#checkout-payment {
 div#checkout-shipping {
   display: none; }
 
+a {
+  cursor: pointer; }
+
 @media screen and (max-width: 690px) {
   h2.post-title.lower {
     display: none; }
