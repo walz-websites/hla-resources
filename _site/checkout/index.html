@@ -341,9 +341,7 @@
 	}
 	function get_payeezy_info (amount) {
 		if (amount>0) {
-			alert(amount);
 			amount = amount.toFixed(2);
-			alert(amount);
 			var url = 'https://script.google.com/macros/s/AKfycbyi8SArIvUBMgX-cFBwRhqa_d_Z6z2tiv9_8biz1afVaNyGCfd6/exec?amount=' + amount;
 			var xml = new XMLHttpRequest();
 			xml.open('GET',url,true);
