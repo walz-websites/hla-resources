@@ -328,6 +328,35 @@ ul#primary-menu li.menu-item-has-children a:hover + ul.sub-menu{
 html{background: #1B1B1B;}
 img.logo{width: 250px;}
 
+@media screen and (max-width: 600px) {
+	ul#primary-menu{
+		display: list-item;
+		text-align: left;
+		width:170px;
+	}
+	ul#primary-menu li.menu-item-has-children ul.sub-menu{
+		display: list-item;
+		text-align: left;
+		box-shadow: none;
+		margin-left:15px;
+	}
+	ul#primary-menu li.menu-item-has-children ul.sub-menu:hover{
+		display: list-item;
+		text-align: left;
+		position: relative;
+	}
+	ul#primary-menu li.menu-item-has-children a:hover + ul.sub-menu{
+		display: list-item;
+		text-align: left;
+		position: relative;
+	}
+	ul#primary-menu li.menu-item-has-children ul.sub-menu li a{
+		line-height: 20px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+}
+
 @media screen and (min-width: 550px) {
 	.product-video{
 		float: left;
