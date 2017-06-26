@@ -134,7 +134,7 @@
 				amount = Number(data.items[i].suggested_donation) * Number(data.items[i].quantity);
 			}
 
-			html= html + '<tr class="cart-table-row"><td>' + '<img class="cart-item-image" src="/images/' + data.items[i].image + '"/>' + '</td><td>' + data.items[i].item + '<br>' + data.items[i].use + '</td><td>' + i + '</td><td>$' + (Number(data.items[i].suggested_donation) * Number(data.items[i].quantity)).toFixed(2).toString() + '</td><td>$' + amount.toFixed(2).toString() + "</td></tr>";
+			html= html + '<tr class="cart-table-row"><td>' + '<img class="cart-item-image" src="/images/' + data.items[i].image + '"/>' + '</td><td>' + data.items[i].item + '<br>' + data.items[i].use + '</td><td>' + data.items[i].quantity + '</td><td>$' + (Number(data.items[i].suggested_donation) * Number(data.items[i].quantity)).toFixed(2).toString() + '</td><td>$' + amount.toFixed(2).toString() + "</td></tr>";
 		};
 		html = html + '<tr><td></td><td></td><td></td><td>$' + data.suggested_total.toFixed(2).toString() + '</td><td>$' + data.total.toFixed(2).toString() + '</td></tr></tbody></table>';
 

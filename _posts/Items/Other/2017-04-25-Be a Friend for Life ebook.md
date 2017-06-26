@@ -9,7 +9,7 @@ store: true
 price:
     amount: 1.99
     text: "$1.99"
-after-checkout: '<p>To download the full <a href="{{ site.baseurl }}/pdf/friend-for-life.pdf">click here</a>.</p>'
+after-checkout: '<p>To download the full <cite>Be a Friend for Life ebook</cite> <a href="{{ site.baseurl }}/pdf/friend-for-life.pdf">click here</a>.</p>'
 
 date: 2017-04-10 14:19:33 -0500
 
