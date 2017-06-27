@@ -74,6 +74,8 @@ function list_items () {
     
   
     
+  
+    
       var item = {
         issues:"Abstinence".replace(/, /g, ",").replace(/ /g, "-"),
         item_type:"Publication".replace(/, /g, ",").replace(/ /g, "-"),
