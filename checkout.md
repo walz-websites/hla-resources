@@ -222,14 +222,14 @@ permalink: /checkout/
   					string = string + '<input type="hidden" name="x_phone"      		value="' + b_phone + '" />';
   					string = string + '<input type="hidden" name="x_email"      		value="' + b_email + '" />';
 
-  					string = string + '<input type="hidden" name="x_ship_to_first_name" value="' + s_f_name + '" />';
-  					string = string + '<input type="hidden" name="x_ship_to_last_name"  value="' + s_l_name + '" />';
-  					string = string + '<input type="hidden" name="x_ship_to_company"    value="' + s_o_name + '" />';
-  					string = string + '<input type="hidden" name="x_ship_to_address"    value="' + s_address_1 + " " + s_address_2 + '" />';
-  					string = string + '<input type="hidden" name="x_ship_to_city"       value="' + s_city + '" />';
-  					string = string + '<input type="hidden" name="x_ship_to_state"      value="' + s_state + '" />';
-  					string = string + '<input type="hidden" name="x_ship_to_zip"        value="' + s_zip + '" />';
-  					string = string + '<input type="hidden" name="x_ship_to_country"    value="' + s_country + '" />';
+  					string = string + '<input type="hidden" name="x_ship_to_first_name" value="' + b_f_name + '" />';
+  					string = string + '<input type="hidden" name="x_ship_to_last_name"  value="' + b_l_name + '" />';
+  					string = string + '<input type="hidden" name="x_ship_to_company"    value="' + b_o_name + '" />';
+  					string = string + '<input type="hidden" name="x_ship_to_address"    value="' + b_address_1 + " " + s_address_2 + '" />';
+  					string = string + '<input type="hidden" name="x_ship_to_city"       value="' + b_city + '" />';
+  					string = string + '<input type="hidden" name="x_ship_to_state"      value="' + b_state + '" />';
+  					string = string + '<input type="hidden" name="x_ship_to_zip"        value="' + b_zip + '" />';
+  					string = string + '<input type="hidden" name="x_ship_to_country"    value="' + b_country + '" />';
 
 					document.getElementById("payeesyformuser").innerHTML = string;
 					document.getElementById("{{ site.payeesyform }}").submit(); 

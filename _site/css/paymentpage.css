@@ -35,3 +35,7 @@ body div#document div#footer{
 html{
 	border-top: 5px solid #424242;
 }
+form div.custom_field_row:nth-child(3) div.custom_field label::after{
+    content: " Example: 0822 not 08/22";
+    font-weight: normal;
+}
