@@ -22,7 +22,7 @@ permalink: /checkout/
 	function show_billing () {
 		var pastval = read("b_state");
 		var pastcval = read("b_country");
-		var htmlString = '<h3>Billing Details</h3><p class="half first"><label for="">First Name<span class="required">*</span></label><input id="input-b-f-name" type="text" value="' + read("b_f_name") + '"></p><p class="half"><label for="">Last Name<span class="required">*</span></label><input id="input-b-l-name" type="text" value="' + read("b_l_name") + '"></p><p class="full"><label for="">Organization Name</label><input id="input-b-o-name" type="text" value="' + read("b_o_name") + '"></p><p class="half first"><label for="">Email Address<span class="required">*</span></label><input id="input-b-email" type="text" value="' + read("b_email") + '"></p><p class="half"><label for="">Phone<span class="required">*</span></label><input id="input-b-phone" type="text" value="' + read("b_phone") + '"></p><p class="full">{% include select-country.html type="b" %}</p><p class="full"><label for="">Address<span class="required">*</span></label><input id="input-b-address-1" value="' + read("b_address_1") + '" type="text" placeholder="Street Address" style="margin-bottom:5px;"><input id="input-b-address-2" value="' + read("b_address_2") + '" type="text" placeholder="Apartment, suite, unit etc. (optional)"></p><p class="full"><label for="">Town / City<span class="required">*</span></label><input id="input-b-city" value="' + read("b_city") + '" type="text"></p><p class="half first" id="b_state"><label for="billing_state" class="">State<span class="required">*</span></label><select id="input-b-state" name="billing_state" id="billing_state" class="state_select select2-hidden-accessible" data-placeholder="" tabindex="-1" aria-hidden="true"><br><option value="">Select an option…</option><option value="AL" ' + selected("AL",pastval) +'>Alabama</option><option value="AK" ' + selected("AK",pastval) +'>Alaska</option><option value="AZ" ' + selected("AZ",pastval) +'>Arizona</option><option value="AR" ' + selected("AR",pastval) +'>Arkansas</option><option value="CA" ' + selected("CA",pastval) +'>California</option><option value="CO" ' + selected("CO",pastval) +'>Colorado</option><option value="CT" ' + selected("CT",pastval) +'>Connecticut</option><option value="DE" ' + selected("DE",pastval) +'>Delaware</option><option value="DC" ' + selected("DC",pastval) +'>District Of Columbia</option><option value="FL" ' + selected("FL",pastval) +'>Florida</option><option value="GA" ' + selected("GA",pastval) +'>Georgia</option><option value="HI" ' + selected("HI",pastval) +'>Hawaii</option><option value="ID" ' + selected("ID",pastval) +'>Idaho</option><option value="IL" ' + selected("IL",pastval) +'>Illinois</option><option value="IN" ' + selected("IN",pastval) +'>Indiana</option><option value="IA" ' + selected("IA",pastval) +'>Iowa</option><option value="KS" ' + selected("KS",pastval) +'>Kansas</option><option value="KY" ' + selected("KY",pastval) +'>Kentucky</option><option value="LA" ' + selected("LA",pastval) +'>Louisiana</option><option value="ME" ' + selected("ME",pastval) +'>Maine</option><option value="MD" ' + selected("MD",pastval) +'>Maryland</option><option value="MA" ' + selected("MA",pastval) +'>Massachusetts</option><option value="MI" ' + selected("MI",pastval) +'>Michigan</option><option value="MN" ' + selected("MN",pastval) +'>Minnesota</option><option value="MS" ' + selected("MS",pastval) +'>Mississippi</option><option value="MO" ' + selected("MO",pastval) +'>Missouri</option><option value="MT" ' + selected("MT",pastval) +'>Montana</option><option value="NE" ' + selected("NE",pastval) +'>Nebraska</option><option value="NV" ' + selected("NV",pastval) +'>Nevada</option><option value="NH" ' + selected("NH",pastval) +'>New Hampshire</option><option value="NJ" ' + selected("NJ",pastval) +'>New Jersey</option><option value="NM" ' + selected("NM",pastval) +'>New Mexico</option><option value="NY" ' + selected("NY",pastval) +'>New York</option><option value="NC" ' + selected("NC",pastval) +'>North Carolina</option><option value="ND" ' + selected("ND",pastval) +'>North Dakota</option><option value="OH" ' + selected("OH",pastval) +'>Ohio</option><option value="OK" ' + selected("OK",pastval) +'>Oklahoma</option><option value="OR" ' + selected("OR",pastval) +'>Oregon</option><option value="PA" ' + selected("PA",pastval) +'>Pennsylvania</option><option value="RI" ' + selected("RI",pastval) +'>Rhode Island</option><option value="SC" ' + selected("SC",pastval) +'>South Carolina</option><option value="SD" ' + selected("SD",pastval) +'>South Dakota</option><option value="TN" ' + selected("TN",pastval) +'>Tennessee</option><option value="TX" ' + selected("TX",pastval) +'>Texas</option><option value="UT" ' + selected("UT",pastval) +'>Utah</option><option value="VT" ' + selected("VT",pastval) +'>Vermont</option><option value="VA" ' + selected("VA",pastval) +'>Virginia</option><option value="WA" ' + selected("WA",pastval) +'>Washington</option><option value="WV" ' + selected("WV",pastval) +'>West Virginia</option><option value="WI" ' + selected("WI",pastval) +'>Wisconsin</option><option value="WY" ' + selected("WY",pastval) +'>Wyoming</option><option value="AA" ' + selected("AA",pastval) +'>Armed Forces (AA)</option><option value="AE" ' + selected("AE",pastval) +'>Armed Forces (AE)</option><option value="AP" ' + selected("AP",pastval) +'>Armed Forces (AP)</option></select></p><p class="half"><label for="">ZIP<span class="required">*</span></label><input id="input-b-zip" value="' + read("b_zip") + '" type="text"></p>';
+		var htmlString = '<h3>Billing Details</h3><p class="half first"><label for="">First Name<span class="required">*</span></label><input id="input-b-f-name" type="text" value="' + read("b_f_name") + '"></p><p class="half"><label for="">Last Name<span class="required">*</span></label><input id="input-b-l-name" type="text" value="' + read("b_l_name") + '"></p><p class="full"><label for="">Organization Name</label><input id="input-b-o-name" type="text" value="' + read("b_o_name") + '"></p><p class="half first"><label for="">Email Address<span class="required">*</span></label><input id="input-b-email" type="text" value="' + read("b_email") + '"></p><p class="half"><label for="">Phone<span class="required">*</span></label><input id="input-b-phone" type="text" value="' + read("b_phone") + '"></p><p class="full">{% include select-country.html type="b" %}</p><p class="full"><label for="">Address<span class="required">*</span></label><input id="input-b-address-1" value="' + read("b_address_1") + '" type="text" placeholder="Street Address" style="margin-bottom:5px;"><input id="input-b-address-2" value="' + read("b_address_2") + '" type="text" placeholder="Apartment, suite, unit etc. (optional)"></p><p class="full"><label for="">Town / City<span class="required">*</span></label><input id="input-b-city" value="' + read("b_city") + '" type="text"></p><p class="half first" id="b_state"><label for="billing_state" class="">State<span class="required">*</span></label><select id="input-b-state" name="billing_state" id="billing_state" class="state_select select2-hidden-accessible" data-placeholder="" tabindex="-1" aria-hidden="true"><br><option value="">Select an option…</option><option value="Alabama" ' + selected("Alabama",pastval) +'>Alabama</option><option value="Alaska" ' + selected("Alaska",pastval) +'>Alaska</option><option value="Arizona" ' + selected("Arizona",pastval) +'>Arizona</option><option value="Arkansas" ' + selected("Arkansas",pastval) +'>Arkansas</option><option value="California" ' + selected("California",pastval) +'>California</option><option value="Colorado" ' + selected("Colorado",pastval) +'>Colorado</option><option value="Connecticut" ' + selected("Connecticut",pastval) +'>Connecticut</option><option value="Delaware" ' + selected("Delaware",pastval) +'>Delaware</option><option value="District Of Columbia" ' + selected("District Of Columbia",pastval) +'>District Of Columbia</option><option value="Florida" ' + selected("Florida",pastval) +'>Florida</option><option value="Georgia" ' + selected("Georgia",pastval) +'>Georgia</option><option value="Hawaii" ' + selected("Hawaii",pastval) +'>Hawaii</option><option value="Idaho" ' + selected("Idaho",pastval) +'>Idaho</option><option value="Illinois" ' + selected("Illinois",pastval) +'>Illinois</option><option value="Indiana" ' + selected("Indiana",pastval) +'>Indiana</option><option value="Iowa" ' + selected("Iowa",pastval) +'>Iowa</option><option value="Kansas" ' + selected("Kansas",pastval) +'>Kansas</option><option value="Kentucky" ' + selected("Kentucky",pastval) +'>Kentucky</option><option value="Louisiana" ' + selected("Louisiana",pastval) +'>Louisiana</option><option value="Maine" ' + selected("Maine",pastval) +'>Maine</option><option value="Maryland" ' + selected("Maryland",pastval) +'>Maryland</option><option value="Massachusetts" ' + selected("Massachusetts",pastval) +'>Massachusetts</option><option value="Michigan" ' + selected("Michigan",pastval) +'>Michigan</option><option value="Minnesota" ' + selected("Minnesota",pastval) +'>Minnesota</option><option value="Mississippi" ' + selected("Mississippi",pastval) +'>Mississippi</option><option value="Missouri" ' + selected("Missouri",pastval) +'>Missouri</option><option value="Montana" ' + selected("Montana",pastval) +'>Montana</option><option value="Nebraska" ' + selected("Nebraska",pastval) +'>Nebraska</option><option value="Nevada" ' + selected("Nevada",pastval) +'>Nevada</option><option value="New Hampshire" ' + selected("New Hampshire",pastval) +'>New Hampshire</option><option value="New Jersey" ' + selected("New Jersey",pastval) +'>New Jersey</option><option value="New Mexico" ' + selected("New Mexico",pastval) +'>New Mexico</option><option value="New York" ' + selected("New York",pastval) +'>New York</option><option value="North Carolina" ' + selected("North Carolina",pastval) +'>North Carolina</option><option value="North Dakota" ' + selected("North Dakota",pastval) +'>North Dakota</option><option value="Ohio" ' + selected("Ohio",pastval) +'>Ohio</option><option value="Oklahoma" ' + selected("Oklahoma",pastval) +'>Oklahoma</option><option value="Oregon" ' + selected("Oregon",pastval) +'>Oregon</option><option value="Pennsylvania" ' + selected("Pennsylvania",pastval) +'>Pennsylvania</option><option value="Rhode Island" ' + selected("Rhode Island",pastval) +'>Rhode Island</option><option value="South Carolina" ' + selected("South Carolina",pastval) +'>South Carolina</option><option value="South Dakota" ' + selected("South Dakota",pastval) +'>South Dakota</option><option value="Tennessee" ' + selected("Tennessee",pastval) +'>Tennessee</option><option value="Texas" ' + selected("Texas",pastval) +'>Texas</option><option value="Utah" ' + selected("Utah",pastval) +'>Utah</option><option value="Vermont" ' + selected("Vermont",pastval) +'>Vermont</option><option value="Virginia" ' + selected("Virginia",pastval) +'>Virginia</option><option value="Washington" ' + selected("Washington",pastval) +'>Washington</option><option value="West Virginia" ' + selected("West Virginia",pastval) +'>West Virginia</option><option value="Wisconsin" ' + selected("Wisconsin",pastval) +'>Wisconsin</option><option value="Wyoming" ' + selected("Wyoming",pastval) +'>Wyoming</option><option value="Armed Forces (AA)" ' + selected("Armed Forces (AA)",pastval) +'>Armed Forces (AA)</option><option value="Armed Forces (AE)" ' + selected("Armed Forces (AE)",pastval) +'>Armed Forces (AE)</option><option value="Armed Forces (AP)" ' + selected("Armed Forces (AP)",pastval) +'>Armed Forces (AP)</option></select></p><p class="half"><label for="">ZIP<span class="required">*</span></label><input id="input-b-zip" value="' + read("b_zip") + '" type="text"></p>';
 			document.getElementById('checkout-billing').innerHTML = htmlString;
 	}
 	function show_shipping () {
@@ -113,9 +113,9 @@ permalink: /checkout/
 		var s_city = document.getElementById("input-s-city").value;
 		var s_state = document.getElementById("input-s-state").value;
 		var s_zip = document.getElementById("input-s-zip").value;
-		if (b_f_name != "" && b_l_name != "" && b_email != "" && b_phone != "" && b_country != "" && b_address_1 != "" && b_city != "" && b_state != "" && b_zip != "") {
+		if (b_f_name != "" && b_l_name != "" && check_email(b_email) && b_phone != "" && b_country != "" && b_address_1 != "" && b_city != "" && b_state != "" && b_zip != "") {
 			if (document.getElementById("input-dif-ship").checked) {
-				if (s_f_name != "" && s_l_name != "" && s_email != "" && s_phone != "" && s_country != "" && s_address_1 != "" && s_city != "" && s_state != "" && s_zip != "") {
+				if (s_f_name != "" && s_l_name != "" && check_email(s_email) && s_phone != "" && s_country != "" && s_address_1 != "" && s_city != "" && s_state != "" && s_zip != "") {
 					localStorage.setItem("b_f_name", JSON.stringify(b_f_name));
 					localStorage.setItem("b_l_name", JSON.stringify(b_l_name));
 					localStorage.setItem("b_o_name", JSON.stringify(b_o_name));
@@ -175,7 +175,34 @@ permalink: /checkout/
 						window.location.assign("{{ site.baseurl }}{{ site.thankyoutemp }}/?Card_Number=null");
 					};
 				}else{
-					document.getElementById('error').innerHTML = 'Error: Shipping information incomplete. <a onclick="dismiss_error();">Dismiss Error</a>';		
+					if(s_f_name == ""){
+						document.getElementById("input-s-f-name").style = "border: solid red 2px;";
+					}
+					if(s_l_name == ""){
+						document.getElementById("input-s-l-name").style = "border: solid red 2px;";
+					}
+					if(!check_email(s_email)){
+						document.getElementById("input-s-email").style = "border: solid red 2px;";
+					}
+					if(s_phone == ""){
+						document.getElementById("input-s-phone").style = "border: solid red 2px;";
+					}
+					if(s_country == ""){
+						document.getElementById("input-s-country").style = "border: solid red 2px;";
+					}
+					if(s_address_1 == ""){
+						document.getElementById("input-s-address-1").style = "border: solid red 2px;";
+					}
+					if(s_city == ""){
+						document.getElementById("input-s-city").style = "border: solid red 2px;";
+					}
+					if(s_state == ""){
+						document.getElementById("input-s-state").style = "border: solid red 2px;";
+					}
+					if(s_zip == ""){
+						document.getElementById("input-s-zip").style = "border: solid red 2px;";
+					}
+					window.scrollTo(0, 0);		
 				}
 			}else{
 				localStorage.setItem("b_f_name", JSON.stringify(b_f_name));
@@ -239,8 +266,42 @@ permalink: /checkout/
 
 			};
 		}else{
-			document.getElementById('error').innerHTML = 'Error: Billing information incomplete. <a onclick="dismiss_error();">Dismiss Error</a>';
+			if(b_f_name == ""){
+				document.getElementById("input-b-f-name").style = "border: solid red 2px;";
+			}
+			if(b_l_name == ""){
+				document.getElementById("input-b-l-name").style = "border: solid red 2px;";
+			}
+			if(!check_email(b_email)){
+				document.getElementById("input-b-email").style = "border: solid red 2px;";
+			}
+			if(b_phone == ""){
+				document.getElementById("input-b-phone").style = "border: solid red 2px;";
+			}
+			if(b_country == ""){
+				document.getElementById("input-b-country").style = "border: solid red 2px;";
+			}
+			if(b_address_1 == ""){
+				document.getElementById("input-b-address-1").style = "border: solid red 2px;";
+			}
+			if(b_city == ""){
+				document.getElementById("input-b-city").style = "border: solid red 2px;";
+			}
+			if(b_state == ""){
+				document.getElementById("input-b-state").style = "border: solid red 2px;";
+			}
+			if(b_zip == ""){
+				document.getElementById("input-b-zip").style = "border: solid red 2px;";
+			}
+			window.scrollTo(0, 0);
 		};
+	}
+	function check_email(email){
+		if(email.indexOf("@") != -1 && email.indexOf(".") != -1){
+			return true;
+		}else{
+			return false;
+		}
 	}
 	function dismiss_error () {
 		document.getElementById('error').innerHTML = '';
