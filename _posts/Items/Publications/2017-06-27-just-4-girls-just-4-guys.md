@@ -9,9 +9,9 @@ store: false
 
 date: 2017-04-21 14:19:33 -0500
 
-front-pic: j4g-front.jpg
+front-pic: j4g2017front.jpg
 social-pic: j4g-social.jpg
-pdf: j4g.pdf
+pdf: j4g2017.pdf
 
 issues: Abstinence
 type: Publication
