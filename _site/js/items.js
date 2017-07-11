@@ -74,6 +74,22 @@ function list_items () {
     
   
     
+      var item = {
+        issues:"Abstinence".replace(/, /g, ",").replace(/ /g, "-"),
+        item_type:"Publication".replace(/, /g, ",").replace(/ /g, "-"),
+        target_age:"Teens, Young Adults".replace(/, /g, ",").replace(/ /g, "-"),
+        target_audience:"Church Groups, College Students, High School Students, Youth Group".replace(/, /g, ",").replace(/ /g, "-"),
+        item_language:"English".replace(/, /g, ",").replace(/ /g, "-"),
+        item_title:"Just for Girls/Just for Guys 2017-18",
+        pic:"j4g2017front.jpg",
+        url:"/just-4-girls-just-4-guys/",
+        loc:"009980",
+        id:"#0103",
+        size:"33",
+        price:{amount:"",text:""}
+      };
+      items.push(item);
+    
   
     
       var item = {
@@ -84,7 +100,7 @@ function list_items () {
         item_language:"English".replace(/, /g, ",").replace(/ /g, "-"),
         item_title:"Just for Girls/Just for Guys 2016-17",
         pic:"j4g-front.jpg",
-        url:"/just-4-girls-just-4-guys/",
+        url:"/just-4-girls-just-4-guys-2016/",
         loc:"014000",
         id:"#0014",
         size:"33",

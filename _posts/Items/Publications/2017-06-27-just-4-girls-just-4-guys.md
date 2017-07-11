@@ -4,13 +4,13 @@ category: item
 my_id: "#0103"
 loc: "009980"
 title: "Just for Girls/Just for Guys 2017-18"
-permalink: /new/
-store: false
+permalink: /just-4-girls-just-4-guys/
+store: true
 
 date: 2017-04-21 14:19:33 -0500
 
 front-pic: j4g2017front.jpg
-social-pic: j4g-social.jpg
+social-pic: j4g2017social.jpg
 pdf: j4g2017.pdf
 
 issues: Abstinence
