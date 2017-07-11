@@ -66,10 +66,11 @@ layout: default
   	{% endif %}
 	<div id="form_div" class="form-div">
 		<h2 class="post-title lower" itemprop="name headline">{{ page.title }}</h2>
-  		{% if page.no-description  %}
-  		{% else %}
-	  		
-	    	{{ content }}
+		{% if page.type != "DVD" %}
+  			{% if page.no-description  %}
+  			{% else %}
+	    		{{ content }}
+    		{% endif %}
     	{% endif %}
 		 <div class="add-to-cart-form">
 		 	<input id="suggested-donation" type="radio" name="donation" value="suggested" onclick="suggested_donation();" checked="checked">
@@ -117,6 +118,12 @@ layout: default
   		{% if page.share %}{% include add-to-any.html %}{% endif %}
   	</div>
   	<div>
+  		{% if page.type == "DVD" %}
+  			{% if page.no-description  %}
+  			{% else %}
+	    		{{ content }}
+    		{% endif %}
+    	{% endif %}
   		<h4 class="item-description">Categories:</h4>
     	<table class="categories">
     		<tbody>
