@@ -110,6 +110,8 @@ function list_items () {
     
   
     
+  
+    
       var item = {
         issues:"Euthanasia".replace(/, /g, ",").replace(/ /g, "-"),
         item_type:"Publication".replace(/, /g, ",").replace(/ /g, "-"),
