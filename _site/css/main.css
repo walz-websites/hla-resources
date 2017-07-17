@@ -120,6 +120,17 @@ div.form-div a.shop-buttons:hover {
   font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   cursor: pointer; }
 
+.shop-buttons:visited {
+  background: #9CA3C1;
+  color: #ffffff;
+  padding: .18em 0.6em;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 10px;
+  border: none;
+  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  cursor: pointer; }
+
 .shop-buttons:hover {
   background: #002664;
   color: #ffffff;

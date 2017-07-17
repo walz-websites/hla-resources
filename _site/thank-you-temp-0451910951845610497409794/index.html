@@ -84,7 +84,7 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Thank You</h1>
+    <h1 id="post-title" class="post-title">Thank You</h1>
   </header>
 
   <div class="post-content">
@@ -92,7 +92,7 @@
 <p><br /><br /><br /><br /><br /><br /></p>
 
 <script type="text/javascript">
-	submit();
+	start();
 
 	function getUrlVars() {
 	    var vars = {};
@@ -101,8 +101,94 @@
 	    });
 	    return vars;
 	}
+	function start(){
+		var response_code = getUrlVars()["x_response_code"];
+		var items = JSON.parse(localStorage.getItem("items")) || null;
+		if (items) {
+			var mytotal = total(items);
+			if(mytotal>0){
+				if(response_code == "1"){
+					submit();
+				}else if(response_code == "2"){
+					failed();
+				}else{
+					error();
+				}
+			}else{
+				submit();
+			}
+		}
+		else{
+			submit();
+		}
+	}
+	function failed() {
+		var items = JSON.parse(localStorage.getItem("items")) || null;
+		var mytotal = total(items);
+		var mysuggested_total = suggested_total(items);
+
+		document.getElementById('post-title').innerHTML = "Your payment failed";
+
+		var html = '<p>Your payment failed. Some things to check:</p>';
+		html = html + '<ul><li>Is your card expired?</li><li>Is your card active (check with your bank)?</li><li>Double-check that the name, expiration date, and CVV number are correct.</li><li>Some cards have limits, are you over yours?</li></ul>';
+		html = html + '<p>To go to the checkout to try again <a class="shop-buttons" href="/checkout/">click here.</a></p>';
+		html = html + '<p>To place the order with no donation at this time <a class="shop-buttons" onclick="zero();">click here.</a></p>';
+		html = html + '<p>Your current order can be found below.</p>';
+		html = html + '<table  class="cart-table-m cart-table"><tbody><tr><th></th><th>Item</th><th>Quantity</th><th>Suggested Donation</th><th>Donation</th></tr>';
+
+		for (var i = 0; i < items.length; i++) {
+			var amount = 0;
+			if(items[i].donation){
+				amount = Number(items[i].suggested_donation) * Number(items[i].quantity);
+			}
+
+			html= html + '<tr class="cart-table-row"><td>' + '<img class="cart-item-image" src="/images/' + items[i].image + '"/>' + '</td><td>' + items[i].item + '<br>' + items[i].use + '</td><td>' + items[i].quantity + '</td><td>$' + (Number(items[i].suggested_donation) * Number(items[i].quantity)).toFixed(2).toString() + '</td><td>$' + amount.toFixed(2).toString() + "</td></tr>";
+		};
+		html = html + '<tr><td></td><td></td><td></td><td>$' + mysuggested_total.toFixed(2).toString() + '</td><td>$' + mytotal.toFixed(2).toString() + '</td></tr></tbody></table>';
+
+		document.getElementById('loading').innerHTML = html;
+	}
+	function error(){
+		var items = JSON.parse(localStorage.getItem("items")) || null;
+		var mytotal = total(items);
+		var mysuggested_total = suggested_total(items);
+
+		document.getElementById('post-title').innerHTML = "Error";
+
+		var html = '<p>An error occurred while processing your payment. Please try again later.</p>';
+		html = html + '<p>To go to the checkout to try again <a class="shop-buttons" href="/checkout/">click here.</a></p>';
+		html = html + '<p>To place the order with no donation at this time <a class="shop-buttons" onclick="zero();">click here.</a></p>';
+		html = html + '<p>Your current order can be found below.</p>';
+		html = html + '<table  class="cart-table-m cart-table"><tbody><tr><th></th><th>Item</th><th>Quantity</th><th>Suggested Donation</th><th>Donation</th></tr>';
+
+		for (var i = 0; i < items.length; i++) {
+			var amount = 0;
+			if(items[i].donation){
+				amount = Number(items[i].suggested_donation) * Number(items[i].quantity);
+			}
+
+			html= html + '<tr class="cart-table-row"><td>' + '<img class="cart-item-image" src="/images/' + items[i].image + '"/>' + '</td><td>' + items[i].item + '<br>' + items[i].use + '</td><td>' + items[i].quantity + '</td><td>$' + (Number(items[i].suggested_donation) * Number(items[i].quantity)).toFixed(2).toString() + '</td><td>$' + amount.toFixed(2).toString() + "</td></tr>";
+		};
+		html = html + '<tr><td></td><td></td><td></td><td>$' + mysuggested_total.toFixed(2).toString() + '</td><td>$' + mytotal.toFixed(2).toString() + '</td></tr></tbody></table>';
+
+		document.getElementById('loading').innerHTML = html;
+	}
+	function zero () {
+		var items = JSON.parse(localStorage.getItem("items")) || null;
+		if (items) {
+			for (var i = items.length - 1; i >= 0; i--) {
+				if (items[i].donation) {
+					items[i].donation = false;
+				};
+			};
+			var myJSON = JSON.stringify(items);
+			localStorage.setItem("items", myJSON);
+		}
+		window.location.reload(false);
+	}
 	function submit () {
 		var my_items = JSON.parse(localStorage.getItem("items")) || null;
+
 		if(my_items != null){
 			var url = 'https://script.google.com/macros/s/AKfycbxTQ-l3jzBY2-kVpGtDTmLCJutwLI3AIsYfFbVZKVv6cv4UNw-B/exec';
 			var xml = new XMLHttpRequest();
@@ -113,7 +199,7 @@
 			xml.onload = function() {
 			      var status = xml.status;
 			      if (status == 200) {
-			        document.getElementById('loading').innerHTML = thankyou(params,JSON.stringify(xml.response.id));
+			        document.getElementById('loading').innerHTML = thankyou(JSON.stringify(xml.response.id));
 			      } else {
 			        document.getElementById('loading').innerHTML = "<p>Error:</p>";
 			      }
@@ -123,20 +209,20 @@
 			document.getElementById('loading').innerHTML = '<p>Sorry your order has already been submitted. If you are just trying to remove your billing (not including any credit card information) and shipping information <a id="removed" onclick="remove_b_s();">click here</a>.</p>';
 		}
 	}
-	function thankyou (data,id) {
-		data = JSON.parse(data);
+	function thankyou (id) {
+		var items = JSON.parse(localStorage.getItem("items")) || null;
 		var html = '<p>Request# ' + id + '</p>';
 		html = html + '<table  class="cart-table-m cart-table"><tbody><tr><th></th><th>Item</th><th>Quantity</th><th>Suggested Donation</th><th>Donation</th></tr>';
 
-		for (var i = 0; i < data.items.length; i++) {
+		for (var i = 0; i < items.length; i++) {
 			var amount = 0;
-			if(if_cart_donation(data.items[i].donation,"donation") == "donation"){
-				amount = Number(data.items[i].suggested_donation) * Number(data.items[i].quantity);
+			if(items[i].donation){
+				amount = Number(items[i].suggested_donation) * Number(items[i].quantity);
 			}
 
-			html= html + '<tr class="cart-table-row"><td>' + '<img class="cart-item-image" src="/images/' + data.items[i].image + '"/>' + '</td><td>' + data.items[i].item + '<br>' + data.items[i].use + '</td><td>' + data.items[i].quantity + '</td><td>$' + (Number(data.items[i].suggested_donation) * Number(data.items[i].quantity)).toFixed(2).toString() + '</td><td>$' + amount.toFixed(2).toString() + "</td></tr>";
+			html= html + '<tr class="cart-table-row"><td>' + '<img class="cart-item-image" src="/images/' + items[i].image + '"/>' + '</td><td>' + items[i].item + '<br>' + items[i].use + '</td><td>' + items[i].quantity + '</td><td>$' + (Number(items[i].suggested_donation) * Number(items[i].quantity)).toFixed(2).toString() + '</td><td>$' + amount.toFixed(2).toString() + "</td></tr>";
 		};
-		html = html + '<tr><td></td><td></td><td></td><td>$' + data.suggested_total.toFixed(2).toString() + '</td><td>$' + data.total.toFixed(2).toString() + '</td></tr></tbody></table>';
+		html = html + '<tr><td></td><td></td><td></td><td>$' + suggested_total(items).toFixed(2).toString() + '</td><td>$' + total(items).toFixed(2).toString() + '</td></tr></tbody></table>';
 
 		html = html + '<p>Your billing (not including any credit card information) and shipping information has been saved to this browser to allow for faster checkout next time. If you would like to delete this information <a id="removed" onclick="remove_b_s();">click here</a>.</p>';
 		var tmp = localStorage.getItem("after_checkout") || "";
@@ -209,7 +295,7 @@
 
 		var cardNum = getUrlVars()["Card_Number"];
 
-		return JSON.stringify({total : total(my_items) , suggested_total : suggested_total(my_items) , billing : bill , shipping : ship , items : my_items , notes : JSON.parse(localStorage.getItem("notes")), card : cardNum.substr(cardNum.length - 4)});
+		return JSON.stringify({total : total(my_items).toFixed(2) , suggested_total : suggested_total(my_items).toFixed(2) , billing : bill , shipping : ship , items : my_items , notes : JSON.parse(localStorage.getItem("notes")), card : cardNum.substr(cardNum.length - 4)});
 	}
 	function total (items) {
 		var amount = 0;
@@ -224,9 +310,7 @@
 	function suggested_total (items) {
 		var amount = 0;
 		for (var i = items.length - 1; i >= 0; i--) {
-			if (items[i].use != "none") {
-				amount = amount + (Number(items[i].suggested_donation) * Number(items[i].quantity));
-			};
+			amount = Number(amount) + Number(Number(items[i].suggested_donation) * Number(items[i].quantity));
 		};
 		return amount;
 	}
