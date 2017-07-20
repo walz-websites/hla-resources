@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Adoption is a choice Fact Sheet</title>
+  <title>Surrogacy Fact Sheet</title>
   <meta name="description" content="">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://resources.humanlife.org/adoption/">
+  <link rel="canonical" href="https://resources.humanlife.org/surrogacy/">
   <link rel="alternate" type="application/rss+xml" title="Human Life Alliance" href="https://resources.humanlife.org/feed.xml">
   <script src="https://use.fontawesome.com/87dcc5176e.js"></script>
 </head>
@@ -90,12 +90,12 @@
 <div id="item-notification"></div>
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <div class="post-content" itemprop="articleBody">
-	<h2 class="post-title higher" itemprop="name headline">Adoption is a choice Fact Sheet</h2>
+	<h2 class="post-title higher" itemprop="name headline">Surrogacy Fact Sheet</h2>
   	
-  		<img class="item-image" src="/images/adoption-fact-sheet-front.jpg" alt="Adoption is a choice Fact Sheet">
+  		<img class="item-image" src="/images/surrogacy-front.jpg" alt="Surrogacy Fact Sheet">
   	
 	<div id="form_div" class="form-div">
-		<h2 class="post-title lower" itemprop="name headline">Adoption is a choice Fact Sheet</h2>
+		<h2 class="post-title lower" itemprop="name headline">Surrogacy Fact Sheet</h2>
 		
   			
   			
@@ -141,7 +141,7 @@
   			<input id="quantity" class="input-text qty text" step="1" min="1" max="99999" name="quantity" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" type="number">
   			<input type = "submit" class="shop-buttons" onclick="add_to_cart();" value="Add to Cart">
 		</div> 
-		<a class="shop-buttons" href="https://resources.humanlife.org/pdf/adoption.pdf">View PDF</a>
+		<a class="shop-buttons" href="https://resources.humanlife.org/pdf/surrogacy.pdf">View PDF</a>
 		
   		<!-- AddToAny BEGIN -->
 <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
@@ -189,10 +189,10 @@
 	function add_to_cart () {
 		
 		var line_item = new Object();
-		line_item.item = "Adoption is a choice Fact Sheet";
-		line_item.id_number = "#0104";
-		line_item.url = "/adoption/";
-		line_item.image = "adoption-fact-sheet-front.jpg";
+		line_item.item = "Surrogacy Fact Sheet";
+		line_item.id_number = "#0106";
+		line_item.url = "/surrogacy/";
+		line_item.image = "surrogacy-front.jpg";
 		line_item.donation = document.getElementById("suggested-donation").checked;
 		line_item.suggested_donation = "0.1";
 		line_item.quantity = document.getElementById("quantity").value;
@@ -201,7 +201,7 @@
 		items.push(line_item);
 		var myJSON = JSON.stringify(items);
 		localStorage.setItem("items", myJSON);
-		document.getElementById("item-notification").innerHTML = "<div><b>" + line_item.quantity + ' Adoption is a choice Fact Sheet added to cart</b></div><div id="lower"><a class="shop-buttons" onclick="window.history.back();">Back</a><a class="shop-buttons" href="/cart/">Go to Cart</a></div>';
+		document.getElementById("item-notification").innerHTML = "<div><b>" + line_item.quantity + ' Surrogacy Fact Sheet added to cart</b></div><div id="lower"><a class="shop-buttons" onclick="window.history.back();">Back</a><a class="shop-buttons" href="/cart/">Go to Cart</a></div>';
 		scroll(0,0);
 	}
 	first_load();

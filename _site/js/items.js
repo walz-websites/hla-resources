@@ -110,6 +110,58 @@ function list_items () {
     
   
     
+      var item = {
+        issues:"Abortion".replace(/, /g, ",").replace(/ /g, "-"),
+        item_type:"Fact Sheet".replace(/, /g, ",").replace(/ /g, "-"),
+        target_age:"Teens, Young Adults, Adults".replace(/, /g, ",").replace(/ /g, "-"),
+        target_audience:"Church Groups, College Students, High School Students, Youth Group".replace(/, /g, ",").replace(/ /g, "-"),
+        item_language:"English".replace(/, /g, ",").replace(/ /g, "-"),
+        item_title:"Surrogacy Fact Sheet",
+        pic:"surrogacy-front.jpg",
+        url:"/surrogacy/",
+        loc:"023003",
+        id:"#0106",
+        size:"34",
+        price:{amount:"",text:""}
+      };
+      items.push(item);
+    
+  
+    
+      var item = {
+        issues:"Abortion".replace(/, /g, ",").replace(/ /g, "-"),
+        item_type:"Fact Sheet".replace(/, /g, ",").replace(/ /g, "-"),
+        target_age:"Teens, Young Adults, Adults".replace(/, /g, ",").replace(/ /g, "-"),
+        target_audience:"Church Groups, College Students, High School Students, Youth Group".replace(/, /g, ",").replace(/ /g, "-"),
+        item_language:"English".replace(/, /g, ",").replace(/ /g, "-"),
+        item_title:"Maternal Mortality India Fact Sheet",
+        pic:"maternal-mortality-india-fact-sheet-front.jpg",
+        url:"/maternal-mortality-india/",
+        loc:"023002",
+        id:"#0105",
+        size:"34",
+        price:{amount:"",text:""}
+      };
+      items.push(item);
+    
+  
+    
+      var item = {
+        issues:"Abortion".replace(/, /g, ",").replace(/ /g, "-"),
+        item_type:"Fact Sheet".replace(/, /g, ",").replace(/ /g, "-"),
+        target_age:"Teens, Young Adults, Adults".replace(/, /g, ",").replace(/ /g, "-"),
+        target_audience:"Church Groups, College Students, High School Students, Youth Group".replace(/, /g, ",").replace(/ /g, "-"),
+        item_language:"English".replace(/, /g, ",").replace(/ /g, "-"),
+        item_title:"Adoption is a choice Fact Sheet",
+        pic:"adoption-fact-sheet-front.jpg",
+        url:"/adoption/",
+        loc:"023001",
+        id:"#0104",
+        size:"34",
+        price:{amount:"",text:""}
+      };
+      items.push(item);
+    
   
     
       var item = {
