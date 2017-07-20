@@ -10,4 +10,81 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <script src="https://use.fontawesome.com/87dcc5176e.js"></script>
+
+
+  {% if page.category == item %}
+  {% if page.type == "Publication" %}
+	{% if page.price.amount %}
+  		{% assign price-text = page.price.text %}
+  		{% assign price-amount = page.price.amount %}
+	{% else %}
+  		{% assign price-text = site.price.publication.text %}
+  		{% assign price-amount = site.price.publication.amount %}
+  	{% endif %}
+{% endif %}
+{% if page.type == "DVD" %}
+	{% if page.price.amount %}
+  		{% assign price-text = page.price.text %}
+  		{% assign price-amount = page.price.amount %}
+	{% else %}
+  		{% assign price-text = site.price.dvd.text %}
+  		{% assign price-amount = site.price.dvd.amount %}
+  	{% endif %}
+{% endif %}
+{% if page.type == "Fact Sheet" %}
+	{% if page.price.amount %}
+  		{% assign price-text = page.price.text %}
+  		{% assign price-amount = page.price.amount %}
+	{% else %}
+  		{% assign price-text = site.price.fact-sheet.text %}
+  		{% assign price-amount = site.price.fact-sheet.amount %}
+  	{% endif %}
+{% endif %}
+{% if page.type == "Poster" %}
+	{% if page.price.amount %}
+  		{% assign price-text = page.price.text %}
+  		{% assign price-amount = page.price.amount %}
+	{% else %}
+  		{% assign price-text = site.price.poster.text %}
+  		{% assign price-amount = site.price.poster.amount %}
+  	{% endif %}
+{% endif %}
+{% if page.type == "Other" %}
+	{% if page.price.amount %}
+  		{% assign price-text = page.price.text %}
+  		{% assign price-amount = page.price.amount %}
+	{% else %}
+  		{% assign price-text = site.price.other.text %}
+  		{% assign price-amount = site.price.other.amount %}
+  	{% endif %}
+{% endif %}
+{% if page.type == "Bumper Sticker" %}
+	{% if page.price.amount %}
+  		{% assign price-text = page.price.text %}
+  		{% assign price-amount = page.price.amount %}
+	{% else %}
+  		{% assign price-text = site.price.bumper-sticker.text %}
+  		{% assign price-amount = site.price.bumper-sticker.amount %}
+  	{% endif %}
+{% endif %}
+  <meta property="fb:app_id"                content="264837497346590" /> 
+  <meta property="og:type"                  content="product.item" /> 
+  <meta property="og:url"                   content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" /> 
+  <meta property="og:title"                 content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" /> 
+  <meta property="og:image"                 content="{{ site.baseurl | prepend: site.url }}/images/{% if page.social-pic %}{{ page.social-pic }}{% else %}resources.jpg{% endif %}" /> 
+  <meta property="product:retailer_item_id" content="{{ page.my_id }}" /> 
+  <meta property="product:price:amount"     content="{{ price-amount }}" /> 
+  <meta property="product:price:currency"   content="USD" /> 
+  <meta property="product:availability"     content="in stock" /> 
+  <meta property="product:condition"        content="new" /> 
+  {% else %}
+  <meta property="fb:app_id"                content="264837497346590" /> 
+  <meta property="og:url"                   content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:type"               content="article" />
+  <meta property="og:title"              content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  {% assign content = post.content | strip_newlines %}
+  
+  <meta property="og:description"        content="{% if content == ""  %}{{ site.description }}{% else %}{{ content }}{% endif %}" />
+  <meta property="og:image"                 content="{{ site.baseurl | prepend: site.url }}/images/{% if page.social-pic %}{{ page.social-pic }}{% else %}resources.jpg{% endif %}" /> 
+  {% endif %}
 </head>
