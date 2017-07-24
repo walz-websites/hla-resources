@@ -15,6 +15,7 @@ date: 2017-04-10 14:19:33 -0500
 
 front-pic: nuestra-biografia-everyones-biography-front.jpg
 social-pic: nuestra-biografia-everyones-biography-social.jpg
+pdf: nuestra-biografia.pdf
 
 issues: Abortion
 type: Other

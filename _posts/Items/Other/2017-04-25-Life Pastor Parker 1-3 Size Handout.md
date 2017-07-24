@@ -14,6 +14,7 @@ date: 2017-04-10 14:19:33 -0500
 
 front-pic: life-pastor-parker-13-size-handout-front.jpg
 social-pic: life-pastor-parker-13-size-handout-social.jpg
+pdf: life-handout-pastor-parker-third.pdf
 
 issues: Abortion
 type: Other

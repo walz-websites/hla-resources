@@ -15,6 +15,7 @@ date: 2017-04-10 14:19:33 -0500
 
 front-pic: everyones-biography-front.jpg
 social-pic: everyones-biography-social.jpg
+pdf: everyones-biography.pdf
 
 issues: Abortion
 type: Other

@@ -1075,7 +1075,7 @@ function list_items () {
         url:"/life-pastor-parker-13-size-handout/",
         loc:"037000",
         id:"#0037",
-        size:"34",
+        size:"35",
         price:{amount:"0.1",text:"$0.10"}
       };
       items.push(item);
@@ -1093,7 +1093,7 @@ function list_items () {
         url:"/life-pastor-parker-12-size-handout/",
         loc:"036000",
         id:"#0036",
-        size:"34",
+        size:"35",
         price:{amount:"0.1",text:"$0.10"}
       };
       items.push(item);
