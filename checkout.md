@@ -618,7 +618,7 @@ permalink: /checkout/
 	function get_payeezy_info (cost) {
 		if (cost>0) {
 			cost = cost.toFixed(2);
-			var url = '{{ site.payeesyscript }}?cost=' + cost;
+			var url = '{{ site.payeesyscript }}';
 			var xml = new XMLHttpRequest();
 			xml.open('POST',url,true);
 			xml.responseType = 'json';

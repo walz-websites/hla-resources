@@ -720,7 +720,7 @@
 	function get_payeezy_info (cost) {
 		if (cost>0) {
 			cost = cost.toFixed(2);
-			var url = 'https://script.google.com/macros/s/AKfycbxPwrbjuyCdgpZtUwh3cLUDkfxobOnd-swmKHylcJs4mLsFcvI/exec?cost=' + cost;
+			var url = 'https://script.google.com/macros/s/AKfycbxPwrbjuyCdgpZtUwh3cLUDkfxobOnd-swmKHylcJs4mLsFcvI/exec';
 			var xml = new XMLHttpRequest();
 			xml.open('POST',url,true);
 			xml.responseType = 'json';
