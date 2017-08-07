@@ -615,12 +615,12 @@ permalink: /checkout/
 		};
 		return amount;
 	}
-	function get_payeezy_info (amount) {
-		if (amount>0) {
-			amount = amount.toFixed(2);
-			var url = '{{ site.payeesyscript }}?amount=' + amount;
+	function get_payeezy_info (cost) {
+		if (cost>0) {
+			cost = cost.toFixed(2);
+			var url = '{{ site.payeesyscript }}?cost=' + cost;
 			var xml = new XMLHttpRequest();
-			xml.open('GET',url,true);
+			xml.open('POST',url,true);
 			xml.responseType = 'json';
 			xml.onload = function() {
 		      var status = xml.status;
@@ -630,7 +630,7 @@ permalink: /checkout/
 		        make_pay_error();
 		      }
 		    };
-		    xml.send();
+		    xml.send(JSON.stringify({amount : cost}));
 	    };
 
 	}

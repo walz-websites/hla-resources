@@ -717,12 +717,12 @@
 		};
 		return amount;
 	}
-	function get_payeezy_info (amount) {
-		if (amount>0) {
-			amount = amount.toFixed(2);
-			var url = 'https://script.google.com/macros/s/AKfycbxPwrbjuyCdgpZtUwh3cLUDkfxobOnd-swmKHylcJs4mLsFcvI/exec?amount=' + amount;
+	function get_payeezy_info (cost) {
+		if (cost>0) {
+			cost = cost.toFixed(2);
+			var url = 'https://script.google.com/macros/s/AKfycbxPwrbjuyCdgpZtUwh3cLUDkfxobOnd-swmKHylcJs4mLsFcvI/exec?cost=' + cost;
 			var xml = new XMLHttpRequest();
-			xml.open('GET',url,true);
+			xml.open('POST',url,true);
 			xml.responseType = 'json';
 			xml.onload = function() {
 		      var status = xml.status;
@@ -732,7 +732,7 @@
 		        make_pay_error();
 		      }
 		    };
-		    xml.send();
+		    xml.send(JSON.stringify({amount : cost}));
 	    };
 
 	}
