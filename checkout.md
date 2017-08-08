@@ -665,4 +665,4 @@ permalink: /checkout/
 		document.getElementById('error-or-continue').innerHTML = '<p>Error: needs internet connection (then refresh page).</p>';	
 	}
 	check_payment();
-</script>
+</script> 
