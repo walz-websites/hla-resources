@@ -17,6 +17,16 @@ div#item-notification div a{
 	color:#ffffff;
 }
 
+div.trigger ul#primary-menu li.donate-menu-item a{
+	background:#ff6600;
+	color:#ffffff;
+	text-decoration: none;	
+}
+div.trigger ul#primary-menu li.donate-menu-item a:hover{
+	background:#9CA3C1;
+	color:#ffffff;
+	text-decoration: none;	
+}
 i.loading{
 	webkit-animation: spin 1s infinite cubic-bezier(.46,.03,.52,.96);
 	animation: spin 1s infinite cubic-bezier(.46,.03,.52,.96);
@@ -278,6 +288,12 @@ table.categories{width:100%;}
 
 .store-pics{
 	//max-width:200px;
+}
+a.footer-link {
+    color: #fff;
+}
+a.footer-link:visited {
+    color: #fff;
 }
 .store-item-block{
 	display:inline-block;
