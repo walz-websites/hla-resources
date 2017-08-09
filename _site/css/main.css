@@ -321,7 +321,8 @@ footer.site-footer {
 
 ul.social-media-list li {
   display: inline-block;
-  margin-left: 5px; }
+  margin-left: 5px;
+  margin-bottom: 15px; }
 
 ul#primary-menu {
   list-style-type: none;
