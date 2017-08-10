@@ -289,11 +289,14 @@ table.categories{width:100%;}
 .store-pics{
 	//max-width:200px;
 }
-a.footer-link {
-    color: #fff;
+.footer-link{
+	color:#fff;
 }
-a.footer-link:visited {
-    color: #fff;
+.footer-link:visited{
+	color:#fff;
+}
+.footer-link:hover{
+	color:#9CA3C1;
 }
 .store-item-block{
 	display:inline-block;

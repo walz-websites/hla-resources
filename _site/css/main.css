@@ -298,11 +298,14 @@ table.categories {
 .float-left {
   float: left; }
 
-a.footer-link {
+.footer-link {
   color: #fff; }
 
-a.footer-link:visited {
+.footer-link:visited {
   color: #fff; }
+
+.footer-link:hover {
+  color: #9CA3C1; }
 
 .store-item-block {
   display: inline-block;
