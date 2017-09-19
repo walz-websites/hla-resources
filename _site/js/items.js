@@ -6,6 +6,24 @@ function list_items () {
         issues:"Abortion".replace(/, /g, ",").replace(/ /g, "-"),
         item_type:"Publication".replace(/, /g, ",").replace(/ /g, "-"),
         target_age:"Teens, Young Adults, Adults".replace(/, /g, ",").replace(/ /g, "-"),
+        target_audience:"College Students, High School Students, Pro-life Organizations, Sidewalk Counselors, Youth Group".replace(/, /g, ",").replace(/ /g, "-"),
+        item_language:"English".replace(/, /g, ",").replace(/ /g, "-"),
+        item_title:"Manual for Adulting",
+        pic:"Adulting-front.jpg",
+        url:"/campus/",
+        loc:"009970",
+        id:"#0107",
+        size:"34",
+        price:{amount:"",text:""}
+      };
+      items.push(item);
+    
+  
+    
+      var item = {
+        issues:"Abortion".replace(/, /g, ",").replace(/ /g, "-"),
+        item_type:"Publication".replace(/, /g, ",").replace(/ /g, "-"),
+        target_age:"Teens, Young Adults, Adults".replace(/, /g, ",").replace(/ /g, "-"),
         target_audience:"College Students, High School Students, Latino Community, Sidewalk Counselors".replace(/, /g, ",").replace(/ /g, "-"),
         item_language:"Spanish".replace(/, /g, ",").replace(/ /g, "-"),
         item_title:"Ella es una niña, no una opción",
@@ -28,7 +46,7 @@ function list_items () {
         item_language:"English".replace(/, /g, ",").replace(/ /g, "-"),
         item_title:"Stand Up",
         pic:"stand-up-front.jpg",
-        url:"/campus/",
+        url:"/stand-up/",
         loc:"011000",
         id:"#0011",
         size:"34",
