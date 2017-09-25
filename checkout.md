@@ -87,7 +87,7 @@ permalink: /checkout/
 		if (total>0) {
 			get_payeezy_info(total);
 		}else{
-			continue_submit();
+			continue_submit(); 
 		}
 	}
 	function continue_submit () {
