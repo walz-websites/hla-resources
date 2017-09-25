@@ -1,0 +1,41 @@
+body div#document{
+	width: 95%;
+}
+body div#document div#content div#order{
+	visibility: hidden;
+}
+body div#document div#content div#order h1{
+	visibility: visible;
+}
+body div#document div#content div#order table{
+	visibility: visible;
+}
+body div#document div#content div#order label{
+	visibility: visible;
+}
+body div#document div#header h1{
+	visibility: hidden;
+}
+body div#document div#header h1 img{
+	visibility: visible;
+}
+body div#document div#header{
+	border-bottom: unset;
+}
+body div#document div#footer div.powered{
+	display: none;
+}
+body div#document div#footer{
+	background: #1B1B1B;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	width: 100%;
+}
+html{
+	border-top: 5px solid #424242;
+}
+form div.custom_field_row:nth-child(3) div.custom_field label::after{
+    content: " Example: 0822 not 08/22";
+    font-weight: normal;
+}
