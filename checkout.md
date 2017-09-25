@@ -73,315 +73,7 @@ permalink: /checkout/
 			return '';
 		}
 	}
-	function check_payment () {
-		var total = my_total(JSON.parse(localStorage.getItem("items")));
-		if (total>0) {
-			get_payeezy_info(total);
-			var i = 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			var i = 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			var i = 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-			i = i + 1;
-			setTimeout('get_payeezy_info(my_total(JSON.parse(localStorage.getItem("items"))))',600000 * i);
-		}else{
-			document.getElementById('checkout-payment').innerHTML = "";
-		};
-		//setTimeout(check_payment(),10000);
-	}
+	
 	function read (argument) {
 		var data = JSON.parse(localStorage.getItem(argument)) || null;
 		if(data != null){
@@ -390,6 +82,15 @@ permalink: /checkout/
 		return "";
 	}
 	function submit () {
+		document.getElementById('error-or-continue').innerHTML = '<i style="-webkit-animation-name: spin;-webkit-animation-duration: 800ms;-webkit-animation-iteration-count: infinite;-webkit-animation-timing-function: linear;-moz-animation-name: spin;-moz-animation-duration: 800ms;-moz-animation-iteration-count: infinite;-moz-animation-timing-function: linear;-ms-animation-name: spin;-ms-animation-duration: 800ms;-ms-animation-iteration-count: infinite;-ms-animation-timing-function: linear;-o-transition: rotate(3600deg);" class="fa fa-spinner" aria-hidden="true"></i> Loading...';
+		var total = my_total(JSON.parse(localStorage.getItem("items")));
+		if (total>0) {
+			get_payeezy_info(total);
+		}else{
+			continue_submit();
+		}
+	}
+	function continue_submit () {
 		var b_f_name = document.getElementById("input-b-f-name").value;
 		var b_l_name = document.getElementById("input-b-l-name").value;
 		var b_o_name = document.getElementById("input-b-o-name").value;
@@ -622,14 +323,17 @@ permalink: /checkout/
 			var xml = new XMLHttpRequest();
 			xml.open('POST',url,true);
 			xml.responseType = 'json';
-			xml.onload = function() {
-		      var status = xml.status;
-		      if (status == 200) {
-		        make_pay_button(xml.response);
-		      } else {
-		        make_pay_error();
-		      }
-		    };
+		    xml.onreadystatechange = function()
+			{
+			    if(this.readyState == 4){
+			    	var status = xml.status;
+				    if (status == 200) {
+				    	make_pay_button(xml.response);
+				    } else {
+				        make_pay_error();
+				    }
+			    }
+			}
 		    xml.send(JSON.stringify({amount : cost}));
 	    };
 
@@ -651,7 +355,9 @@ permalink: /checkout/
 				if (items[i].donation) {
 					amount = items[i].suggested_donation;
 				};
-  				string = string + '<input type="hidden" name="x_line_item" value="' + items[i].id_number + '<|>' + items[i].item + '<|>' + items[i].item + '<|>' + items[i].quantity + '<|>' + amount + '<|>N<|>' + items[i].id_number + '<|><|><|><|><|><|><|><|>' + items[i].quantity * amount + '" />';
+				if(parseInt(items[i].quantity) > 0){
+  					string = string + '<input type="hidden" name="x_line_item" value="' + items[i].id_number + '<|>' + items[i].item + '<|>' + items[i].item + '<|>' + parseInt(items[i].quantity) + '<|>' + amount + '<|>N<|>' + items[i].id_number + '<|><|><|><|><|><|><|><|>' + parseInt(items[i].quantity) * amount + '" />';
+  				}
   			}
   		}
   		
@@ -660,9 +366,9 @@ permalink: /checkout/
   		string = string + '<input type="hidden" name="x_show_form" value="PAYMENT_FORM" />';
   		string = string + '<input type="submit" value="pay" /></form>';
 		document.getElementById('checkout-payment').innerHTML = string;
+		continue_submit();
 	}
 	function make_pay_error () {
-		document.getElementById('error-or-continue').innerHTML = '<p>Error: needs internet connection (then refresh page).</p>';	
+		document.getElementById('error-or-continue').innerHTML = 'Error: needs internet connection (then refresh page).';
 	}
-	check_payment();
 </script> 
